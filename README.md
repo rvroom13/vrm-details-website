@@ -3169,3 +3169,5 @@ Notes: ${notes}`,
     res.status(500).json({ error: err.message });
   }
 }
+fetch("https://YOUR-VERCEL-URL/api/send-sms"
+fetch(["https://your-project.vercel.app/api/send-sms](https://vrm-details-website.vercel.app/)"
