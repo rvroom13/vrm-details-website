@@ -3137,3 +3137,35 @@ function getSelectedAddons() {
   return selected.join(", ");
 }
 </script>
+import twilio from "twilio";
+
+export default async function handler(req, res) {
+  const client = twilio(
+    process.env.TWILIO_SID,
+    process.env.TWILIO_AUTH
+  );
+
+  const { name, phone, service, addons, car, location, date, time, notes } = req.body;
+
+  try {
+    await client.messages.create({
+      body: `🚗 NEW BOOKING
+
+Name: ${name}
+Phone: ${phone}
+Car: ${car}
+Service: ${service}
+Add-ons: ${addons}
+Location: ${location}
+Date: ${date}
+Time: ${time}
+Notes: ${notes}`,
+      from: process.env.TWILIO_PHONE,
+      to: process.env.YOUR_PHONE
+    });
+
+    res.status(200).json({ success: true });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+}
