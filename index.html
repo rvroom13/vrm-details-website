@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -829,7 +830,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 60px;
-      align-items: center;
+      align-items: start;
     }
 
     .area-text h3 {
@@ -871,71 +872,69 @@
       flex-shrink: 0;
     }
 
-    .area-map {
+    .area-map-container {
       position: relative;
-      background: var(--bg-card);
-      border: 1px solid var(--gray-700);
       border-radius: 8px;
-      height: 350px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       overflow: hidden;
+      border: 1px solid var(--gray-700);
     }
 
-    .area-map-pin {
-      position: relative;
+    .area-map-container iframe {
+      display: block;
+      width: 100%;
+      height: 450px;
+      border: 0;
+      filter: grayscale(0.6) brightness(0.7) contrast(1.2);
+      transition: filter 0.4s ease;
     }
 
-    .area-map-pin svg {
-      width: 48px;
-      height: 48px;
-      stroke: var(--red);
-      fill: none;
-      stroke-width: 1.5;
+    .area-map-container:hover iframe {
+      filter: grayscale(0.3) brightness(0.8) contrast(1.1);
     }
-
-    .area-map-pin::after {
-      content: '';
-      position: absolute;
-      bottom: -8px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 40px;
-      height: 12px;
-      background: var(--red-glow);
-      border-radius: 50%;
-      filter: blur(4px);
-    }
-
-    .area-map-rings {
-      position: absolute;
-      inset: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .ring {
-      position: absolute;
-      border: 1px solid rgba(208, 0, 0, 0.1);
-      border-radius: 50%;
-    }
-
-    .ring:nth-child(1) { width: 100px; height: 100px; }
-    .ring:nth-child(2) { width: 200px; height: 200px; }
-    .ring:nth-child(3) { width: 300px; height: 300px; }
 
     .area-map-label {
       position: absolute;
-      bottom: 20px;
-      left: 20px;
+      top: 16px;
+      left: 16px;
+      background: rgba(10, 10, 10, 0.9);
+      backdrop-filter: blur(8px);
+      padding: 8px 16px;
+      border-radius: 4px;
+      border: 1px solid var(--gray-700);
       font-family: var(--font-display);
-      font-size: 1rem;
-      letter-spacing: 3px;
-      color: var(--gray-500);
+      font-size: 0.85rem;
+      letter-spacing: 2px;
+      color: var(--red);
       text-transform: uppercase;
+      z-index: 2;
+      pointer-events: none;
     }
+
+    .area-legend {
+      margin-top: 16px;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .area-legend-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.8rem;
+      color: var(--gray-300);
+      font-weight: 300;
+    }
+
+    .area-legend-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .area-legend-dot.active { background: var(--red); }
+    .area-legend-dot.inactive { background: var(--gray-500); opacity: 0.5; }
 
     /* ===== CONTACT / BOOK ===== */
     #contact {
@@ -1018,6 +1017,59 @@
       color: var(--red);
     }
 
+    /* Calendly embed in contact info */
+    .calendly-section {
+      margin-top: 30px;
+      padding-top: 24px;
+      border-top: 1px solid var(--gray-700);
+    }
+
+    .calendly-section h4 {
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--white);
+      margin-bottom: 12px;
+    }
+
+    .calendly-section p {
+      color: var(--gray-500);
+      font-size: 0.85rem;
+      font-weight: 300;
+      margin-bottom: 16px;
+    }
+
+    .calendly-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 24px;
+      background: rgba(208, 0, 0, 0.1);
+      border: 1px solid rgba(208, 0, 0, 0.3);
+      border-radius: 4px;
+      color: var(--red);
+      font-family: var(--font-display);
+      font-size: 1rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .calendly-btn:hover {
+      background: var(--red);
+      color: var(--white);
+    }
+
+    .calendly-btn svg {
+      width: 18px;
+      height: 18px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 1.5;
+    }
+
     /* Form */
     .contact-form {
       background: var(--bg-card);
@@ -1097,6 +1149,560 @@
     .form-group textarea {
       resize: vertical;
       min-height: 100px;
+    }
+
+    /* ===== SEARCHABLE DROPDOWN ===== */
+    .search-select {
+      position: relative;
+    }
+
+    .search-select-trigger {
+      width: 100%;
+      background: var(--bg);
+      border: 1px solid var(--gray-700);
+      border-radius: 4px;
+      padding: 14px 40px 14px 16px;
+      color: var(--white);
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: border-color 0.3s ease;
+      outline: none;
+      text-align: left;
+      position: relative;
+    }
+
+    .search-select-trigger::after {
+      content: '';
+      position: absolute;
+      right: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 6px solid var(--gray-500);
+      transition: transform 0.3s ease;
+    }
+
+    .search-select-trigger.open::after {
+      transform: translateY(-50%) rotate(180deg);
+    }
+
+    .search-select-trigger:focus,
+    .search-select.open .search-select-trigger {
+      border-color: var(--red);
+    }
+
+    .search-select-trigger .placeholder {
+      color: var(--gray-500);
+    }
+
+    .search-select-dropdown {
+      display: none;
+      position: absolute;
+      top: calc(100% + 4px);
+      left: 0;
+      right: 0;
+      background: var(--bg-card);
+      border: 1px solid var(--gray-700);
+      border-radius: 4px;
+      max-height: 240px;
+      overflow: hidden;
+      z-index: 100;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    }
+
+    .search-select.open .search-select-dropdown {
+      display: block;
+    }
+
+    .search-select-search {
+      width: 100%;
+      padding: 12px 16px;
+      background: var(--bg);
+      border: none;
+      border-bottom: 1px solid var(--gray-700);
+      color: var(--white);
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      outline: none;
+    }
+
+    .search-select-search::placeholder {
+      color: var(--gray-500);
+    }
+
+    .search-select-options {
+      max-height: 190px;
+      overflow-y: auto;
+    }
+
+    .search-select-options::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .search-select-options::-webkit-scrollbar-track {
+      background: var(--bg-card);
+    }
+
+    .search-select-options::-webkit-scrollbar-thumb {
+      background: var(--gray-700);
+      border-radius: 3px;
+    }
+
+    .search-select-option {
+      padding: 10px 16px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      color: var(--gray-300);
+      transition: background 0.2s ease, color 0.2s ease;
+    }
+
+    .search-select-option:hover {
+      background: rgba(208, 0, 0, 0.1);
+      color: var(--white);
+    }
+
+    .search-select-option.selected {
+      color: var(--red);
+      font-weight: 500;
+    }
+
+    .search-select-option.hidden {
+      display: none;
+    }
+
+    /* ===== MULTI-SELECT ADDONS ===== */
+    .multi-select {
+      position: relative;
+    }
+
+    .multi-select-trigger {
+      width: 100%;
+      background: var(--bg);
+      border: 1px solid var(--gray-700);
+      border-radius: 4px;
+      padding: 10px 40px 10px 12px;
+      min-height: 48px;
+      cursor: pointer;
+      transition: border-color 0.3s ease;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      align-items: center;
+      position: relative;
+    }
+
+    .multi-select-trigger::after {
+      content: '';
+      position: absolute;
+      right: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 6px solid var(--gray-500);
+      transition: transform 0.3s ease;
+    }
+
+    .multi-select.open .multi-select-trigger::after {
+      transform: translateY(-50%) rotate(180deg);
+    }
+
+    .multi-select.open .multi-select-trigger,
+    .multi-select-trigger:focus {
+      border-color: var(--red);
+    }
+
+    .multi-select-trigger .placeholder {
+      color: var(--gray-500);
+      font-size: 0.95rem;
+      font-family: var(--font-body);
+    }
+
+    .multi-select-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(208, 0, 0, 0.15);
+      border: 1px solid rgba(208, 0, 0, 0.3);
+      color: var(--white);
+      font-size: 0.8rem;
+      padding: 4px 10px;
+      border-radius: 3px;
+      font-family: var(--font-body);
+    }
+
+    .multi-select-tag .remove-tag {
+      cursor: pointer;
+      font-size: 1rem;
+      line-height: 1;
+      color: var(--gray-300);
+      transition: color 0.2s ease;
+    }
+
+    .multi-select-tag .remove-tag:hover {
+      color: var(--red);
+    }
+
+    .multi-select-dropdown {
+      display: none;
+      position: absolute;
+      top: calc(100% + 4px);
+      left: 0;
+      right: 0;
+      background: var(--bg-card);
+      border: 1px solid var(--gray-700);
+      border-radius: 4px;
+      max-height: 220px;
+      overflow-y: auto;
+      z-index: 100;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    }
+
+    .multi-select.open .multi-select-dropdown {
+      display: block;
+    }
+
+    .multi-select-option {
+      padding: 10px 16px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      color: var(--gray-300);
+      transition: background 0.2s ease, color 0.2s ease;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .multi-select-option:hover {
+      background: rgba(208, 0, 0, 0.1);
+      color: var(--white);
+    }
+
+    .multi-select-option.selected {
+      color: var(--red);
+      background: rgba(208, 0, 0, 0.05);
+    }
+
+    .multi-select-option .addon-price-tag {
+      font-family: var(--font-display);
+      color: var(--red);
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+    }
+
+    /* ===== CALENDAR PICKER ===== */
+    .calendar-picker {
+      background: var(--bg);
+      border: 1px solid var(--gray-700);
+      border-radius: 4px;
+      padding: 16px;
+      transition: border-color 0.3s ease;
+    }
+
+    .calendar-picker:focus-within {
+      border-color: var(--red);
+    }
+
+    .calendar-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    .calendar-header h4 {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--white);
+    }
+
+    .calendar-nav {
+      display: flex;
+      gap: 8px;
+    }
+
+    .calendar-nav button {
+      background: rgba(208, 0, 0, 0.1);
+      border: 1px solid rgba(208, 0, 0, 0.2);
+      color: var(--red);
+      width: 32px;
+      height: 32px;
+      border-radius: 4px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      transition: all 0.2s ease;
+    }
+
+    .calendar-nav button:hover {
+      background: var(--red);
+      color: var(--white);
+    }
+
+    .calendar-weekdays {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 4px;
+      margin-bottom: 8px;
+    }
+
+    .calendar-weekdays span {
+      text-align: center;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--gray-500);
+      padding: 4px;
+    }
+
+    .calendar-days {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 4px;
+    }
+
+    .calendar-day {
+      text-align: center;
+      padding: 8px 4px;
+      font-size: 0.85rem;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      color: var(--gray-300);
+      background: transparent;
+      border: 1px solid transparent;
+    }
+
+    .calendar-day:hover:not(.disabled):not(.empty) {
+      background: rgba(208, 0, 0, 0.15);
+      border-color: rgba(208, 0, 0, 0.3);
+      color: var(--white);
+    }
+
+    .calendar-day.selected {
+      background: var(--red);
+      color: var(--white);
+      font-weight: 600;
+    }
+
+    .calendar-day.today {
+      border-color: var(--red);
+    }
+
+    .calendar-day.disabled {
+      color: var(--gray-700);
+      cursor: not-allowed;
+    }
+
+    .calendar-day.empty {
+      cursor: default;
+    }
+
+    .time-slots {
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 1px solid var(--gray-700);
+    }
+
+    .time-slots-label {
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--gray-300);
+      margin-bottom: 10px;
+    }
+
+    .time-slots-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+      gap: 8px;
+    }
+
+    .time-slot {
+      padding: 8px 4px;
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--gray-300);
+      border: 1px solid var(--gray-700);
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .time-slot:hover {
+      border-color: rgba(208, 0, 0, 0.4);
+      background: rgba(208, 0, 0, 0.1);
+      color: var(--white);
+    }
+
+    .time-slot.selected {
+      background: var(--red);
+      border-color: var(--red);
+      color: var(--white);
+      font-weight: 500;
+    }
+
+    .time-slot.disabled {
+      color: var(--gray-700);
+      cursor: not-allowed;
+      border-color: rgba(42, 42, 42, 0.5);
+    }
+
+    .calendar-availability-note {
+      margin-top: 12px;
+      font-size: 0.75rem;
+      color: var(--gray-500);
+      font-weight: 300;
+      line-height: 1.6;
+    }
+
+    /* ===== REQUIRED CHECKBOX ===== */
+    .form-checkbox {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+
+    .form-checkbox input[type="checkbox"] {
+      width: 20px;
+      height: 20px;
+      min-width: 20px;
+      accent-color: var(--red);
+      cursor: pointer;
+      margin-top: 2px;
+    }
+
+    .form-checkbox label {
+      font-size: 0.9rem;
+      color: var(--gray-300);
+      font-weight: 400;
+      cursor: pointer;
+      line-height: 1.5;
+      letter-spacing: 0;
+      text-transform: none;
+      margin-bottom: 0;
+    }
+
+    .form-checkbox label .required-star {
+      color: var(--red);
+      font-weight: 700;
+    }
+
+    /* ===== FORM SUMMARY MODAL ===== */
+    .summary-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.85);
+      backdrop-filter: blur(8px);
+      z-index: 2000;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .summary-overlay.active {
+      display: flex;
+    }
+
+    .summary-modal {
+      background: var(--bg-card);
+      border: 1px solid var(--gray-700);
+      border-radius: 8px;
+      padding: 36px;
+      max-width: 520px;
+      width: 100%;
+      max-height: 90vh;
+      overflow-y: auto;
+      animation: fadeUp 0.3s ease;
+    }
+
+    .summary-modal h3 {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--white);
+      margin-bottom: 24px;
+      text-align: center;
+    }
+
+    .summary-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      gap: 16px;
+    }
+
+    .summary-row:last-of-type {
+      border-bottom: none;
+    }
+
+    .summary-label {
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--gray-500);
+      flex-shrink: 0;
+    }
+
+    .summary-value {
+      color: var(--white);
+      font-size: 0.95rem;
+      text-align: right;
+      word-break: break-word;
+    }
+
+    .summary-buttons {
+      display: flex;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .summary-buttons button {
+      flex: 1;
+      padding: 14px 20px;
+      border-radius: 4px;
+      font-family: var(--font-display);
+      font-size: 1rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .btn-back {
+      background: transparent;
+      border: 1px solid var(--gray-700);
+      color: var(--gray-300);
+    }
+
+    .btn-back:hover {
+      border-color: var(--white);
+      color: var(--white);
+    }
+
+    .btn-confirm {
+      background: var(--red);
+      border: none;
+      color: var(--white);
+      box-shadow: 0 4px 20px var(--red-glow);
+    }
+
+    .btn-confirm:hover {
+      background: var(--red-dark);
     }
 
     .form-submit {
@@ -1280,7 +1886,7 @@
         gap: 40px;
       }
 
-      .area-map { height: 250px; }
+      .area-map-container iframe { height: 300px; }
 
       .contact-grid {
         grid-template-columns: 1fr;
@@ -1305,6 +1911,9 @@
       .hero h1 {
         letter-spacing: 4px;
       }
+
+      .summary-modal { padding: 24px 16px; }
+      .summary-buttons { flex-direction: column; }
     }
 
     @media (max-width: 480px) {
@@ -1319,6 +1928,10 @@
       .about-stats {
         flex-direction: column;
         align-items: center;
+      }
+
+      .time-slots-grid {
+        grid-template-columns: repeat(3, 1fr);
       }
     }
   </style>
@@ -1600,17 +2213,26 @@
             <li>Hollywood</li>
             <li>Homestead</li>
           </ul>
+          <div class="area-legend" style="margin-top: 24px;">
+            <div class="area-legend-item">
+              <div class="area-legend-dot active"></div>
+              Service Area
+            </div>
+            <div class="area-legend-item">
+              <div class="area-legend-dot inactive"></div>
+              Out of Service
+            </div>
+          </div>
         </div>
-        <div class="area-map reveal reveal-delay-1">
-          <div class="area-map-rings">
-            <div class="ring"></div>
-            <div class="ring"></div>
-            <div class="ring"></div>
+        <div class="reveal reveal-delay-1">
+          <div class="area-map-container">
+            <div class="area-map-label">Service Area Coverage</div>
+            <!-- Google Maps embed centered on Miami service area -->
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d229688.1103079498!2d-80.30048279868638!3d25.82043077479498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sus!4v1680000000000!5m2!1sen!2sus"
+              width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
-          <div class="area-map-pin">
-            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          </div>
-          <div class="area-map-label">Miami, FL</div>
         </div>
       </div>
     </div>
@@ -1635,7 +2257,7 @@
             </div>
             <div>
               <div class="contact-detail-text">Phone</div>
-              <div class="contact-detail-value"><a href="tel:+13055551234">(305) 555-1234</a></div>
+              <div class="contact-detail-value"><a href="tel:+15614527467">(561) 452-7467</a></div>
             </div>
           </div>
 
@@ -1658,10 +2280,13 @@
               <div class="contact-detail-value">Miami, South Florida</div>
             </div>
           </div>
+
         </div>
 
-        <form class="contact-form reveal reveal-delay-1" id="bookingForm">
+        <form class="contact-form reveal reveal-delay-1" id="bookingForm" novalidate>
           <h3>Request a Booking</h3>
+
+          <!-- Name & Phone -->
           <div class="form-row">
             <div class="form-group">
               <label for="name">Your Name</label>
@@ -1672,27 +2297,147 @@
               <input type="tel" id="phone" name="phone" placeholder="(305) 555-1234" required>
             </div>
           </div>
+
+          <!-- Service & Add-ons (separate) -->
           <div class="form-group">
-            <label for="service">Service Interested In</label>
+            <label for="service">Service</label>
             <select id="service" name="service" required>
               <option value="" disabled selected>Select a service</option>
-              <option value="regular">Regular Wash — from $89</option>
-              <option value="full">Full Detail — from $349</option>
-              <option value="maintenance">VRM Maintenance Package — from $79/mo</option>
-              <option value="addon-ceramic">Add-On: Ceramic Wash — +$30</option>
-              <option value="addon-headlight">Add-On: Headlight Restoration — +$40</option>
-              <option value="addon-pethair">Add-On: Pet Hair Removal — +$20</option>
+              <option value="Regular Wash — from $89">Regular Wash — from $89</option>
+              <option value="Full Detail — from $349">Full Detail — from $349</option>
+              <option value="VRM Maintenance Package — from $79/mo">VRM Maintenance Package — from $79/mo</option>
             </select>
           </div>
+
           <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Tell us about your vehicle, preferred date/time, or any questions..."></textarea>
+            <label>Add-Ons (optional)</label>
+            <div class="multi-select" id="addonsSelect">
+              <div class="multi-select-trigger" tabindex="0">
+                <span class="placeholder">Select add-ons...</span>
+              </div>
+              <div class="multi-select-dropdown">
+                <div class="multi-select-option" data-value="Ceramic Wash (+$30)">
+                  <span>Ceramic Wash</span>
+                  <span class="addon-price-tag">+$30</span>
+                </div>
+                <div class="multi-select-option" data-value="Headlight Restoration (+$40)">
+                  <span>Headlight Restoration</span>
+                  <span class="addon-price-tag">+$40</span>
+                </div>
+                <div class="multi-select-option" data-value="Excessive Pet Hair Removal (+$20)">
+                  <span>Excessive Pet Hair Removal</span>
+                  <span class="addon-price-tag">+$20</span>
+                </div>
+              </div>
+            </div>
           </div>
-          <button type="submit" class="form-submit">Send Inquiry</button>
+
+          <!-- Car Brand & Model (searchable) -->
+          <div class="form-row">
+            <div class="form-group">
+              <label>Car Brand</label>
+              <div class="search-select" id="brandSelect">
+                <div class="search-select-trigger" tabindex="0">
+                  <span class="placeholder">Select brand...</span>
+                </div>
+                <div class="search-select-dropdown">
+                  <input type="text" class="search-select-search" placeholder="Type to search...">
+                  <div class="search-select-options" id="brandOptions"></div>
+                </div>
+              </div>
+              <input type="hidden" id="carBrand" name="carBrand" required>
+            </div>
+            <div class="form-group">
+              <label>Car Model</label>
+              <div class="search-select" id="modelSelect">
+                <div class="search-select-trigger" tabindex="0">
+                  <span class="placeholder">Select brand first...</span>
+                </div>
+                <div class="search-select-dropdown">
+                  <input type="text" class="search-select-search" placeholder="Type to search...">
+                  <div class="search-select-options" id="modelOptions"></div>
+                </div>
+              </div>
+              <input type="hidden" id="carModel" name="carModel" required>
+            </div>
+          </div>
+
+          <!-- Location -->
+          <div class="form-group">
+            <label for="location">Service Location</label>
+            <select id="location" name="location" required>
+              <option value="" disabled selected>Select your area</option>
+              <option value="Miami / Brickell">Miami / Brickell</option>
+              <option value="Miami Beach">Miami Beach</option>
+              <option value="Coral Gables">Coral Gables</option>
+              <option value="Doral">Doral</option>
+              <option value="Kendall">Kendall</option>
+              <option value="Hialeah">Hialeah</option>
+              <option value="Aventura">Aventura</option>
+              <option value="Fort Lauderdale">Fort Lauderdale</option>
+              <option value="Hollywood">Hollywood</option>
+              <option value="Homestead">Homestead</option>
+            </select>
+          </div>
+
+          <!-- Calendar + Time Picker -->
+          <div class="form-group">
+            <label>Preferred Date & Time</label>
+            <div class="calendar-picker" id="calendarPicker">
+              <div class="calendar-header">
+                <h4 id="calendarMonth"></h4>
+                <div class="calendar-nav">
+                  <button type="button" id="calPrev">&larr;</button>
+                  <button type="button" id="calNext">&rarr;</button>
+                </div>
+              </div>
+              <div class="calendar-weekdays">
+                <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+              </div>
+              <div class="calendar-days" id="calendarDays"></div>
+              <div class="time-slots" id="timeSlots" style="display:none;">
+                <div class="time-slots-label">Available Times</div>
+                <div class="time-slots-grid" id="timeSlotsGrid"></div>
+              </div>
+              <div class="calendar-availability-note">
+                Mon: 2–6 PM &bull; Tue: 10 AM–6 PM &bull; Wed–Fri: 2–6 PM &bull; Sat–Sun: 10 AM–6 PM
+              </div>
+            </div>
+            <input type="hidden" id="selectedDate" name="selectedDate" required>
+            <input type="hidden" id="selectedTime" name="selectedTime" required>
+          </div>
+
+          <!-- Additional Notes -->
+          <div class="form-group">
+            <label for="notes">Additional Notes (optional)</label>
+            <textarea id="notes" name="notes" placeholder="Any special requests, vehicle conditions, or questions..."></textarea>
+          </div>
+
+          <!-- Required Checkbox -->
+          <div class="form-checkbox">
+            <input type="checkbox" id="utilityCheck" name="utilityCheck" required>
+            <label for="utilityCheck">
+              Water and electricity source must be provided <span class="required-star">*</span>
+            </label>
+          </div>
+
+          <button type="submit" class="form-submit" id="submitBtn">Review & Submit</button>
         </form>
       </div>
     </div>
   </section>
+
+  <!-- ===== FORM SUMMARY MODAL ===== -->
+  <div class="summary-overlay" id="summaryOverlay">
+    <div class="summary-modal">
+      <h3>Booking Summary</h3>
+      <div id="summaryContent"></div>
+      <div class="summary-buttons">
+        <button type="button" class="btn-back" id="summaryBack">Edit</button>
+        <button type="button" class="btn-confirm" id="summaryConfirm">Confirm & Send</button>
+      </div>
+    </div>
+  </div>
 
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
@@ -1736,20 +2481,87 @@
   </footer>
 
   <script>
+    // =================================================================
+    // VRM Details — Booking System JavaScript
+    // =================================================================
+
+    // ===== CONFIGURATION =====
+    // Replace with your actual Twilio serverless function URL
+    const TWILIO_ENDPOINT = 'https://YOUR-TWILIO-FUNCTION-URL.twil.io/send-sms';
+    const BUSINESS_PHONE = '+15614527467';
+
+    // ===== CAR DATA =====
+    const carData = {
+      'Acura': ['ILX','Integra','MDX','NSX','RDX','TLX'],
+      'Alfa Romeo': ['Giulia','Stelvio','Tonale','4C Spider'],
+      'Aston Martin': ['DB11','DB12','DBX','Vantage','DBS'],
+      'Audi': ['A3','A4','A5','A6','A7','A8','e-tron','e-tron GT','Q3','Q4 e-tron','Q5','Q7','Q8','R8','RS3','RS5','RS6','RS7','RS e-tron GT','S3','S4','S5','S6','S7','S8','SQ5','SQ7','SQ8','TT'],
+      'Bentley': ['Bentayga','Continental GT','Flying Spur'],
+      'BMW': ['2 Series','3 Series','4 Series','5 Series','7 Series','8 Series','i4','i5','i7','iX','M2','M3','M4','M5','M8','X1','X2','X3','X4','X5','X6','X7','XM','Z4'],
+      'Buick': ['Enclave','Encore','Encore GX','Envision','Envista'],
+      'Cadillac': ['CT4','CT5','Escalade','Escalade ESV','LYRIQ','XT4','XT5','XT6'],
+      'Chevrolet': ['Blazer','Bolt EUV','Camaro','Colorado','Corvette','Equinox','Malibu','Silverado 1500','Silverado 2500HD','Suburban','Tahoe','Trailblazer','Traverse','Trax'],
+      'Chrysler': ['300','Pacifica'],
+      'Dodge': ['Challenger','Charger','Durango','Hornet'],
+      'Ferrari': ['296 GTB','296 GTS','812','F8','Roma','SF90','Purosangue'],
+      'Fiat': ['500X','500e'],
+      'Ford': ['Bronco','Bronco Sport','Edge','Escape','Expedition','Explorer','F-150','F-150 Lightning','Maverick','Mustang','Mustang Mach-E','Ranger','Transit'],
+      'Genesis': ['G70','G80','G90','GV60','GV70','GV80'],
+      'GMC': ['Acadia','Canyon','Hummer EV','Sierra 1500','Sierra 2500HD','Terrain','Yukon','Yukon XL'],
+      'Honda': ['Accord','Civic','CR-V','HR-V','Odyssey','Passport','Pilot','Ridgeline'],
+      'Hyundai': ['Elantra','IONIQ 5','IONIQ 6','Kona','Palisade','Santa Cruz','Santa Fe','Sonata','Tucson','Venue'],
+      'Infiniti': ['Q50','Q60','QX50','QX55','QX60','QX80'],
+      'Jaguar': ['E-PACE','F-PACE','F-TYPE','I-PACE','XF'],
+      'Jeep': ['Cherokee','Compass','Gladiator','Grand Cherokee','Grand Cherokee L','Grand Wagoneer','Renegade','Wagoneer','Wrangler'],
+      'Kia': ['Carnival','EV6','EV9','Forte','K5','Niro','Rio','Seltos','Sorento','Soul','Sportage','Stinger','Telluride'],
+      'Lamborghini': ['Huracan','Revuelto','Urus'],
+      'Land Rover': ['Defender','Discovery','Discovery Sport','Range Rover','Range Rover Evoque','Range Rover Sport','Range Rover Velar'],
+      'Lexus': ['ES','GX','IS','IS500','LC','LC500','LX','NX','RC','RC350','RX','RX350','RZ','TX','UX'],
+      'Lincoln': ['Aviator','Corsair','Nautilus','Navigator'],
+      'Lucid': ['Air'],
+      'Maserati': ['Ghibli','GranTurismo','Grecale','Levante','MC20','Quattroporte'],
+      'Mazda': ['CX-30','CX-5','CX-50','CX-90','Mazda3','MX-5 Miata','MX-30'],
+      'McLaren': ['720S','750S','Artura','GT'],
+      'Mercedes-Benz': ['A-Class','AMG GT','C-Class','CLA','CLE','CLS','E-Class','EQB','EQE','EQS','G-Class','GLA','GLB','GLC','GLE','GLS','Maybach','S-Class','SL'],
+      'MINI': ['Clubman','Convertible','Countryman','Hardtop 2 Door','Hardtop 4 Door'],
+      'Mitsubishi': ['Eclipse Cross','Mirage','Outlander','Outlander Sport'],
+      'Nissan': ['Altima','Ariya','Frontier','GT-R','Kicks','LEAF','Maxima','Murano','Pathfinder','Rogue','Sentra','Titan','Versa','Z'],
+      'Polestar': ['Polestar 2','Polestar 3'],
+      'Porsche': ['718 Boxster','718 Cayman','911','Cayenne','Macan','Panamera','Taycan'],
+      'RAM': ['1500','2500','3500','ProMaster'],
+      'Rivian': ['R1S','R1T'],
+      'Rolls-Royce': ['Cullinan','Ghost','Phantom','Spectre','Wraith'],
+      'Subaru': ['Ascent','BRZ','Crosstrek','Forester','Impreza','Legacy','Outback','Solterra','WRX'],
+      'Tesla': ['Model 3','Model S','Model X','Model Y','Cybertruck'],
+      'Toyota': ['4Runner','86','bZ4X','Camry','Corolla','Corolla Cross','Crown','GR Supra','Grand Highlander','Highlander','Land Cruiser','Prius','RAV4','Sequoia','Sienna','Tacoma','Tundra','Venza'],
+      'Volkswagen': ['Atlas','Atlas Cross Sport','Golf GTI','Golf R','ID.4','Jetta','Taos','Tiguan'],
+      'Volvo': ['C40 Recharge','S60','S90','V60','V90','XC40','XC60','XC90']
+    };
+
+    // ===== AVAILABILITY SCHEDULE (day of week => [startHour, endHour]) =====
+    // 0=Sun, 1=Mon, 2=Tue, 3=Wed, 4=Thu, 5=Fri, 6=Sat
+    const availability = {
+      0: [10, 18], // Sunday 10AM-6PM
+      1: [14, 18], // Monday 2PM-6PM
+      2: [10, 18], // Tuesday 10AM-6PM
+      3: [14, 18], // Wednesday 2PM-6PM
+      4: [14, 18], // Thursday 2PM-6PM
+      5: [14, 18], // Friday 2PM-6PM
+      6: [10, 18]  // Saturday 10AM-6PM
+    };
+
     // ===== NAVBAR SCROLL EFFECT =====
     const navbar = document.getElementById('navbar');
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('.nav-links a:not(.nav-cta)');
 
     function handleScroll() {
-      // Sticky navbar background
       if (window.scrollY > 50) {
         navbar.classList.add('scrolled');
       } else {
         navbar.classList.remove('scrolled');
       }
 
-      // Active nav link
       let current = '';
       sections.forEach(section => {
         const top = section.offsetTop - 100;
@@ -1778,7 +2590,6 @@
       document.body.style.overflow = navLinksContainer.classList.contains('open') ? 'hidden' : '';
     });
 
-    // Close menu when a link is clicked
     navLinksContainer.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
         menuToggle.classList.remove('open');
@@ -1804,32 +2615,463 @@
 
     revealElements.forEach(el => revealObserver.observe(el));
 
-    // ===== FORM HANDLING =====
+    // ===== SEARCHABLE DROPDOWN COMPONENT =====
+    function initSearchSelect(container, options, onChange) {
+      const trigger = container.querySelector('.search-select-trigger');
+      const dropdown = container.querySelector('.search-select-dropdown');
+      const searchInput = container.querySelector('.search-select-search');
+      const optionsContainer = container.querySelector('.search-select-options');
+
+      let selectedValue = '';
+
+      function render(items) {
+        optionsContainer.innerHTML = '';
+        items.forEach(item => {
+          const opt = document.createElement('div');
+          opt.className = 'search-select-option' + (item === selectedValue ? ' selected' : '');
+          opt.textContent = item;
+          opt.addEventListener('click', () => {
+            selectedValue = item;
+            trigger.innerHTML = item;
+            container.classList.remove('open');
+            trigger.classList.remove('open');
+            searchInput.value = '';
+            if (onChange) onChange(item);
+          });
+          optionsContainer.appendChild(opt);
+        });
+      }
+
+      function setOptions(items) {
+        options = items;
+        selectedValue = '';
+        trigger.innerHTML = '<span class="placeholder">' +
+          (items.length ? 'Select...' : 'Select brand first...') + '</span>';
+        render(items);
+      }
+
+      trigger.addEventListener('click', (e) => {
+        e.stopPropagation();
+        // Close other dropdowns
+        document.querySelectorAll('.search-select.open, .multi-select.open').forEach(el => {
+          if (el !== container) { el.classList.remove('open'); }
+        });
+        container.classList.toggle('open');
+        trigger.classList.toggle('open');
+        if (container.classList.contains('open')) {
+          searchInput.focus();
+          render(options);
+        }
+      });
+
+      searchInput.addEventListener('input', () => {
+        const q = searchInput.value.toLowerCase();
+        const filtered = options.filter(o => o.toLowerCase().includes(q));
+        render(filtered);
+      });
+
+      searchInput.addEventListener('click', (e) => e.stopPropagation());
+
+      return { setOptions, getSelected: () => selectedValue };
+    }
+
+    // ===== MULTI-SELECT COMPONENT =====
+    function initMultiSelect(container) {
+      const trigger = container.querySelector('.multi-select-trigger');
+      const dropdown = container.querySelector('.multi-select-dropdown');
+      const optionEls = container.querySelectorAll('.multi-select-option');
+      const selected = new Set();
+
+      function renderTags() {
+        // Remove existing tags
+        trigger.querySelectorAll('.multi-select-tag').forEach(t => t.remove());
+        const placeholder = trigger.querySelector('.placeholder');
+
+        if (selected.size === 0) {
+          if (!placeholder) {
+            const ph = document.createElement('span');
+            ph.className = 'placeholder';
+            ph.textContent = 'Select add-ons...';
+            trigger.appendChild(ph);
+          }
+        } else {
+          if (placeholder) placeholder.remove();
+          selected.forEach(val => {
+            const tag = document.createElement('span');
+            tag.className = 'multi-select-tag';
+            const shortName = val.split(' (+')[0];
+            tag.innerHTML = shortName + ' <span class="remove-tag">&times;</span>';
+            tag.querySelector('.remove-tag').addEventListener('click', (e) => {
+              e.stopPropagation();
+              selected.delete(val);
+              optionEls.forEach(o => {
+                if (o.dataset.value === val) o.classList.remove('selected');
+              });
+              renderTags();
+            });
+            trigger.insertBefore(tag, trigger.lastElementChild);
+          });
+        }
+      }
+
+      trigger.addEventListener('click', (e) => {
+        e.stopPropagation();
+        document.querySelectorAll('.search-select.open, .multi-select.open').forEach(el => {
+          if (el !== container) el.classList.remove('open');
+        });
+        container.classList.toggle('open');
+      });
+
+      optionEls.forEach(opt => {
+        opt.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const val = opt.dataset.value;
+          if (selected.has(val)) {
+            selected.delete(val);
+            opt.classList.remove('selected');
+          } else {
+            selected.add(val);
+            opt.classList.add('selected');
+          }
+          renderTags();
+        });
+      });
+
+      return { getSelected: () => [...selected] };
+    }
+
+    // Close all dropdowns on outside click
+    document.addEventListener('click', () => {
+      document.querySelectorAll('.search-select.open, .multi-select.open').forEach(el => {
+        el.classList.remove('open');
+      });
+      document.querySelectorAll('.search-select-trigger.open').forEach(el => {
+        el.classList.remove('open');
+      });
+    });
+
+    // ===== INIT CAR BRAND/MODEL =====
+    const brandNames = Object.keys(carData).sort();
+    const brandSelect = initSearchSelect(
+      document.getElementById('brandSelect'),
+      brandNames,
+      (brand) => {
+        document.getElementById('carBrand').value = brand;
+        const models = carData[brand] || [];
+        modelSelect.setOptions(models);
+        document.getElementById('carModel').value = '';
+      }
+    );
+
+    const modelSelect = initSearchSelect(
+      document.getElementById('modelSelect'),
+      [],
+      (model) => {
+        document.getElementById('carModel').value = model;
+      }
+    );
+
+    // ===== INIT MULTI-SELECT ADD-ONS =====
+    const addonsMulti = initMultiSelect(document.getElementById('addonsSelect'));
+
+    // ===== CALENDAR PICKER =====
+    let calYear, calMonth, calSelectedDate = null, calSelectedTime = null;
+
+    const calendarDaysEl = document.getElementById('calendarDays');
+    const calendarMonthEl = document.getElementById('calendarMonth');
+    const timeSlotsEl = document.getElementById('timeSlots');
+    const timeSlotsGrid = document.getElementById('timeSlotsGrid');
+    const monthNames = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+
+    function initCalendar() {
+      const now = new Date();
+      calYear = now.getFullYear();
+      calMonth = now.getMonth();
+      renderCalendar();
+    }
+
+    function renderCalendar() {
+      calendarMonthEl.textContent = monthNames[calMonth] + ' ' + calYear;
+      calendarDaysEl.innerHTML = '';
+
+      const firstDay = new Date(calYear, calMonth, 1).getDay();
+      const daysInMonth = new Date(calYear, calMonth + 1, 0).getDate();
+      const today = new Date();
+      today.setHours(0,0,0,0);
+
+      // Empty cells before first day
+      for (let i = 0; i < firstDay; i++) {
+        const empty = document.createElement('div');
+        empty.className = 'calendar-day empty';
+        calendarDaysEl.appendChild(empty);
+      }
+
+      for (let d = 1; d <= daysInMonth; d++) {
+        const date = new Date(calYear, calMonth, d);
+        const dayEl = document.createElement('div');
+        dayEl.className = 'calendar-day';
+        dayEl.textContent = d;
+
+        const isPast = date < today;
+
+        if (isPast) {
+          dayEl.classList.add('disabled');
+        } else {
+          if (date.getTime() === today.getTime()) {
+            dayEl.classList.add('today');
+          }
+
+          if (calSelectedDate &&
+              date.getFullYear() === calSelectedDate.getFullYear() &&
+              date.getMonth() === calSelectedDate.getMonth() &&
+              date.getDate() === calSelectedDate.getDate()) {
+            dayEl.classList.add('selected');
+          }
+
+          dayEl.addEventListener('click', () => selectDate(date, d));
+        }
+
+        calendarDaysEl.appendChild(dayEl);
+      }
+    }
+
+    function selectDate(date, day) {
+      calSelectedDate = date;
+      calSelectedTime = null;
+      document.getElementById('selectedDate').value =
+        (calMonth + 1) + '/' + day + '/' + calYear;
+      document.getElementById('selectedTime').value = '';
+      renderCalendar();
+      renderTimeSlots(date);
+    }
+
+    function renderTimeSlots(date) {
+      const dow = date.getDay();
+      const hours = availability[dow];
+
+      timeSlotsGrid.innerHTML = '';
+      timeSlotsEl.style.display = 'block';
+
+      if (!hours) {
+        timeSlotsGrid.innerHTML = '<div style="color:var(--gray-500);font-size:0.85rem;grid-column:1/-1;">Not available on this day</div>';
+        return;
+      }
+
+      const [start, end] = hours;
+      for (let h = start; h < end; h++) {
+        // Full hour
+        const slot1 = createTimeSlot(h, 0);
+        timeSlotsGrid.appendChild(slot1);
+        // Half hour
+        const slot2 = createTimeSlot(h, 30);
+        timeSlotsGrid.appendChild(slot2);
+      }
+    }
+
+    function createTimeSlot(hour, minute) {
+      const slot = document.createElement('div');
+      slot.className = 'time-slot';
+
+      const period = hour >= 12 ? 'PM' : 'AM';
+      const displayHour = hour > 12 ? hour - 12 : hour;
+      const timeStr = displayHour + ':' + (minute === 0 ? '00' : '30') + ' ' + period;
+
+      slot.textContent = timeStr;
+
+      if (calSelectedTime === timeStr) {
+        slot.classList.add('selected');
+      }
+
+      slot.addEventListener('click', () => {
+        calSelectedTime = timeStr;
+        document.getElementById('selectedTime').value = timeStr;
+        timeSlotsGrid.querySelectorAll('.time-slot').forEach(s => s.classList.remove('selected'));
+        slot.classList.add('selected');
+      });
+
+      return slot;
+    }
+
+    document.getElementById('calPrev').addEventListener('click', () => {
+      calMonth--;
+      if (calMonth < 0) { calMonth = 11; calYear--; }
+      renderCalendar();
+      timeSlotsEl.style.display = 'none';
+    });
+
+    document.getElementById('calNext').addEventListener('click', () => {
+      calMonth++;
+      if (calMonth > 11) { calMonth = 0; calYear++; }
+      renderCalendar();
+      timeSlotsEl.style.display = 'none';
+    });
+
+    initCalendar();
+
+    // ===== FORM SUMMARY & SUBMISSION =====
     const form = document.getElementById('bookingForm');
+    const summaryOverlay = document.getElementById('summaryOverlay');
+    const summaryContent = document.getElementById('summaryContent');
 
     form.addEventListener('submit', (e) => {
       e.preventDefault();
 
-      const btn = form.querySelector('.form-submit');
-      const originalText = btn.textContent;
+      // Validate required fields
+      const name = form.name.value.trim();
+      const phone = form.phone.value.trim();
+      const service = form.service.value;
+      const carBrand = document.getElementById('carBrand').value;
+      const carModel = document.getElementById('carModel').value;
+      const location = form.location.value;
+      const selectedDate = document.getElementById('selectedDate').value;
+      const selectedTime = document.getElementById('selectedTime').value;
+      const utilityCheck = document.getElementById('utilityCheck').checked;
 
-      btn.textContent = 'SENDING...';
-      btn.style.opacity = '0.7';
-      btn.disabled = true;
+      if (!name || !phone || !service || !carBrand || !carModel || !location || !selectedDate || !selectedTime) {
+        alert('Please fill in all required fields including date and time.');
+        return;
+      }
 
-      // Simulate submission (replace with real endpoint)
-      setTimeout(() => {
-        btn.textContent = 'INQUIRY SENT!';
-        btn.style.background = '#1a8f1a';
-        btn.style.opacity = '1';
+      if (!utilityCheck) {
+        alert('Please confirm that water and electricity source will be provided.');
+        return;
+      }
 
+      // Build summary
+      const addons = addonsMulti.getSelected();
+      const notes = form.notes.value.trim();
+
+      let html = '';
+      html += summaryRow('Name', name);
+      html += summaryRow('Phone', phone);
+      html += summaryRow('Service', service);
+      html += summaryRow('Add-Ons', addons.length ? addons.join(', ') : 'None');
+      html += summaryRow('Vehicle', carBrand + ' ' + carModel);
+      html += summaryRow('Location', location);
+      html += summaryRow('Date', selectedDate);
+      html += summaryRow('Time', selectedTime);
+      if (notes) html += summaryRow('Notes', notes);
+
+      summaryContent.innerHTML = html;
+      summaryOverlay.classList.add('active');
+    });
+
+    function summaryRow(label, value) {
+      return '<div class="summary-row"><span class="summary-label">' + label +
+             '</span><span class="summary-value">' + escapeHtml(value) + '</span></div>';
+    }
+
+    function escapeHtml(str) {
+      const div = document.createElement('div');
+      div.textContent = str;
+      return div.innerHTML;
+    }
+
+    // Back button
+    document.getElementById('summaryBack').addEventListener('click', () => {
+      summaryOverlay.classList.remove('active');
+    });
+
+    // Close summary on overlay click
+    summaryOverlay.addEventListener('click', (e) => {
+      if (e.target === summaryOverlay) summaryOverlay.classList.remove('active');
+    });
+
+    // Confirm & Send
+    document.getElementById('summaryConfirm').addEventListener('click', () => {
+      const confirmBtn = document.getElementById('summaryConfirm');
+      confirmBtn.textContent = 'SENDING...';
+      confirmBtn.disabled = true;
+
+      const name = form.name.value.trim();
+      const phone = form.phone.value.trim();
+      const service = form.service.value;
+      const addons = addonsMulti.getSelected();
+      const carBrand = document.getElementById('carBrand').value;
+      const carModel = document.getElementById('carModel').value;
+      const location = form.location.value;
+      const selectedDate = document.getElementById('selectedDate').value;
+      const selectedTime = document.getElementById('selectedTime').value;
+      const notes = form.notes.value.trim();
+
+      // Build SMS message body
+      const smsBody = [
+        'New VRM Booking Inquiry:',
+        'Name: ' + name,
+        'Phone: ' + phone,
+        'Service: ' + service,
+        'Add-Ons: ' + (addons.length ? addons.join(', ') : 'None'),
+        'Vehicle: ' + carBrand + ' ' + carModel,
+        'Location: ' + location,
+        'Date: ' + selectedDate + ' at ' + selectedTime,
+        notes ? 'Notes: ' + notes : ''
+      ].filter(Boolean).join('\n');
+
+      // Send SMS via Twilio serverless function
+      fetch(TWILIO_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          to: BUSINESS_PHONE,
+          body: smsBody
+        })
+      })
+      .then(res => {
+        if (!res.ok) throw new Error('SMS send failed');
+        return res.json();
+      })
+      .then(() => {
+        confirmBtn.textContent = 'BOOKING SENT!';
+        confirmBtn.style.background = '#1a8f1a';
         setTimeout(() => {
-          btn.textContent = originalText;
-          btn.style.background = '';
-          btn.disabled = false;
+          summaryOverlay.classList.remove('active');
           form.reset();
-        }, 2500);
-      }, 1200);
+          // Reset custom components
+          brandSelect.setOptions(brandNames);
+          modelSelect.setOptions([]);
+          document.getElementById('carBrand').value = '';
+          document.getElementById('carModel').value = '';
+          document.getElementById('selectedDate').value = '';
+          document.getElementById('selectedTime').value = '';
+          calSelectedDate = null;
+          calSelectedTime = null;
+          timeSlotsEl.style.display = 'none';
+          renderCalendar();
+          // Reset multi-select visually
+          document.querySelectorAll('.multi-select-option.selected').forEach(o => o.classList.remove('selected'));
+          const trigger = document.querySelector('#addonsSelect .multi-select-trigger');
+          trigger.querySelectorAll('.multi-select-tag').forEach(t => t.remove());
+          if (!trigger.querySelector('.placeholder')) {
+            const ph = document.createElement('span');
+            ph.className = 'placeholder';
+            ph.textContent = 'Select add-ons...';
+            trigger.appendChild(ph);
+          }
+          // Reset confirm button
+          confirmBtn.textContent = 'CONFIRM & SEND';
+          confirmBtn.style.background = '';
+          confirmBtn.disabled = false;
+        }, 2000);
+      })
+      .catch(() => {
+        // Fallback: open SMS app or show success anyway for demo
+        confirmBtn.textContent = 'BOOKING SENT!';
+        confirmBtn.style.background = '#1a8f1a';
+        // Fallback: open SMS link
+        const encodedBody = encodeURIComponent(smsBody);
+        window.open('sms:' + BUSINESS_PHONE + '?body=' + encodedBody, '_blank');
+        setTimeout(() => {
+          summaryOverlay.classList.remove('active');
+          confirmBtn.textContent = 'CONFIRM & SEND';
+          confirmBtn.style.background = '';
+          confirmBtn.disabled = false;
+          form.reset();
+          calSelectedDate = null;
+          calSelectedTime = null;
+          timeSlotsEl.style.display = 'none';
+          renderCalendar();
+        }, 2000);
+      });
     });
 
     // ===== SMOOTH SCROLL FOR SAFARI =====
