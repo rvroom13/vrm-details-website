@@ -3093,3 +3093,47 @@
 
 </body>
 </html>
+<script>
+document.getElementById("summaryConfirm").addEventListener("click", async () => {
+
+  const data = {
+    name: document.getElementById("name").value,
+    phone: document.getElementById("phone").value,
+    service: document.getElementById("service").value,
+    addons: getSelectedAddons(),
+    car: document.getElementById("carBrand").value + " " + document.getElementById("carModel").value,
+    location: document.getElementById("location").value,
+    date: document.getElementById("selectedDate").value,
+    time: document.getElementById("selectedTime").value,
+    notes: document.getElementById("notes").value
+  };
+
+  try {
+    const res = await fetch("https://YOUR-VERCEL-URL/api/send-sms", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(data)
+    });
+
+    if (res.ok) {
+      alert("Booking sent! Check your phone.");
+    } else {
+      alert("Failed to send booking.");
+    }
+  } catch (err) {
+    alert("Error sending booking.");
+  }
+});
+
+
+// helper for addons
+function getSelectedAddons() {
+  const selected = [];
+  document.querySelectorAll(".multi-select-option.selected").forEach(el => {
+    selected.push(el.dataset.value);
+  });
+  return selected.join(", ");
+}
+</script>
