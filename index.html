@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VRM Details — Premium Mobile Auto Detailing | Miami, FL</title>
-  <meta name="description" content="VRM Details is Miami's premier mobile auto detailing service. We come to you — exterior wash, interior detail, paint correction, and more.">
+  <title>VRM Details â Premium Mobile Auto Detailing | Miami, FL</title>
+  <meta name="description" content="VRM Details is Miami's premier mobile auto detailing service. We come to you â exterior wash, interior detail, paint correction, and more.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -680,7 +679,7 @@
       position: absolute;
       top: 16px;
       right: 16px;
-      background: #C8960E;
+      background: #C82960E;
       color: var(--white);
       font-family: var(--font-display);
       font-size: 0.7rem;
@@ -695,7 +694,7 @@
     }
 
     .service-card.monthly::before {
-      background: #C8960E;
+      background: #C82960E;
     }
 
     .service-note {
@@ -752,7 +751,7 @@
       letter-spacing: 1px;
     }
 
-    /* ===== WHY CHOOSE US ===== */
+    /* ===== WHRCHOOSE US ===== */
     #why {
       background: var(--bg);
     }
@@ -778,1904 +777,511 @@
 
     .feature-icon {
       width: 64px;
-      height: 64px;
-      border-radius: 50%;
-      background: rgba(208, 0, 0, 0.08);
-      border: 1px solid rgba(208, 0, 0, 0.2);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 20px;
-      transition: all 0.4s ease;
-    }
-
-    .feature:hover .feature-icon {
-      background: rgba(208, 0, 0, 0.15);
-      border-color: var(--red);
-      transform: scale(1.05);
-    }
-
-    .feature-icon svg {
-      width: 28px;
-      height: 28px;
-      stroke: var(--red);
-      fill: none;
-      stroke-width: 1.5;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-    }
-
-    .feature h3 {
-      font-family: var(--font-display);
-      font-size: 1.2rem;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      margin-bottom: 10px;
-      color: var(--white);
-    }
-
-    .feature p {
-      color: var(--gray-300);
-      font-weight: 300;
-      font-size: 0.9rem;
-      line-height: 1.6;
-    }
-
-    /* ===== SERVICE AREA ===== */
-    #area {
-      background: #0D0D0D;
-    }
-
-    .area-content {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 60px;
-      align-items: start;
-    }
-
-    .area-text h3 {
-      font-family: var(--font-display);
-      font-size: 1.8rem;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      margin-bottom: 16px;
-    }
-
-    .area-text p {
-      color: var(--gray-300);
-      font-weight: 300;
-      line-height: 1.8;
-      margin-bottom: 24px;
-    }
-
-    .area-list {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
-    }
-
-    .area-list li {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      color: var(--gray-300);
-      font-weight: 300;
-      font-size: 0.95rem;
-    }
-
-    .area-list li::before {
-      content: '';
-      width: 8px;
-      height: 8px;
-      border: 2px solid var(--red);
-      border-radius: 50%;
-      flex-shrink: 0;
-    }
-
-    .area-map-container {
-      position: relative;
-      border-radius: 8px;
-      overflow: hidden;
-      border: 1px solid var(--gray-700);
-    }
-
-    .area-map-container iframe {
-      display: block;
-      width: 100%;
-      height: 450px;
-      border: 0;
-      filter: grayscale(0.6) brightness(0.7) contrast(1.2);
-      transition: filter 0.4s ease;
-    }
-
-    .area-map-container:hover iframe {
-      filter: grayscale(0.3) brightness(0.8) contrast(1.1);
-    }
-
-    .area-map-label {
-      position: absolute;
-      top: 16px;
-      left: 16px;
-      background: rgba(10, 10, 10, 0.9);
-      backdrop-filter: blur(8px);
-      padding: 8px 16px;
-      border-radius: 4px;
-      border: 1px solid var(--gray-700);
-      font-family: var(--font-display);
-      font-size: 0.85rem;
-      letter-spacing: 2px;
-      color: var(--red);
-      text-transform: uppercase;
-      z-index: 2;
-      pointer-events: none;
-    }
-
-    .area-legend {
-      margin-top: 16px;
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-
-    .area-legend-item {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 0.8rem;
-      color: var(--gray-300);
-      font-weight: 300;
-    }
-
-    .area-legend-dot {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      flex-shrink: 0;
-    }
-
-    .area-legend-dot.active { background: var(--red); }
-    .area-legend-dot.inactive { background: var(--gray-500); opacity: 0.5; }
-
-    /* ===== CONTACT / BOOK ===== */
-    #contact {
-      background: var(--bg);
-    }
-
-    .contact-grid {
-      display: grid;
-      grid-template-columns: 1fr 1.2fr;
-      gap: 60px;
-      align-items: start;
-    }
-
-    .contact-info h3 {
-      font-family: var(--font-display);
-      font-size: 1.8rem;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      margin-bottom: 16px;
-    }
-
-    .contact-info > p {
-      color: var(--gray-300);
-      font-weight: 300;
-      line-height: 1.8;
-      margin-bottom: 30px;
-    }
-
-    .contact-detail {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      padding: 16px 0;
-      border-bottom: 1px solid var(--gray-700);
-    }
-
-    .contact-detail:last-of-type {
-      border-bottom: none;
-    }
-
-    .contact-detail-icon {
-      width: 44px;
-      height: 44px;
-      border-radius: 8px;
-      background: rgba(208, 0, 0, 0.1);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-    }
-
-    .contact-detail-icon svg {
-      width: 20px;
-      height: 20px;
-      stroke: var(--red);
-      fill: none;
-      stroke-width: 1.5;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-    }
-
-    .contact-detail-text {
-      font-size: 0.85rem;
-      color: var(--gray-500);
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-
-    .contact-detail-value {
-      color: var(--white);
-      font-weight: 500;
-      font-size: 1.05rem;
-    }
-
-    .contact-detail a {
-      transition: color 0.3s ease;
-    }
-
-    .contact-detail a:hover {
-      color: var(--red);
-    }
-
-    /* Calendly embed in contact info */
-    .calendly-section {
-      margin-top: 30px;
-      padding-top: 24px;
-      border-top: 1px solid var(--gray-700);
-    }
-
-    .calendly-section h4 {
-      font-family: var(--font-display);
-      font-size: 1.2rem;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: var(--white);
-      margin-bottom: 12px;
-    }
-
-    .calendly-section p {
-      color: var(--gray-500);
-      font-size: 0.85rem;
-      font-weight: 300;
-      margin-bottom: 16px;
-    }
-
-    .calendly-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 12px 24px;
-      background: rgba(208, 0, 0, 0.1);
-      border: 1px solid rgba(208, 0, 0, 0.3);
-      border-radius: 4px;
-      color: var(--red);
-      font-family: var(--font-display);
-      font-size: 1rem;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      cursor: pointer;
-      transition: all 0.3s ease;
-    }
-
-    .calendly-btn:hover {
-      background: var(--red);
-      color: var(--white);
-    }
-
-    .calendly-btn svg {
-      width: 18px;
-      height: 18px;
-      stroke: currentColor;
-      fill: none;
-      stroke-width: 1.5;
-    }
-
-    /* Form */
-    .contact-form {
-      background: var(--bg-card);
-      border: 1px solid var(--gray-700);
-      border-radius: 8px;
-      padding: 40px;
-    }
-
-    .contact-form h3 {
-      font-family: var(--font-display);
-      font-size: 1.5rem;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      margin-bottom: 24px;
-    }
-
-    .form-row {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 16px;
-    }
-
-    .form-group {
-      margin-bottom: 16px;
-    }
-
-    .form-group label {
-      display: block;
-      font-size: 0.8rem;
-      font-weight: 600;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      color: var(--gray-300);
-      margin-bottom: 8px;
-    }
-
-    .form-group input,
-    .form-group select,
-    .form-group textarea {
-      width: 100%;
-      background: var(--bg);
-      border: 1px solid var(--gray-700);
-      border-radius: 4px;
-      padding: 14px 16px;
-      color: var(--white);
-      font-family: var(--font-body);
-      font-size: 0.95rem;
-      transition: border-color 0.3s ease;
-      outline: none;
-    }
-
-    .form-group input::placeholder,
-    .form-group textarea::placeholder {
-      color: var(--gray-500);
-    }
-
-    .form-group input:focus,
-    .form-group select:focus,
-    .form-group textarea:focus {
-      border-color: var(--red);
-    }
-
-    .form-group select {
-      appearance: none;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23707070' viewBox='0 0 16 16'%3E%3Cpath d='M8 11L3 6h10z'/%3E%3C/svg%3E");
-      background-repeat: no-repeat;
-      background-position: right 16px center;
-      padding-right: 40px;
-      cursor: pointer;
-    }
-
-    .form-group select option {
-      background: var(--bg-card);
-      color: var(--white);
-    }
-
-    .form-group textarea {
-      resize: vertical;
-      min-height: 100px;
-    }
-
-    /* ===== SEARCHABLE DROPDOWN ===== */
-    .search-select {
-      position: relative;
-    }
-
-    .search-select-trigger {
-      width: 100%;
-      background: var(--bg);
-      border: 1px solid var(--gray-700);
-      border-radius: 4px;
-      padding: 14px 40px 14px 16px;
-      color: var(--white);
-      font-family: var(--font-body);
-      font-size: 0.95rem;
-      cursor: pointer;
-      transition: border-color 0.3s ease;
-      outline: none;
-      text-align: left;
-      position: relative;
-    }
-
-    .search-select-trigger::after {
-      content: '';
-      position: absolute;
-      right: 16px;
-      top: 50%;
-      transform: translateY(-50%);
-      border-left: 5px solid transparent;
-      border-right: 5px solid transparent;
-      border-top: 6px solid var(--gray-500);
-      transition: transform 0.3s ease;
-    }
-
-    .search-select-trigger.open::after {
-      transform: translateY(-50%) rotate(180deg);
-    }
-
-    .search-select-trigger:focus,
-    .search-select.open .search-select-trigger {
-      border-color: var(--red);
-    }
-
-    .search-select-trigger .placeholder {
-      color: var(--gray-500);
-    }
-
-    .search-select-dropdown {
-      display: none;
-      position: absolute;
-      top: calc(100% + 4px);
-      left: 0;
-      right: 0;
-      background: var(--bg-card);
-      border: 1px solid var(--gray-700);
-      border-radius: 4px;
-      max-height: 240px;
-      overflow: hidden;
-      z-index: 100;
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
-    }
-
-    .search-select.open .search-select-dropdown {
-      display: block;
-    }
-
-    .search-select-search {
-      width: 100%;
-      padding: 12px 16px;
-      background: var(--bg);
-      border: none;
-      border-bottom: 1px solid var(--gray-700);
-      color: var(--white);
-      font-family: var(--font-body);
-      font-size: 0.9rem;
-      outline: none;
-    }
-
-    .search-select-search::placeholder {
-      color: var(--gray-500);
-    }
-
-    .search-select-options {
-      max-height: 190px;
-      overflow-y: auto;
-    }
-
-    .search-select-options::-webkit-scrollbar {
-      width: 6px;
-    }
-
-    .search-select-options::-webkit-scrollbar-track {
-      background: var(--bg-card);
-    }
-
-    .search-select-options::-webkit-scrollbar-thumb {
-      background: var(--gray-700);
-      border-radius: 3px;
-    }
-
-    .search-select-option {
-      padding: 10px 16px;
-      cursor: pointer;
-      font-size: 0.9rem;
-      color: var(--gray-300);
-      transition: background 0.2s ease, color 0.2s ease;
-    }
-
-    .search-select-option:hover {
-      background: rgba(208, 0, 0, 0.1);
-      color: var(--white);
-    }
-
-    .search-select-option.selected {
-      color: var(--red);
-      font-weight: 500;
-    }
-
-    .search-select-option.hidden {
-      display: none;
-    }
-
-    /* ===== MULTI-SELECT ADDONS ===== */
-    .multi-select {
-      position: relative;
-    }
-
-    .multi-select-trigger {
-      width: 100%;
-      background: var(--bg);
-      border: 1px solid var(--gray-700);
-      border-radius: 4px;
-      padding: 10px 40px 10px 12px;
-      min-height: 48px;
-      cursor: pointer;
-      transition: border-color 0.3s ease;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      align-items: center;
-      position: relative;
-    }
-
-    .multi-select-trigger::after {
-      content: '';
-      position: absolute;
-      right: 16px;
-      top: 50%;
-      transform: translateY(-50%);
-      border-left: 5px solid transparent;
-      border-right: 5px solid transparent;
-      border-top: 6px solid var(--gray-500);
-      transition: transform 0.3s ease;
-    }
-
-    .multi-select.open .multi-select-trigger::after {
-      transform: translateY(-50%) rotate(180deg);
-    }
-
-    .multi-select.open .multi-select-trigger,
-    .multi-select-trigger:focus {
-      border-color: var(--red);
-    }
-
-    .multi-select-trigger .placeholder {
-      color: var(--gray-500);
-      font-size: 0.95rem;
-      font-family: var(--font-body);
-    }
-
-    .multi-select-tag {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      background: rgba(208, 0, 0, 0.15);
-      border: 1px solid rgba(208, 0, 0, 0.3);
-      color: var(--white);
-      font-size: 0.8rem;
-      padding: 4px 10px;
-      border-radius: 3px;
-      font-family: var(--font-body);
-    }
-
-    .multi-select-tag .remove-tag {
-      cursor: pointer;
-      font-size: 1rem;
-      line-height: 1;
-      color: var(--gray-300);
-      transition: color 0.2s ease;
-    }
-
-    .multi-select-tag .remove-tag:hover {
-      color: var(--red);
-    }
-
-    .multi-select-dropdown {
-      display: none;
-      position: absolute;
-      top: calc(100% + 4px);
-      left: 0;
-      right: 0;
-      background: var(--bg-card);
-      border: 1px solid var(--gray-700);
-      border-radius: 4px;
-      max-height: 220px;
-      overflow-y: auto;
-      z-index: 100;
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
-    }
-
-    .multi-select.open .multi-select-dropdown {
-      display: block;
-    }
-
-    .multi-select-option {
-      padding: 10px 16px;
-      cursor: pointer;
-      font-size: 0.9rem;
-      color: var(--gray-300);
-      transition: background 0.2s ease, color 0.2s ease;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .multi-select-option:hover {
-      background: rgba(208, 0, 0, 0.1);
-      color: var(--white);
-    }
-
-    .multi-select-option.selected {
-      color: var(--red);
-      background: rgba(208, 0, 0, 0.05);
-    }
-
-    .multi-select-option .addon-price-tag {
-      font-family: var(--font-display);
-      color: var(--red);
-      font-size: 0.9rem;
-      letter-spacing: 1px;
-    }
-
-    /* ===== CALENDAR PICKER ===== */
-    .calendar-picker {
-      background: var(--bg);
-      border: 1px solid var(--gray-700);
-      border-radius: 4px;
-      padding: 16px;
-      transition: border-color 0.3s ease;
-    }
-
-    .calendar-picker:focus-within {
-      border-color: var(--red);
-    }
-
-    .calendar-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 16px;
-    }
-
-    .calendar-header h4 {
-      font-family: var(--font-display);
-      font-size: 1.1rem;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: var(--white);
-    }
-
-    .calendar-nav {
-      display: flex;
-      gap: 8px;
-    }
-
-    .calendar-nav button {
-      background: rgba(208, 0, 0, 0.1);
-      border: 1px solid rgba(208, 0, 0, 0.2);
-      color: var(--red);
-      width: 32px;
-      height: 32px;
-      border-radius: 4px;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.1rem;
-      transition: all 0.2s ease;
-    }
-
-    .calendar-nav button:hover {
-      background: var(--red);
-      color: var(--white);
-    }
-
-    .calendar-weekdays {
-      display: grid;
-      grid-template-columns: repeat(7, 1fr);
-      gap: 4px;
-      margin-bottom: 8px;
-    }
-
-    .calendar-weekdays span {
-      text-align: center;
-      font-size: 0.7rem;
-      font-weight: 600;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      color: var(--gray-500);
-      padding: 4px;
-    }
-
-    .calendar-days {
-      display: grid;
-      grid-template-columns: repeat(7, 1fr);
-      gap: 4px;
-    }
-
-    .calendar-day {
-      text-align: center;
-      padding: 8px 4px;
-      font-size: 0.85rem;
-      border-radius: 4px;
-      cursor: pointer;
-      transition: all 0.2s ease;
-      color: var(--gray-300);
-      background: transparent;
-      border: 1px solid transparent;
-    }
-
-    .calendar-day:hover:not(.disabled):not(.empty) {
-      background: rgba(208, 0, 0, 0.15);
-      border-color: rgba(208, 0, 0, 0.3);
-      color: var(--white);
-    }
-
-    .calendar-day.selected {
-      background: var(--red);
-      color: var(--white);
-      font-weight: 600;
-    }
-
-    .calendar-day.today {
-      border-color: var(--red);
-    }
-
-    .calendar-day.disabled {
-      color: var(--gray-700);
-      cursor: not-allowed;
-    }
-
-    .calendar-day.empty {
-      cursor: default;
-    }
-
-    .time-slots {
-      margin-top: 16px;
-      padding-top: 16px;
-      border-top: 1px solid var(--gray-700);
-    }
-
-    .time-slots-label {
-      font-size: 0.8rem;
-      font-weight: 600;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      color: var(--gray-300);
-      margin-bottom: 10px;
-    }
-
-    .time-slots-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
-      gap: 8px;
-    }
-
-    .time-slot {
-      padding: 8px 4px;
-      text-align: center;
-      font-size: 0.8rem;
-      color: var(--gray-300);
-      border: 1px solid var(--gray-700);
-      border-radius: 4px;
-      cursor: pointer;
-      transition: all 0.2s ease;
-    }
-
-    .time-slot:hover {
-      border-color: rgba(208, 0, 0, 0.4);
-      background: rgba(208, 0, 0, 0.1);
-      color: var(--white);
-    }
-
-    .time-slot.selected {
-      background: var(--red);
-      border-color: var(--red);
-      color: var(--white);
-      font-weight: 500;
-    }
-
-    .time-slot.disabled {
-      color: var(--gray-700);
-      cursor: not-allowed;
-      border-color: rgba(42, 42, 42, 0.5);
-    }
-
-    .calendar-availability-note {
-      margin-top: 12px;
-      font-size: 0.75rem;
-      color: var(--gray-500);
-      font-weight: 300;
-      line-height: 1.6;
-    }
-
-    /* ===== REQUIRED CHECKBOX ===== */
-    .form-checkbox {
-      display: flex;
-      align-items: flex-start;
-      gap: 12px;
-      margin-bottom: 20px;
-      cursor: pointer;
-    }
-
-    .form-checkbox input[type="checkbox"] {
-      width: 20px;
-      height: 20px;
-      min-width: 20px;
-      accent-color: var(--red);
-      cursor: pointer;
-      margin-top: 2px;
-    }
-
-    .form-checkbox label {
-      font-size: 0.9rem;
-      color: var(--gray-300);
-      font-weight: 400;
-      cursor: pointer;
-      line-height: 1.5;
-      letter-spacing: 0;
-      text-transform: none;
-      margin-bottom: 0;
-    }
-
-    .form-checkbox label .required-star {
-      color: var(--red);
-      font-weight: 700;
-    }
-
-    /* ===== FORM SUMMARY MODAL ===== */
-    .summary-overlay {
-      display: none;
-      position: fixed;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.85);
-      backdrop-filter: blur(8px);
-      z-index: 2000;
-      align-items: center;
-      justify-content: center;
-      padding: 24px;
-    }
-
-    .summary-overlay.active {
-      display: flex;
-    }
-
-    .summary-modal {
-      background: var(--bg-card);
-      border: 1px solid var(--gray-700);
-      border-radius: 8px;
-      padding: 36px;
-      max-width: 520px;
-      width: 100%;
-      max-height: 90vh;
-      overflow-y: auto;
-      animation: fadeUp 0.3s ease;
-    }
-
-    .summary-modal h3 {
-      font-family: var(--font-display);
-      font-size: 1.5rem;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: var(--white);
-      margin-bottom: 24px;
-      text-align: center;
-    }
-
-    .summary-row {
-      display: flex;
-      justify-content: space-between;
-      padding: 12px 0;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-      gap: 16px;
-    }
-
-    .summary-row:last-of-type {
-      border-bottom: none;
-    }
-
-    .summary-label {
-      font-size: 0.8rem;
-      font-weight: 600;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      color: var(--gray-500);
-      flex-shrink: 0;
-    }
-
-    .summary-value {
-      color: var(--white);
-      font-size: 0.95rem;
-      text-align: right;
-      word-break: break-word;
-    }
-
-    .summary-buttons {
-      display: flex;
-      gap: 12px;
-      margin-top: 28px;
-    }
-
-    .summary-buttons button {
-      flex: 1;
-      padding: 14px 20px;
-      border-radius: 4px;
-      font-family: var(--font-display);
-      font-size: 1rem;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      cursor: pointer;
-      transition: all 0.3s ease;
-    }
-
-    .btn-back {
-      background: transparent;
-      border: 1px solid var(--gray-700);
-      color: var(--gray-300);
-    }
-
-    .btn-back:hover {
-      border-color: var(--white);
-      color: var(--white);
-    }
-
-    .btn-confirm {
-      background: var(--red);
-      border: none;
-      color: var(--white);
-      box-shadow: 0 4px 20px var(--red-glow);
-    }
-
-    .btn-confirm:hover {
-      background: var(--red-dark);
-    }
-
-    .form-submit {
-      width: 100%;
-      font-family: var(--font-display);
-      font-size: 1.1rem;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      padding: 16px;
-      background: var(--red);
-      color: var(--white);
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      margin-top: 8px;
-    }
-
-    .form-submit:hover {
-      background: var(--red-dark);
-      box-shadow: 0 4px 20px var(--red-glow);
-    }
-
-    /* ===== FOOTER ===== */
-    .footer {
-      background: #050505;
-      border-top: 1px solid var(--gray-700);
-      padding: 60px 0 30px;
-    }
-
-    .footer-grid {
-      display: grid;
-      grid-template-columns: 2fr 1fr 1fr;
-      gap: 40px;
-      margin-bottom: 40px;
-    }
-
-    .footer-brand .nav-logo {
-      margin-bottom: 16px;
-      display: inline-block;
-    }
-
-    .footer-brand p {
-      color: var(--gray-500);
-      font-weight: 300;
-      font-size: 0.95rem;
-      line-height: 1.7;
-      max-width: 350px;
-    }
-
-    .footer-social {
-      display: flex;
-      gap: 12px;
-      margin-top: 20px;
-    }
-
-    .footer-social a {
-      width: 40px;
-      height: 40px;
-      border-radius: 8px;
-      border: 1px solid var(--gray-700);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: all 0.3s ease;
-    }
-
-    .footer-social a:hover {
-      border-color: var(--red);
-      background: rgba(208, 0, 0, 0.1);
-    }
-
-    .footer-social a svg {
-      width: 18px;
-      height: 18px;
-      fill: var(--gray-300);
-      transition: fill 0.3s ease;
-    }
-
-    .footer-social a:hover svg {
-      fill: var(--red);
-    }
-
-    .footer-col h4 {
-      font-family: var(--font-display);
-      font-size: 1rem;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: var(--white);
-      margin-bottom: 20px;
-    }
-
-    .footer-col a {
-      display: block;
-      color: var(--gray-500);
-      font-weight: 300;
-      font-size: 0.9rem;
-      padding: 5px 0;
-      transition: color 0.3s ease;
-    }
-
-    .footer-col a:hover {
-      color: var(--red);
-    }
-
-    .footer-bottom {
-      border-top: 1px solid var(--gray-700);
-      padding-top: 24px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .footer-bottom p {
-      color: var(--gray-500);
-      font-size: 0.85rem;
-      font-weight: 300;
-    }
-
-    /* ===== MOBILE RESPONSIVE ===== */
-    @media (max-width: 1024px) {
-      .features-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    @media (max-width: 768px) {
-      section { padding: 70px 0; }
-
-      .menu-toggle { display: flex; }
-
-      .nav-links {
-        position: fixed;
-        inset: 0;
-        background: rgba(10, 10, 10, 0.98);
-        backdrop-filter: blur(20px);
-        flex-direction: column;
-        justify-content: center;
-        gap: 28px;
-        opacity: 0;
-        visibility: hidden;
-        transition: all 0.4s ease;
-      }
-
-      .nav-links.open {
-        opacity: 1;
-        visibility: visible;
-      }
-
-      .nav-links a {
-        font-size: 1.2rem;
-        letter-spacing: 3px;
-      }
-
-      .about-grid {
-        grid-template-columns: 1fr;
-        gap: 40px;
-      }
-
-      .about-visual { height: 250px; }
-
-      .about-stats {
-        justify-content: center;
-      }
-
-      .services-grid {
-        grid-template-columns: 1fr;
-        max-width: 400px;
-        margin: 0 auto;
-      }
-
-      .features-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 16px;
-      }
-
-      .feature { padding: 24px 12px; }
-
-      .area-content {
-        grid-template-columns: 1fr;
-        gap: 40px;
-      }
-
-      .area-map-container iframe { height: 300px; }
-
-      .contact-grid {
-        grid-template-columns: 1fr;
-        gap: 40px;
-      }
-
-      .contact-form { padding: 28px 20px; }
-
-      .form-row { grid-template-columns: 1fr; }
-
-      .footer-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
-      }
-
-      .footer-bottom {
-        flex-direction: column;
-        gap: 8px;
-        text-align: center;
-      }
-
-      .hero h1 {
-        letter-spacing: 4px;
-      }
-
-      .summary-modal { padding: 24px 16px; }
-      .summary-buttons { flex-direction: column; }
-    }
-
-    @media (max-width: 480px) {
-      .features-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .area-list {
-        grid-template-columns: 1fr;
-      }
-
-      .about-stats {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .time-slots-grid {
-        grid-template-columns: repeat(3, 1fr);
-      }
-    }
-  </style>
-</head>
-<body>
-
-  <!-- ===== NAVBAR ===== -->
-  <nav class="navbar" id="navbar">
-    <div class="container">
-      <a href="#" class="nav-logo">VRM <span>Details</span></a>
-      <div class="nav-links" id="navLinks">
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#why">Why Us</a>
-        <a href="#area">Area</a>
-        <a href="#contact" class="nav-cta">Book Now</a>
-      </div>
-      <div class="menu-toggle" id="menuToggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-  </nav>
-
-  <!-- ===== HERO ===== -->
-  <section class="hero" id="hero">
-    <div class="hero-grid"></div>
-    <div class="hero-content">
-      <div class="hero-badge">Premium Mobile Detailing</div>
-      <h1>VRM<span>Details</span></h1>
-      <p class="hero-tagline">We come to you. Your car, perfected.</p>
-      <div class="hero-buttons">
-        <a href="#contact" class="btn btn-primary">Book Now</a>
-        <a href="#services" class="btn btn-outline">View Services</a>
-      </div>
-    </div>
-    <div class="scroll-indicator">
-      <span>Scroll</span>
-      <div class="scroll-line"></div>
-    </div>
-  </section>
-
-  <!-- ===== ABOUT ===== -->
-  <section id="about">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-visual reveal">
-          <div class="about-visual-inner">
-            <div class="about-visual-text">VRM</div>
-          </div>
-        </div>
-        <div class="about-text reveal reveal-delay-1">
-          <h3>Mobile Detailing, <span>Elevated</span></h3>
-          <p>VRM Details is Miami's premier mobile auto detailing service. We bring professional-grade equipment and premium products directly to your door &mdash; no shop visit needed.</p>
-          <p>From daily drivers to exotic supercars, we treat every vehicle with the same obsessive attention to detail. Serving Miami-Dade and all of South Florida, we work around your schedule so your car always looks its absolute best.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== SERVICES ===== -->
-  <section id="services">
-    <div class="container">
-      <div class="section-heading reveal">
-        <h2>Services & Pricing</h2>
-        <div class="accent-line"></div>
-        <p>Professional-grade detailing packages designed to keep your vehicle in showroom condition</p>
-      </div>
-      <div class="services-grid">
-
-        <!-- Regular Wash -->
-        <div class="service-card reveal">
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
-          </div>
-          <h3>Regular Wash</h3>
-          <p class="service-subtitle">Essential clean, in &amp; out &bull; Est. 2&ndash;3 hrs</p>
-          <div class="pricing-table">
-            <div class="pricing-row">
-              <span class="vehicle-type">Sedan / Small Vehicle</span>
-              <span class="vehicle-price">$89</span>
-            </div>
-            <div class="pricing-row">
-              <span class="vehicle-type">SUV / Midsize</span>
-              <span class="vehicle-price">$129</span>
-            </div>
-            <div class="pricing-row">
-              <span class="vehicle-type">Large Truck / Big SUV</span>
-              <span class="vehicle-price">$149</span>
-            </div>
-          </div>
-          <div class="service-section-label">Exterior</div>
-          <ul class="service-includes">
-            <li>Exterior hand wash &amp; dry</li>
-            <li>Wheels &amp; tires cleaned</li>
-            <li>Wheel wells rinsed</li>
-            <li>Door jambs wiped</li>
-            <li>Tire dressing applied</li>
-            <li>Exterior trim wipe down</li>
-            <li>Windows cleaned</li>
-          </ul>
-          <div class="service-section-label">Interior</div>
-          <ul class="service-includes">
-            <li>Interior vacuum</li>
-            <li>Interior wipe down</li>
-            <li>Floor mats cleaned</li>
-            <li>Carpets vacuumed</li>
-          </ul>
-        </div>
-
-        <!-- Full Detail -->
-        <div class="service-card popular reveal reveal-delay-1">
-          <div class="popular-badge">Most Popular</div>
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
-          </div>
-          <h3>Full Detail</h3>
-          <p class="service-subtitle">Complete top-to-bottom service &bull; Est. 5&ndash;6 hrs</p>
-          <div class="pricing-table">
-            <div class="pricing-row">
-              <span class="vehicle-type">Sedan / Small Vehicle</span>
-              <span class="vehicle-price">$349</span>
-            </div>
-            <div class="pricing-row">
-              <span class="vehicle-type">SUV / Midsize</span>
-              <span class="vehicle-price">$399</span>
-            </div>
-            <div class="pricing-row">
-              <span class="vehicle-type">Large Truck / Big SUV</span>
-              <span class="vehicle-price">$449</span>
-            </div>
-          </div>
-          <div class="service-section-label">Exterior</div>
-          <ul class="service-includes">
-            <li>Full exterior hand wash &amp; dry</li>
-            <li>Wheels, tires &amp; wheel wells</li>
-            <li>Paint decontamination</li>
-            <li>Trim &amp; tire dressing</li>
-            <li>All exterior glass cleaned</li>
-            <li>Ceramic wash included</li>
-            <li>Engine bay detailed</li>
-          </ul>
-          <div class="service-section-label">Interior</div>
-          <ul class="service-includes">
-            <li>Interior deep vacuum</li>
-            <li>Dash, console &amp; panels cleaned</li>
-            <li>Seats shampooed / leather conditioned</li>
-            <li>Leather conditioning (if applicable)</li>
-            <li>Carpets shampooed &amp; extracted</li>
-            <li>Floor mats cleaned &amp; reinstalled</li>
-            <li>Interior glass cleaned</li>
-          </ul>
-        </div>
-
-        <!-- VRM Maintenance Package -->
-        <div class="service-card monthly reveal reveal-delay-2">
-          <div class="monthly-badge">Monthly</div>
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
-          </div>
-          <h3>VRM Maintenance Package</h3>
-          <p class="service-subtitle">Monthly upkeep &mdash; stay fresh &bull; Est. 1&ndash;2 hrs</p>
-          <div class="pricing-table">
-            <div class="pricing-row">
-              <span class="vehicle-type">Sedan / Small Vehicle</span>
-              <span class="vehicle-price">$79 / mo</span>
-            </div>
-            <div class="pricing-row">
-              <span class="vehicle-type">SUV / Midsize</span>
-              <span class="vehicle-price">$99 / mo</span>
-            </div>
-            <div class="pricing-row">
-              <span class="vehicle-type">Large Truck / Big SUV</span>
-              <span class="vehicle-price">$150 / mo</span>
-            </div>
-          </div>
-          <div class="service-section-label">Exterior</div>
-          <ul class="service-includes">
-            <li>Exterior hand wash &amp; dry</li>
-            <li>Wheels &amp; tires cleaned</li>
-            <li>Wheel wells rinsed</li>
-            <li>Door jambs wiped</li>
-            <li>Tire dressing applied</li>
-            <li>Exterior trim wipe down</li>
-            <li>Windows cleaned</li>
-          </ul>
-          <div class="service-section-label">Interior</div>
-          <ul class="service-includes">
-            <li>Interior vacuum</li>
-            <li>Interior light wipe down</li>
-            <li>Floor mats cleaned</li>
-            <li>Carpets vacuumed</li>
-            <li>Air freshener applied</li>
-            <li>Priority monthly scheduling</li>
-          </ul>
-          <div class="service-note">To start a maintenance package, either a Regular Wash or Full Detail is required depending on vehicle condition.</div>
-        </div>
-
-      </div>
-
-      <!-- Add-Ons -->
-      <div class="addons-bar reveal">
-        <h3>Add-Ons &amp; Fees:</h3>
-        <div class="addon-chip">Ceramic Wash <span class="addon-price">+$30</span></div>
-        <div class="addon-chip">Headlight Restoration <span class="addon-price">+$40</span></div>
-        <div class="addon-chip">Excessive Pet Hair Removal <span class="addon-price">+$20</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== WHY CHOOSE US ===== -->
-  <section id="why">
-    <div class="container">
-      <div class="section-heading reveal">
-        <h2>Why Choose VRM</h2>
-        <div class="accent-line"></div>
-        <p>What sets us apart from the rest</p>
-      </div>
-      <div class="features-grid">
-
-        <div class="feature reveal">
-          <div class="feature-icon">
-            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          </div>
-          <h3>Mobile & Convenient</h3>
-          <p>We come to your home, office, or wherever your car is. No drop-offs, no waiting rooms.</p>
-        </div>
-
-        <div class="feature reveal reveal-delay-1">
-          <div class="feature-icon">
-            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          </div>
-          <h3>Professional Products</h3>
-          <p>We use only premium, professional-grade products that protect and enhance your vehicle's finish.</p>
-        </div>
-
-        <div class="feature reveal reveal-delay-2">
-          <div class="feature-icon">
-            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-          </div>
-          <h3>Attention to Detail</h3>
-          <p>Every crevice, every surface. We don't cut corners &mdash; your car gets the time it deserves.</p>
-        </div>
-
-        <div class="feature reveal reveal-delay-3">
-          <div class="feature-icon">
-            <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
-          </div>
-          <h3>Flexible Scheduling</h3>
-          <p>Book when it works for you. Early mornings, weekends, we work around your schedule.</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== SERVICE AREA ===== -->
-  <section id="area">
-    <div class="container">
-      <div class="section-heading reveal">
-        <h2>Service Area</h2>
-        <div class="accent-line"></div>
-        <p>Proudly serving Miami-Dade and surrounding South Florida communities</p>
-      </div>
-      <div class="area-content">
-        <div class="area-text reveal">
-          <h3>We Cover All of South Florida</h3>
-          <p>Based in Miami, VRM Details serves the entire Miami-Dade area and beyond. Whether you're in Brickell, Coral Gables, or as far as Fort Lauderdale &mdash; we'll bring the detail to you.</p>
-          <ul class="area-list">
-            <li>Miami / Brickell</li>
-            <li>Miami Beach</li>
-            <li>Coral Gables</li>
-            <li>Doral</li>
-            <li>Kendall</li>
-            <li>Hialeah</li>
-            <li>Aventura</li>
-            <li>Fort Lauderdale</li>
-            <li>Hollywood</li>
-            <li>Homestead</li>
-          </ul>
-          <div class="area-legend" style="margin-top: 24px;">
-            <div class="area-legend-item">
-              <div class="area-legend-dot active"></div>
-              Service Area
-            </div>
-            <div class="area-legend-item">
-              <div class="area-legend-dot inactive"></div>
-              Out of Service
-            </div>
-          </div>
-        </div>
-        <div class="reveal reveal-delay-1">
-          <div class="area-map-container">
-            <div class="area-map-label">Service Area Coverage</div>
-            <!-- Google Maps embed centered on Miami service area -->
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d229688.1103079498!2d-80.30048279868638!3d25.82043077479498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sus!4v1680000000000!5m2!1sen!2sus"
-              width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== CONTACT / BOOK ===== -->
-  <section id="contact">
-    <div class="container">
-      <div class="section-heading reveal">
-        <h2>Book Your Detail</h2>
-        <div class="accent-line"></div>
-        <p>Ready to get your car looking its best? Reach out or fill in the form below</p>
-      </div>
-      <div class="contact-grid">
-        <div class="contact-info reveal">
-          <h3>Get in Touch</h3>
-          <p>Have a question or ready to book? Contact us directly or use the form. We'll get back to you within 24 hours.</p>
-
-          <div class="contact-detail">
-            <div class="contact-detail-icon">
-              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            </div>
-            <div>
-              <div class="contact-detail-text">Phone</div>
-              <div class="contact-detail-value"><a href="tel:+15614527467">(561) 452-7467</a></div>
-            </div>
-          </div>
-
-          <div class="contact-detail">
-            <div class="contact-detail-icon">
-              <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-            </div>
-            <div>
-              <div class="contact-detail-text">Instagram</div>
-              <div class="contact-detail-value"><a href="https://instagram.com/vrmdetails" target="_blank" rel="noopener">@vrmdetails</a></div>
-            </div>
-          </div>
-
-          <div class="contact-detail">
-            <div class="contact-detail-icon">
-              <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            </div>
-            <div>
-              <div class="contact-detail-text">Location</div>
-              <div class="contact-detail-value">Miami, South Florida</div>
-            </div>
-          </div>
-
-        </div>
-
-        <form class="contact-form reveal reveal-delay-1" id="bookingForm" novalidate>
-          <h3>Request a Booking</h3>
-
-          <!-- Name & Phone -->
-          <div class="form-row">
-            <div class="form-group">
-              <label for="name">Your Name</label>
-              <input type="text" id="name" name="name" placeholder="John Doe" required>
-            </div>
-            <div class="form-group">
-              <label for="phone">Phone Number</label>
-              <input type="tel" id="phone" name="phone" placeholder="(305) 555-1234" required>
-            </div>
-          </div>
-
-          <!-- Service & Add-ons (separate) -->
-          <div class="form-group">
-            <label for="service">Service</label>
-            <select id="service" name="service" required>
-              <option value="" disabled selected>Select a service</option>
-              <option value="Regular Wash — from $89">Regular Wash — from $89</option>
-              <option value="Full Detail — from $349">Full Detail — from $349</option>
-              <option value="VRM Maintenance Package — from $79/mo">VRM Maintenance Package — from $79/mo</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label>Add-Ons (optional)</label>
-            <div class="multi-select" id="addonsSelect">
-              <div class="multi-select-trigger" tabindex="0">
-                <span class="placeholder">Select add-ons...</span>
-              </div>
-              <div class="multi-select-dropdown">
-                <div class="multi-select-option" data-value="Ceramic Wash (+$30)">
-                  <span>Ceramic Wash</span>
-                  <span class="addon-price-tag">+$30</span>
-                </div>
-                <div class="multi-select-option" data-value="Headlight Restoration (+$40)">
-                  <span>Headlight Restoration</span>
-                  <span class="addon-price-tag">+$40</span>
-                </div>
-                <div class="multi-select-option" data-value="Excessive Pet Hair Removal (+$20)">
-                  <span>Excessive Pet Hair Removal</span>
-                  <span class="addon-price-tag">+$20</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Car Brand & Model (searchable) -->
-          <div class="form-row">
-            <div class="form-group">
-              <label>Car Brand</label>
-              <div class="search-select" id="brandSelect">
-                <div class="search-select-trigger" tabindex="0">
-                  <span class="placeholder">Select brand...</span>
-                </div>
-                <div class="search-select-dropdown">
-                  <input type="text" class="search-select-search" placeholder="Type to search...">
-                  <div class="search-select-options" id="brandOptions"></div>
-                </div>
-              </div>
-              <input type="hidden" id="carBrand" name="carBrand" required>
-            </div>
-            <div class="form-group">
-              <label>Car Model</label>
-              <div class="search-select" id="modelSelect">
-                <div class="search-select-trigger" tabindex="0">
-                  <span class="placeholder">Select brand first...</span>
-                </div>
-                <div class="search-select-dropdown">
-                  <input type="text" class="search-select-search" placeholder="Type to search...">
-                  <div class="search-select-options" id="modelOptions"></div>
-                </div>
-              </div>
-              <input type="hidden" id="carModel" name="carModel" required>
-            </div>
-          </div>
-
-          <!-- Location -->
-          <div class="form-group">
-            <label for="location">Service Location</label>
-            <select id="location" name="location" required>
-              <option value="" disabled selected>Select your area</option>
-              <option value="Miami / Brickell">Miami / Brickell</option>
-              <option value="Miami Beach">Miami Beach</option>
-              <option value="Coral Gables">Coral Gables</option>
-              <option value="Doral">Doral</option>
-              <option value="Kendall">Kendall</option>
-              <option value="Hialeah">Hialeah</option>
-              <option value="Aventura">Aventura</option>
-              <option value="Fort Lauderdale">Fort Lauderdale</option>
-              <option value="Hollywood">Hollywood</option>
-              <option value="Homestead">Homestead</option>
-            </select>
-          </div>
-
-          <!-- Calendar + Time Picker -->
-          <div class="form-group">
-            <label>Preferred Date & Time</label>
-            <div class="calendar-picker" id="calendarPicker">
-              <div class="calendar-header">
-                <h4 id="calendarMonth"></h4>
-                <div class="calendar-nav">
-                  <button type="button" id="calPrev">&larr;</button>
-                  <button type="button" id="calNext">&rarr;</button>
-                </div>
-              </div>
-              <div class="calendar-weekdays">
-                <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
-              </div>
-              <div class="calendar-days" id="calendarDays"></div>
-              <div class="time-slots" id="timeSlots" style="display:none;">
-                <div class="time-slots-label">Available Times</div>
-                <div class="time-slots-grid" id="timeSlotsGrid"></div>
-              </div>
-              <div class="calendar-availability-note">
-                Mon: 2–6 PM &bull; Tue: 10 AM–6 PM &bull; Wed–Fri: 2–6 PM &bull; Sat–Sun: 10 AM–6 PM
-              </div>
-            </div>
-            <input type="hidden" id="selectedDate" name="selectedDate" required>
-            <input type="hidden" id="selectedTime" name="selectedTime" required>
-          </div>
-
-          <!-- Additional Notes -->
-          <div class="form-group">
-            <label for="notes">Additional Notes (optional)</label>
-            <textarea id="notes" name="notes" placeholder="Any special requests, vehicle conditions, or questions..."></textarea>
-          </div>
-
-          <!-- Required Checkbox -->
-          <div class="form-checkbox">
-            <input type="checkbox" id="utilityCheck" name="utilityCheck" required>
-            <label for="utilityCheck">
-              Water and electricity source must be provided <span class="required-star">*</span>
-            </label>
-          </div>
-
-          <button type="submit" class="form-submit" id="submitBtn">Review & Submit</button>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== FORM SUMMARY MODAL ===== -->
-  <div class="summary-overlay" id="summaryOverlay">
-    <div class="summary-modal">
-      <h3>Booking Summary</h3>
-      <div id="summaryContent"></div>
-      <div class="summary-buttons">
-        <button type="button" class="btn-back" id="summaryBack">Edit</button>
-        <button type="button" class="btn-confirm" id="summaryConfirm">Confirm & Send</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="#" class="nav-logo">VRM <span>Details</span></a>
-          <p>Premium mobile auto detailing serving Miami and all of South Florida. We come to you &mdash; your car, perfected.</p>
-          <div class="footer-social">
-            <a href="https://instagram.com/vrmdetails" target="_blank" rel="noopener" aria-label="Instagram">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-            </a>
-            <a href="https://tiktok.com/@vrmdetails" target="_blank" rel="noopener" aria-label="TikTok">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 0010.86 4.46V13a8.28 8.28 0 005.58 2.17v-3.48a4.85 4.85 0 01-3.77-1.77V6.69h3.77z"/></svg>
-            </a>
-            <a href="https://facebook.com/vrmdetails" target="_blank" rel="noopener" aria-label="Facebook">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-            </a>
-          </div>
-        </div>
-        <div class="footer-col">
-          <h4>Quick Links</h4>
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#why">Why Us</a>
-          <a href="#area">Service Area</a>
-          <a href="#contact">Contact</a>
-        </div>
-        <div class="footer-col">
-          <h4>Services</h4>
-          <a href="#services">Regular Wash</a>
-          <a href="#services">Full Detail</a>
-          <a href="#services">Maintenance Package</a>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 VRM Details. All rights reserved.</p>
-        <p>Miami, South Florida</p>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    // =================================================================
-    // VRM Details — Booking System JavaScript
-    // =================================================================
-
-    // ===== CONFIGURATION =====
-    // Replace with your actual Twilio serverless function URL
-    const TWILIO_ENDPOINT = 'https://YOUR-TWILIO-FUNCTION-URL.twil.io/send-sms';
-    const BUSINESS_PHONE = '+15614527467';
-
-    // ===== CAR DATA =====
-    const carData = {
-      'Acura': ['ILX','Integra','MDX','NSX','RDX','TLX'],
-      'Alfa Romeo': ['Giulia','Stelvio','Tonale','4C Spider'],
-      'Aston Martin': ['DB11','DB12','DBX','Vantage','DBS'],
-      'Audi': ['A3','A4','A5','A6','A7','A8','e-tron','e-tron GT','Q3','Q4 e-tron','Q5','Q7','Q8','R8','RS3','RS5','RS6','RS7','RS e-tron GT','S3','S4','S5','S6','S7','S8','SQ5','SQ7','SQ8','TT'],
-      'Bentley': ['Bentayga','Continental GT','Flying Spur'],
-      'BMW': ['2 Series','3 Series','4 Series','5 Series','7 Series','8 Series','i4','i5','i7','iX','M2','M3','M4','M5','M8','X1','X2','X3','X4','X5','X6','X7','XM','Z4'],
-      'Buick': ['Enclave','Encore','Encore GX','Envision','Envista'],
-      'Cadillac': ['CT4','CT5','Escalade','Escalade ESV','LYRIQ','XT4','XT5','XT6'],
-      'Chevrolet': ['Blazer','Bolt EUV','Camaro','Colorado','Corvette','Equinox','Malibu','Silverado 1500','Silverado 2500HD','Suburban','Tahoe','Trailblazer','Traverse','Trax'],
-      'Chrysler': ['300','Pacifica'],
-      'Dodge': ['Challenger','Charger','Durango','Hornet'],
-      'Ferrari': ['296 GTB','296 GTS','812','F8','Roma','SF90','Purosangue'],
-      'Fiat': ['500X','500e'],
-      'Ford': ['Bronco','Bronco Sport','Edge','Escape','Expedition','Explorer','F-150','F-150 Lightning','Maverick','Mustang','Mustang Mach-E','Ranger','Transit'],
-      'Genesis': ['G70','G80','G90','GV60','GV70','GV80'],
-      'GMC': ['Acadia','Canyon','Hummer EV','Sierra 1500','Sierra 2500HD','Terrain','Yukon','Yukon XL'],
-      'Honda': ['Accord','Civic','CR-V','HR-V','Odyssey','Passport','Pilot','Ridgeline'],
-      'Hyundai': ['Elantra','IONIQ 5','IONIQ 6','Kona','Palisade','Santa Cruz','Santa Fe','Sonata','Tucson','Venue'],
-      'Infiniti': ['Q50','Q60','QX50','QX55','QX60','QX80'],
-      'Jaguar': ['E-PACE','F-PACE','F-TYPE','I-PACE','XF'],
-      'Jeep': ['Cherokee','Compass','Gladiator','Grand Cherokee','Grand Cherokee L','Grand Wagoneer','Renegade','Wagoneer','Wrangler'],
-      'Kia': ['Carnival','EV6','EV9','Forte','K5','Niro','Rio','Seltos','Sorento','Soul','Sportage','Stinger','Telluride'],
-      'Lamborghini': ['Huracan','Revuelto','Urus'],
-      'Land Rover': ['Defender','Discovery','Discovery Sport','Range Rover','Range Rover Evoque','Range Rover Sport','Range Rover Velar'],
-      'Lexus': ['ES','GX','IS','IS500','LC','LC500','LX','NX','RC','RC350','RX','RX350','RZ','TX','UX'],
-      'Lincoln': ['Aviator','Corsair','Nautilus','Navigator'],
-      'Lucid': ['Air'],
-      'Maserati': ['Ghibli','GranTurismo','Grecale','Levante','MC20','Quattroporte'],
-      'Mazda': ['CX-30','CX-5','CX-50','CX-90','Mazda3','MX-5 Miata','MX-30'],
-      'McLaren': ['720S','750S','Artura','GT'],
-      'Mercedes-Benz': ['A-Class','AMG GT','C-Class','CLA','CLE','CLS','E-Class','EQB','EQE','EQS','G-Class','GLA','GLB','GLC','GLE','GLS','Maybach','S-Class','SL'],
-      'MINI': ['Clubman','Convertible','Countryman','Hardtop 2 Door','Hardtop 4 Door'],
-      'Mitsubishi': ['Eclipse Cross','Mirage','Outlander','Outlander Sport'],
-      'Nissan': ['Altima','Ariya','Frontier','GT-R','Kicks','LEAF','Maxima','Murano','Pathfinder','Rogue','Sentra','Titan','Versa','Z'],
-      'Polestar': ['Polestar 2','Polestar 3'],
-      'Porsche': ['718 Boxster','718 Cayman','911','Cayenne','Macan','Panamera','Taycan'],
-      'RAM': ['1500','2500','3500','ProMaster'],
-      'Rivian': ['R1S','R1T'],
-      'Rolls-Royce': ['Cullinan','Ghost','Phantom','Spectre','Wraith'],
-      'Subaru': ['Ascent','BRZ','Crosstrek','Forester','Impreza','Legacy','Outback','Solterra','WRX'],
-      'Tesla': ['Model 3','Model S','Model X','Model Y','Cybertruck'],
-      'Toyota': ['4Runner','86','bZ4X','Camry','Corolla','Corolla Cross','Crown','GR Supra','Grand Highlander','Highlander','Land Cruiser','Prius','RAV4','Sequoia','Sienna','Tacoma','Tundra','Venza'],
-      'Volkswagen': ['Atlas','Atlas Cross Sport','Golf GTI','Golf R','ID.4','Jetta','Taos','Tiguan'],
-      'Volvo': ['C40 Recharge','S60','S90','V60','V90','XC40','XC60','XC90']
-    };
-
-    // ===== AVAILABILITY SCHEDULE (day of week => [startHour, endHour]) =====
-    // 0=Sun, 1=Mon, 2=Tue, 3=Wed, 4=Thu, 5=Fri, 6=Sat
-    const availability = {
-      0: [10, 18], // Sunday 10AM-6PM
-      1: [14, 18], // Monday 2PM-6PM
-      2: [10, 18], // Tuesday 10AM-6PM
-      3: [14, 18], // Wednesday 2PM-6PM
-      4: [14, 18], // Thursday 2PM-6PM
-      5: [14, 18], // Friday 2PM-6PM
-      6: [10, 18]  // Saturday 10AM-6PM
-    };
-
-    // ===== NAVBAR SCROLL EFFECT =====
-    const navbar = document.getElementById('navbar');
-    const sections = document.querySelectorAll('section[id]');
-    const navLinks = document.querySelectorAll('.nav-links a:not(.nav-cta)');
-
-    function handleScroll() {
-      if (window.scrollY > 50) {
-        navbar.classList.add('scrolled');
-      } else {
-        navbar.classList.remove('scrolled');
-      }
-
-      let current = '';
-      sections.forEach(section => {
-        const top = section.offsetTop - 100;
-        if (window.scrollY >= top) {
-          current = section.getAttribute('id');
-        }
-      });
-
-      navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href') === '#' + current) {
-          link.classList.add('active');
-        }
-      });
-    }
-
-    window.addEventListener('scroll', handleScroll, { passive: true });
-
-    // ===== MOBILE MENU =====
-    const menuToggle = document.getElementById('menuToggle');
-    const navLinksContainer = document.getElementById('navLinks');
-
-    menuToggle.addEventListener('click', () => {
-      menuToggle.classList.toggle('open');
-      navLinksContainer.classList.toggle('open');
-      document.body.style.overflow = navLinksContainer.classList.contains('open') ? 'hidden' : '';
-    });
-
-    navLinksContainer.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        menuToggle.classList.remove('open');
-        navLinksContainer.classList.remove('open');
-        document.body.style.overflow = '';
-      });
-    });
-
-    // ===== SCROLL REVEAL =====
-    const revealElements = document.querySelectorAll('.reveal');
-
-    const revealObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          revealObserver.unobserve(entry.target);
-        }
-      });
-    }, {
-      threshold: 0.1,
-      rootMargin: '0px 0px -40px 0px'
-    });
-
-    revealElements.forEach(el => revealObserver.observe(el));
-
-    // ===== SEARCHABLE DROPDOWN COMPONENT =====
-    function initSearchSelect(container, options, onChange) {
-      const trigger = container.querySelector('.search-select-trigger');
-      const dropdown = container.querySelector('.search-select-dropdown');
-      const searchInput = container.querySelector('.search-select-search');
-      const optionsContainer = container.querySelector('.search-select-options');
-
-      let selectedValue = '';
-
-      function render(items) {
-        optionsContainer.innerHTML = '';
-        items.forEach(item => {
-          const opt = document.createElement('div');
-          opt.className = 'search-select-option' + (item === selectedValue ? ' selected' : '');
-          opt.textContent = item;
-          opt.addEventListener('click', () => {
-            selectedValue = item;
-            trigger.innerHTML = item;
-            container.classList.remove('open');
-            trigger.classList.remove('open');
-            searchInput.value = '';
-            if (onChange) onChange(item);
-          });
-          optionsContainer.appendChild(opt);
-        });
-      }
-
-      function setOptions(items) {
-        options = items;
-        selectedValue = '';
-        trigger.innerHTML = '<span class="placeholder">' +
-          (items.length ? 'Select...' : 'Select brand first...') + '</span>';
-        render(items);
-      }
-
-      trigger.addEventListener('click', (e) => {
-        e.stopPropagation();
-        // Close other dropdowns
-        document.querySelectorAll('.search-select.open, .multi-select.open').forEach(el => {
-          if (el !== container) { el.classList.remove('open'); }
-        });
-        container.classList.toggle('open');
-        trigger.classList.toggle('open');
-        if (container.classList.contains('open')) {
-          searchInput.focus();
-          render(options);
-        }
-      });
-
-      searchInput.addEventListener('input', () => {
-        const q = searchInput.value.toLowerCase();
-        const filtered = options.filter(o => o.toLowerCase().includes(q));
-        render(filtered);
-      });
-
-      searchInput.addEventListener('click', (e) => e.stopPropagation());
-
-      return { setOptions, getSelected: () => selectedValue };
-    }
-
-    // ===== MULTI-SELECT COMPONENT =====
+      heiÚ
+ÂÜ\\Y]\Î
+L	NÂXÚÙÜÝ[ØJ
+NÂÜ\\ÛÛYØJNÂ\Ü^N^Â[YÛZ][\ÎÙ[\Â\ÝYKXÛÛ[Ù[\ÂX\Ú[]]ÈÂ[Ú][Û[ÈX\ÙNÂBX]\NÝ\X]\KZXÛÛÂXÚÙÜÝ[ØJMJNÂÜ\XÛÛÜ\K\Y
+NÂ[ÙÜNØØ[JK
+JNÂBX]\KZXÛÛÝÈÂÚYÂZYÚÂÝÚÙN\K\Y
+NÂ[ÛNÂÝÚÙK]ÚYKNÂÝÚÙK[[XØ\Ý[ÂÝÚÙK[[ZÚ[Ý[ÂBX]\HÈÂÛY[Z[N\KYÛY\Ü^JNÂÛ\Ú^NK[NÂ]\\ÜXÚ[ÎÂ^][ÙÜN\\Ø\ÙNÂX\Ú[XÝÛNLÂÛÛÜ\K]Ú]JNÂBX]\HÂÛÛÜ\KYÜ^KLÌ
+NÂÛ]ÙZYÚÌÂÛ\Ú^N\[NÂ[KZZYÚKÂBÊOOOOHÑTPÑHTPHOOOOH
+ÂØ\XHÂXÚÙÜÝ[ÌÂB\XKXÛÛ[Â\Ü^NÜYÂÜY][\]KXÛÛ[[ÎYYÂØ\
+Â[YÛZ][\ÎÝ\ÂB\XK]^ÈÂÛY[Z[N\KYÛY\Ü^JNÂÛ\Ú^NK[NÂ]\\ÜXÚ[ÎÂ^][ÙÜN\\Ø\ÙNÂX\Ú[XÝÛNMÂB\XK]^ÂÛÛÜ\KYÜ^KLÌ
+NÂÛ]ÙZYÚÌÂ[KZZYÚKÂX\Ú[XÝÛNÂB\XK[\ÝÂ\Ü^NÜYÂÜY][\]KXÛÛ[[ÎYYÂØ\LÂB\XK[\ÝHÂ\Ü^N^Â[YÛZ][\ÎÙ[\ÂØ\LÂÛÛÜ\KYÜ^KLÌ
+NÂÛ]ÙZYÚÌÂÛ\Ú^NM\[NÂB\XK[\ÝNYÜHÂÛÛ[	ÉÎÂÚYÂZYÚÂÜ\ÛÛY\K\Y
+NÂÜ\\Y]\Î
+L	NÂ^\Ú[ÎÂB\XK[X\XÛÛZ[\ÂÜÚ][Û[]]NÂÜ\\Y]\ÎÂÝ\ÝÎY[ÂÜ\\ÛÛY\KYÜ^KMÌ
+NÂB\XK[X\XÛÛZ[\Y[YHÂ\Ü^NØÚÎÂÚYL	NÂZYÚ
+
+LÂÜ\Â[\Ü^\ØØ[JHYÚ\ÜÊÊHÛÛ\Ý
+KNÂ[Ú][Û[\ÈX\ÙNÂB\XK[X\XÛÛZ[\Ý\Y[YHÂ[\Ü^\ØØ[JÊHYÚ\ÜÊ
+HÛÛ\Ý
+KJNÂB\XK[X\[X[ÂÜÚ][ÛXÛÛ]NÂÜMÂYMÂXÚÙÜÝ[ØJLLLJNÂXÚÙÜY[\\
+NÂY[ÎMÂÜ\\Y]\Î
+ÂÜ\\ÛÛY\KYÜ^KMÌ
+NÂÛY[Z[N\KYÛY\Ü^JNÂÛ\Ú^N
+\[NÂ]\\ÜXÚ[ÎÂÛÛÜ\K\Y
+NÂ^][ÙÜN\\Ø\ÙNÂZ[^ÂÚ[\Y][ÎÛNÂB\XK[YÙ[ÂX\Ú[]ÜMÂ\Ü^N^ÂØ\Â^]Ü\Ü\ÂB\XK[YÙ[Z][HÂ\Ü^N^Â[YÛZ][\ÎÙ[\ÂØ\ÂÛ\Ú^N[NÂÛÛÜ\KYÜ^KLÌ
+NÂÛ]ÙZYÚÌÂB\XK[YÙ[YÝÂÚYLÂZYÚLÂÜ\\Y]\Î
+L	NÂ^\Ú[ÎÂB\XK[YÙ[YÝXÝ]HÈXÚÙÜÝ[\K\Y
+NÈB\XK[YÙ[YÝ[XÝ]HÈXÚÙÜÝ[\KYÜ^KML
+NÈÜXÚ]NNÈBÊOOOOHÓÓPÕÈÓÒÈOOOOH
+ÂØÛÛXÝÂXÚÙÜÝ[\KXÊNÂBÛÛXÝYÜYÂ\Ü^NÜYÂÜY][\]KXÛÛ[[ÎYKÂØ\
+Â[YÛZ][\ÎÝ\ÂBÛÛXÝZ[ÈÈÂÛY[Z[N\KYÛY\Ü^JNÂÛ\Ú^NK[NÂ]\\ÜXÚ[ÎÂ^][ÙÜN\\Ø\ÙNÂX\Ú[XÝÛNMÂBÛÛXÝZ[ÈÂÛÛÜ\KYÜ^KLÌ
+NÂÛ]ÙZYÚÌÂ[KZZYÚKÂX\Ú[XÝÛNÌÂBÛÛXÝY]Z[Â\Ü^N^Â[YÛZ][\ÎÙ[\ÂØ\MÂY[ÎMÂÜ\XÝÛN\ÛÛY\KYÜ^KMÌ
+NÂBÛÛXÝY]Z[\Ý[Ù]\HÂÜ\XÝÛNÛNÂBÛÛXÝY]Z[ZXÛÛÂÚY
+
+ÂZYÚ
+
+ÂÜ\\Y]\ÎÂXÚÙÜÝ[ØJJNÂ\Ü^N^Â[YÛZ][\ÎÙ[\Â\ÝYKXÛÛ[Ù[\Â^\Ú[ÎÂBÛÛXÝY]Z[ZXÛÛÝÈÂÚYÂZYÚÂÝÚÙN\K\Y
+NÂ[ÛNÂÝÚÙK]ÚYKNÂÝÚÙK[[XØ\Ý[ÂÝÚÙK[[ZÚ[Ý[ÂBÛÛXÝY]Z[]^ÂÛ\Ú^N
+\[NÂÛÛÜ\KYÜ^KML
+NÂ^][ÙÜN\\Ø\ÙNÂ]\\ÜXÚ[Î\ÂBÛÛXÝY]Z[][YHÂÛÛÜ\K]Ú]JNÂÛ]ÙZYÚ
+LÂÛ\Ú^NK
+\[NÂBÛÛXÝY]Z[HÂ[Ú][ÛÛÛÜÜÈX\ÙNÂBÛÛXÝY]Z[NÝ\ÂÛÛÜ\K\Y
+NÂBÊØ[[H[XY[ÛÛXÝ[È
+ÂØ[[K\ÙXÝ[ÛÂX\Ú[]ÜÌÂY[Ë]ÜÂÜ\]Ü\ÛÛY\KYÜ^KMÌ
+NÂBØ[[K\ÙXÝ[Û
+ÂÛY[Z[N\KYÛY\Ü^JNÂÛ\Ú^NK[NÂ]\\ÜXÚ[ÎÂ^][ÙÜN\\Ø\ÙNÂÛÛÜ\K]Ú]JNÂX\Ú[XÝÛNLÂBØ[[K\ÙXÝ[ÛÂÛÛÜ\KYÜ^KML
+NÂÛ\Ú^N
+\[NÂÛ]ÙZYÚÌÂX\Ú[XÝÛNMÂBØ[[KXÂ\Ü^N[[KY^Â[YÛZ][\ÎÙ[\ÂØ\ÂY[ÎLÂXÚÙÜÝ[ØJJNÂÜ\\ÛÛYØJÊNÂÜ\\Y]\Î
+ÂÛÛÜ\K\Y
+NÂÛY[Z[N\KYÛY\Ü^JNÂÛ\Ú^N\[NÂ]\\ÜXÚ[ÎÂ^][ÙÜN\\Ø\ÙNÂÝ\ÛÜÚ[\Â[Ú][Û[ÜÈX\ÙNÂBØ[[KXÝ\ÂXÚÙÜÝ[\K\Y
+NÂÛÛÜ\K]Ú]JNÂBØ[[KXÝÈÂÚYNÂZYÚNÂÝÚÙNÝ\[ÛÛÜÂ[ÛNÂÝÚÙK]ÚYKNÂBÊÜH
+ÂÛÛXÝYÜHÂXÚÙÜÝ[\KXËXØ\
+NÂÜ\\ÛÛY\KYÜ^KMÌ
+NÂÜ\\Y]\ÎÂY[Î
+ÂBÛÛXÝYÜHÈÂÛY[Z[N\KYÛY\Ü^JNÂÛ\Ú^NK\[NÂ]\\ÜXÚ[ÎÂ^][ÙÜN\\Ø\ÙNÂX\Ú[XÝÛNÂBÜK\ÝÈÂ\Ü^NÜYÂÜY][\]KXÛÛ[[ÎYYÂØ\MÂBÜKYÜÝ\ÂX\Ú[XÝÛNMÂBÜKYÜÝ\X[Â\Ü^NØÚÎÂÛ\Ú^N[NÂÛ]ÙZYÚ
+Â]\\ÜXÚ[ÎK\Â^][ÙÜN\\Ø\ÙNÂÛÛÜ\KYÜ^KLÌ
+NÂX\Ú[XÝÛNÂBÜKYÜÝ\[]ÜKYÜÝ\Ù[XÝÜKYÜÝ\^\XHÂÚYL	NÂXÚÙÜÝ[\KXÊNÂÜ\\ÛÛY\KYÜ^KMÌ
+NÂÜ\\Y]\Î
+ÂY[ÎMMÂÛÛÜ\K]Ú]JNÂÛY[Z[N\KYÛXÙJNÂÛ\Ú^NM\[NÂ[Ú][ÛÜ\XÛÛÜÜÈX\ÙNÂÝ][NÛNÂBÜKYÜÝ\[]XÙZÛ\ÜKYÜÝ\^\XNXÙZÛ\ÂÛÛÜ\KYÜ^KML
+NÂBÜKYÜÝ\[]ØÝ\ËÜKYÜÝ\Ù[XÝØÝ\ËÜKYÜÝ\^\XNØÝ\ÈÂÜ\XÛÛÜ\K\Y
+NÂBÜKYÜÝ\Ù[XÝÂ\X\[ÙNÛNÂXÚÙÜÝ[Z[XYÙN\
+]N[XYÙKÜÝÊÞ[	LÐÜÝÈ[ÏIÚËÝÝÝËÌËÜËÌÜÝÉÈÚYIÌLÈZYÚIÌLÈ[IÉLÍÌ
+Ì
+Ì	ÈY]ÐÞIÌMMÉLÑILÐÜ]IÓNLSÈ
+LËÉLÑILÐËÜÝÉLÑHNÂXÚÙÜÝ[\\X]Ë\\X]ÂXÚÙÜÝ[\ÜÚ][ÛYÚMÙ[\ÂY[Ë\YÚ
+ÂÝ\ÛÜÚ[\ÂBÜKYÜÝ\Ù[XÝÜ[ÛÂXÚÙÜÝ[\KXËXØ\
+NÂÛÛÜ\K]Ú]JNÂBÜKYÜÝ\^\XHÂ\Ú^N\XØ[ÂZ[ZZYÚLÂBÊOOOOHÑPTÒPHÔÕÓOOOOH
+ÂÙX\Ú\Ù[XÝÂÜÚ][Û[]]NÂBÙX\Ú\Ù[XÝ]YÙÙ\ÂÚYL	NÂXÚÙÜÝ[\KXÊNÂÜ\\ÛÛY\KYÜ^KMÌ
+NÂÜ\\Y]\Î
+ÂY[ÎM
+MMÂÛÛÜ\K]Ú]JNÂÛY[Z[N\KYÛXÙJNÂÛ\Ú^NM\[NÂÝ\ÛÜÚ[\Â[Ú][ÛÜ\XÛÛÜÜÈX\ÙNÂÝ][NÛNÂ^X[YÛYÂÜÚ][Û[]]NÂBÙX\Ú\Ù[XÝ]YÙÙ\Y\ÂÛÛ[	ÉÎÂÜÚ][ÛXÛÛ]NÂYÚMÂÜ
+L	NÂ[ÙÜN[Û]VJML	JNÂÜ\[Y
+\ÛÛY[Ü\[ÂÜ\\YÚ
+\ÛÛY[Ü\[ÂÜ\]Ü
+ÛÛY\KYÜ^KML
+NÂ[Ú][Û[ÙÜHÜÈX\ÙNÂBÙX\Ú\Ù[XÝ]YÙÙ\Ü[Y\Â[ÙÜN[Û]VJML	JHÝ]JNYÊNÂBÙX\Ú\Ù[XÝ]YÙÙ\ØÝ\ËÙX\Ú\Ù[XÝÜ[ÙX\Ú\Ù[XÝ]YÙÙ\ÂÜ\XÛÛÜ\K\Y
+NÂBÙX\Ú\Ù[XÝ]YÙÙ\XÙZÛ\ÂÛÛÜ\KYÜ^KML
+NÂBÙX\Ú\Ù[XÝYÜÝÛÂ\Ü^NÛNÂÜÚ][ÛXÛÛ]NÂÜØ[ÊL	H
+È
+
+NÂYÂYÚÂXÚÙÜÝ[\KXËXØ\
+NÂÜ\\ÛÛY\KYÜ^KMÌ
+NÂÜ\\Y]\Î
+ÂX^ZZYÚÂÝ\ÝÎY[ÂZ[^LÂÞ\ÚYÝÎÌØJ
+NÂBÙX\Ú\Ù[XÝÜ[ÙX\Ú\Ù[XÝYÜÝÛÂ\Ü^NØÚÎÂBÙX\Ú\Ù[XÝ\ÙX\ÚÂÚYL	NÂY[ÎLMÂXÚÙÜÝ[\KXÊNÂÜ\ÛNÂÜ\XÝÛN\ÛÛY\KYÜ^KMÌ
+NÂÛÛÜ\K]Ú]JNÂÛY[Z[N\KYÛXÙJNÂÛ\Ú^N\[NÂÝ][NÛNÂBÙX\Ú\Ù[XÝ\ÙX\ÚXÙZÛ\ÂÛÛÜ\KYÜ^KML
+NÂBÙX\Ú\Ù[XÝ[Ü[ÛÈÂX^ZZYÚNLÂÝ\ÝË^N]]ÎÂBÙX\Ú\Ù[XÝ[Ü[ÛÎ]ÙXÚ]\ØÜÛ\ÂÚY
+ÂBÙX\Ú\Ù[XÝ[Ü[ÛÎ]ÙXÚ]\ØÜÛ\]XÚÈÂXÚÙÜÝ[\KXËXØ\
+NÂBÙX\Ú\Ù[XÝ[Ü[ÛÎ]ÙXÚ]\ØÜÛ\][XÂXÚÙÜÝ[\KYÜ^KMÌ
+NÂÜ\\Y]\ÎÜÂBÙX\Ú\Ù[XÝ[Ü[ÛÂY[ÎLMÂÝ\ÛÜÚ[\ÂÛ\Ú^N\[NÂÛÛÜ\KYÜ^KLÌ
+NÂ[Ú][ÛXÚÙÜÝ[ÈX\ÙKÛÛÜÈX\ÙNÂBÙX\Ú\Ù[XÝ[Ü[ÛÝ\ÂXÚÙÜÝ[ØJJNÂÛÛÜ\K]Ú]JNÂBÙX\Ú\Ù[XÝ[Ü[ÛÙ[XÝYÂÛÛÜ\K\Y
+NÂÛ]ÙZYÚ
+LÂBÙX\Ú\Ù[XÝ[Ü[ÛY[Â\Ü^NÛNÂBÊOOOOHUSKTÑSPÕQÓÈOOOOH
+Â][K\Ù[XÝÂÜÚ][Û[]]NÂB][K\Ù[XÝ]YÙÙ\ÂÚYL	NÂXÚÙÜÝ[\KXÊNÂÜ\\ÛÛY\KYÜ^KMÌ
+NÂÜ\\Y]\Î
+ÂY[ÎL
+LLÂZ[ZZYÚ
+ÂÝ\ÛÜÚ[\Â[Ú][ÛÜ\XÛÛÜÜÈX\ÙNÂ\Ü^N^Â^]Ü\Ü\ÂØ\
+Â[YÛZ][\ÎÙ[\ÂÜÚ][Û[]]NÂB][K\Ù[XÝ]YÙÙ\Y\ÂÛÛ[	ÉÎÂÜÚ][ÛXÛÛ]NÂYÚMÂÜ
+L	NÂ[ÙÜN[Û]VJML	JNÂÜ\[Y
+\ÛÛY[Ü\[ÂÜ\\YÚ
+\ÛÛY[Ü\[ÂÜ\]Ü
+ÛÛY\KYÜ^KML
+NÂ[Ú][Û[ÙÜHÜÈX\ÙNÂB][K\Ù[XÝÜ[][K\Ù[XÝ]YÙÙ\Y\Â[ÙÜN[Û]VJML	JHÝ]JNYÊNÂB][K\Ù[XÝÜ[][K\Ù[XÝ]YÙÙ\][K\Ù[XÝ]YÙÙ\ØÝ\ÈÂÜ\XÛÛÜ\K\Y
+NÂB][K\Ù[XÝ]YÙÙ\XÙZÛ\ÂÛÛÜ\KYÜ^KML
+NÂÛ\Ú^NM\[NÂÛY[Z[N\KYÛXÙJNÂB][K\Ù[XÝ]YÈÂ\Ü^N[[KY^Â[YÛZ][\ÎÙ[\ÂØ\
+ÂXÚÙÜÝ[ØJMJNÂÜ\\ÛÛYØJÊNÂÛÛÜ\K]Ú]JNÂÛ\Ú^N[NÂY[Î
+LÂÜ\\Y]\ÎÜÂÛY[Z[N\KYÛXÙJNÂB][K\Ù[XÝ]YÈ[[ÝK]YÈÂÝ\ÛÜÚ[\ÂÛ\Ú^N\[NÂ[KZZYÚNÂÛÛÜ\KYÜ^KLÌ
+NÂ[Ú][ÛÛÛÜÈX\ÙNÂB][K\Ù[XÝ]YÈ[[ÝK]YÎÝ\ÂÛÛÜ\K\Y
+NÂB][K\Ù[XÝYÜÝÛÂ\Ü^NÛNÂÜÚ][ÛXÛÛ]NÂÜØ[ÊL	H
+È
+
+NÂYÂYÚÂXÚÙÜÝ[\KXËXØ\
+NÂÜ\\ÛÛY\KYÜ^KMÌ
+NÂÜ\\Y]\Î
+ÂX^ZZYÚÂÝ\ÝË^N]]ÎÂZ[^LÂÞ\ÚYÝÎÌØJ
+NÂB][K\Ù[XÝÜ[][K\Ù[XÝYÜÝÛÂ\Ü^NØÚÎÂB][K\Ù[XÝ[Ü[ÛÂY[ÎLMÂÝ\ÛÜÚ[\ÂÛ\Ú^N\[NÂÛÛÜ\KYÜ^KLÌ
+NÂ[Ú][ÛXÚÙÜÝ[ÈX\ÙKÛÛÜÈX\ÙNÂ\Ü^N^Â\ÝYKXÛÛ[ÜXÙKX]ÙY[Â[YÛZ][\ÎÙ[\ÂB][K\Ù[XÝ[Ü[ÛÝ\ÂXÚÙÜÝ[ØJJNÂÛÛÜ\K]Ú]JNÂB][K\Ù[XÝ[Ü[ÛÙ[XÝYÂÛÛÜ\K\Y
+NÂXÚÙÜÝ[ØJ
+JNÂB][K\Ù[XÝ[Ü[ÛYÛ\XÙK]YÈÂÛY[Z[N\KYÛY\Ü^JNÂÛÛÜ\K\Y
+NÂÛ\Ú^N\[NÂ]\\ÜXÚ[Î\ÂBÊOOOOHÐSSTPÒÑTOOOOH
+ÂØ[[\\XÚÙ\ÂXÚÙÜÝ[\KXÊNÂÜ\\ÛÛY\KYÜ^KMÌ
+NÂÜ\\Y]\Î
+ÂY[ÎMÂ[Ú][ÛÜ\XÛÛÜÜÈX\ÙNÂBØ[[\\XÚÙ\ØÝ\Ë]Ú][ÂÜ\XÛÛÜ\K\Y
+NÂBØ[[\ZXY\Â\Ü^N^Â\ÝYKXÛÛ[ÜXÙKX]ÙY[Â[YÛZ][\ÎÙ[\ÂX\Ú[XÝÛNMÂBØ[[\ZXY\
+ÂÛY[Z[N\KYÛY\Ü^JNÂÛ\Ú^NK\[NÂ]\\ÜXÚ[ÎÂ^][ÙÜN\\Ø\ÙNÂÛÛÜ\K]Ú]JNÂBØ[[\[]Â\Ü^N^ÂØ\ÂBØ[[\[]]ÛÂXÚÙÜÝ[ØJJNÂÜ\\ÛÛYØJNÂÛÛÜ\K\Y
+NÂÚYÌÂZYÚÌÂÜ\\Y]\Î
+ÂÝ\ÛÜÚ[\Â\Ü^N^Â[YÛZ][\ÎÙ[\Â\ÝYKXÛÛ[Ù[\ÂÛ\Ú^NK\[NÂ[Ú][Û[ÈX\ÙNÂBØ[[\[]]ÛÝ\ÂXÚÙÜÝ[\K\Y
+NÂÛÛÜ\K]Ú]JNÂBØ[[\]ÙYZÙ^\ÈÂ\Ü^NÜYÂÜY][\]KXÛÛ[[Î\X]
+
+ËYNÂØ\
+ÂX\Ú[XÝÛNÂBØ[[\]ÙYZÙ^\ÈÜ[Â^X[YÛÙ[\ÂÛ\Ú^NÜ[NÂÛ]ÙZYÚ
+Â]\\ÜXÚ[Î\Â^][ÙÜN\\Ø\ÙNÂÛÛÜ\KYÜ^KML
+NÂY[Î
+ÂBØ[[\Y^\ÈÂ\Ü^NÜYÂÜY][\]KXÛÛ[[Î\X]
+
+ËYNÂØ\
+ÂBØ[[\Y^HÂ^X[YÛÙ[\ÂY[Î
+ÂÛ\Ú^N
+\[NÂÜ\\Y]\Î
+ÂÝ\ÛÜÚ[\Â[Ú][Û[ÈX\ÙNÂÛÛÜ\KYÜ^KLÌ
+NÂXÚÙÜÝ[[Ü\[ÂÜ\\ÛÛY[Ü\[ÂBØ[[\Y^NÝ\Ý
+\ØXY
+NÝ
+[\JHÂXÚÙÜÝ[ØJMJNÂÜ\XÛÛÜØJÊNÂÛÛÜ\K]Ú]JNÂBØ[[\Y^KÙ[XÝYÂXÚÙÜÝ[\K\Y
+NÂÛÛÜ\K]Ú]JNÂÛ]ÙZYÚ
+ÂBØ[[\Y^KÙ^HÂÜ\XÛÛÜ\K\Y
+NÂBØ[[\Y^K\ØXYÂÛÛÜ\KYÜ^KMÌ
+NÂÝ\ÛÜÝX[ÝÙYÂBØ[[\Y^K[\HÂÝ\ÛÜY][ÂB[YK\ÛÝÈÂX\Ú[]ÜMÂY[Ë]ÜMÂÜ\]Ü\ÛÛY\KYÜ^KMÌ
+NÂB[YK\ÛÝË[X[ÂÛ\Ú^N[NÂÛ]ÙZYÚ
+Â]\\ÜXÚ[ÎK\Â^][ÙÜN\\Ø\ÙNÂÛÛÜ\KYÜ^KLÌ
+NÂX\Ú[XÝÛNLÂB[YK\ÛÝËYÜYÂ\Ü^NÜYÂÜY][\]KXÛÛ[[Î\X]
+]]ËY[Z[X^
+LYJNÂØ\ÂB[YK\ÛÝÂY[Î
+Â^X[YÛÙ[\ÂÛ\Ú^N[NÂÛÛÜ\KYÜ^KLÌ
+NÂÜ\\ÛÛY\KYÜ^KMÌ
+NÂÜ\\Y]\Î
+ÂÝ\ÛÜÚ[\Â[Ú][Û[ÈX\ÙNÂB[YK\ÛÝÝ\ÂÜ\XÛÛÜØJ
+NÂXÚÙÜÝ[ØJJNÂÛÛÜ\K]Ú]JNÂB[YK\ÛÝÙ[XÝYÂXÚÙÜÝ[\K\Y
+NÂÜ\XÛÛÜ\K\Y
+NÂÛÛÜ\K]Ú]JNÂÛ]ÙZYÚ
+LÂB[YK\ÛÝ\ØXYÂÛÛÜ\KYÜ^KMÌ
+NÂÝ\ÛÜÝX[ÝÙYÂÜ\XÛÛÜØJ
+
+
+JNÂBØ[[\X]Z[X[]K[ÝHÂX\Ú[]ÜLÂÛ\Ú^NÍ\[NÂÛÛÜ\KYÜ^KML
+NÂÛ]ÙZYÚÌÂ[KZZYÚKÂBÊOOOOHTURTQÒPÒÐÖOOOOH
+ÂÜKXÚXÚØÞÂ\Ü^N^Â[YÛZ][\Î^\Ý\ÂØ\LÂX\Ú[XÝÛNÂÝ\ÛÜÚ[\ÂBÜKXÚXÚØÞ[]Ý\OHÚXÚØÞHÂÚYÂZYÚÂZ[]ÚYÂXØÙ[XÛÛÜ\K\Y
+NÂÝ\ÛÜÚ[\ÂX\Ú[]ÜÂBÜKXÚXÚØÞX[ÂÛ\Ú^N\[NÂÛÛÜ\KYÜ^KLÌ
+NÂÛ]ÙZYÚ
+ÂÝ\ÛÜÚ[\Â[KZZYÚKNÂ]\\ÜXÚ[ÎÂ^][ÙÜNÛNÂX\Ú[XÝÛNÂBÜKXÚXÚØÞX[\]Z\Y\Ý\ÂÛÛÜ\K\Y
+NÂÛ]ÙZYÚ
+ÌÂBÊOOOOHÔHÕSSPTHSÑSOOOOH
+ÂÝ[[X\K[Ý\^HÂ\Ü^NÛNÂÜÚ][Û^YÂ[Ù]ÂXÚÙÜÝ[ØJ
+JNÂXÚÙÜY[\\
+NÂZ[^Â[YÛZ][\ÎÙ[\Â\ÝYKXÛÛ[Ù[\ÂY[ÎÂBÝ[[X\K[Ý\^KXÝ]HÂ\Ü^N^ÂBÝ[[X\K[[Ù[ÂXÚÙÜÝ[\KXËXØ\
+NÂÜ\\ÛÛY\KYÜ^KMÌ
+NÂÜ\\Y]\ÎÂY[ÎÍÂX^]ÚY
+LÂÚYL	NÂX^ZZYÚLÂÝ\ÝË^N]]ÎÂ[[X][ÛYU\ÜÈX\ÙNÂBÝ[[X\K[[Ù[ÈÂÛY[Z[N\KYÛY\Ü^JNÂÛ\Ú^NK\[NÂ]\\ÜXÚ[ÎÂ^][ÙÜN\\Ø\ÙNÂÛÛÜ\K]Ú]JNÂX\Ú[XÝÛNÂ^X[YÛÙ[\ÂBÝ[[X\K\ÝÈÂ\Ü^N^Â\ÝYKXÛÛ[ÜXÙKX]ÙY[ÂY[ÎLÂÜ\XÝÛN\ÛÛYØJMKMKMK
+JNÂØ\MÂBÝ[[X\K\ÝÎ\Ý[Ù]\HÂÜ\XÝÛNÛNÂBÝ[[X\K[X[ÂÛ\Ú^N[NÂÛ]ÙZYÚ
+Â]\\ÜXÚ[Î\Â^][ÙÜN\\Ø\ÙNÂÛÛÜ\KYÜ^KML
+NÂ^\Ú[ÎÂBÝ[[X\K][YHÂÛÛÜ\K]Ú]JNÂÛ\Ú^NM\[NÂ^X[YÛYÚÂÛÜXXZÎXZË]ÛÜÂBÝ[[X\KX]ÛÈÂ\Ü^N^ÂØ\LÂX\Ú[]ÜÂBÝ[[X\KX]ÛÈ]ÛÂ^NÂY[ÎMÂÜ\\Y]\Î
+ÂÛY[Z[N\KYÛY\Ü^JNÂÛ\Ú^N\[NÂ]\\ÜXÚ[ÎÂ^][ÙÜN\\Ø\ÙNÂÝ\ÛÜÚ[\Â[Ú][Û[ÜÈX\ÙNÂBXXÚÈÂXÚÙÜÝ[[Ü\[ÂÜ\\ÛÛY\KYÜ^KMÌ
+NÂÛÛÜ\KYÜ^KLÌ
+NÂBXXÚÎÝ\ÂÜ\XÛÛÜ\K]Ú]JNÂÛÛÜ\K]Ú]JNÂBXÛÛ\HÂXÚÙÜÝ[\K\Y
+NÂÜ\ÛNÂÛÛÜ\K]Ú]JNÂÞ\ÚYÝÎ
+\K\YYÛÝÊNÂBXÛÛ\NÝ\ÂXÚÙÜÝ[\K\YY\ÊNÂBÜK\ÝXZ]ÂÚYL	NÂÛY[Z[N\KYÛY\Ü^JNÂÛ\Ú^NK\[NÂ]\\ÜXÚ[ÎÜÂ^][ÙÜN\\Ø\ÙNÂY[ÎMÂXÚÙÜÝ[\K\Y
+NÂÛÛÜ\K]Ú]JNÂÜ\ÛNÂÜ\\Y]\Î
+ÂÝ\ÛÜÚ[\Â[Ú][Û[ÜÈX\ÙNÂX\Ú[]ÜÂBÜK\ÝXZ]Ý\ÂXÚÙÜÝ[\K\YY\ÊNÂÞ\ÚYÝÎ
+\K\YYÛÝÊNÂBÊOOOOHÓÕTOOOOH
+ÂÛÝ\ÂXÚÙÜÝ[Ì
+L
+L
+NÂÜ\]Ü\ÛÛY\KYÜ^KMÌ
+NÂY[Î
+ÌÂBÛÝ\YÜYÂ\Ü^NÜYÂÜY][\]KXÛÛ[[ÎYYÂØ\
+ÂX\Ú[XÝÛN
+ÂBÛÝ\X[][ÙÛÈÂX\Ú[XÝÛNMÂ\Ü^N[[KXØÚÎÂBÛÝ\X[ÂÛÛÜ\KYÜ^KML
+NÂÛ]ÙZYÚÌÂÛ\Ú^NM\[NÂ[KZZYÚKÎÂX^]ÚYÍLÂBÛÝ\\ÛØÚX[Â\Ü^N^ÂØ\LÂX\Ú[]ÜÂBÛÝ\\ÛØÚX[HÂÚY
+ÂZYÚ
+ÂÜ\\Y]\ÎÂÜ\\ÛÛY\KYÜ^KMÌ
+NÂ\Ü^N^Â[YÛZ][\ÎÙ[\Â\ÝYKXÛÛ[Ù[\Â[Ú][Û[ÜÈX\ÙNÂBÛÝ\\ÛØÚX[NÝ\ÂÜ\XÛÛÜ\K\Y
+NÂXÚÙÜÝ[ØJJNÂBÛÝ\\ÛØÚX[HÝÈÂÚYNÂZYÚNÂ[\KYÜ^KLÌ
+NÂ[Ú][Û[ÜÈX\ÙNÂBÛÝ\\ÛØÚX[NÝ\ÝÈÂ[\K\Y
+NÂBÛÝ\XÛÛ
+ÂÛY[Z[N\KYÛY\Ü^JNÂÛ\Ú^N\[NÂ]\\ÜXÚ[ÎÂ^][ÙÜN\\Ø\ÙNÂÛÛÜ\K]Ú]JNÂX\Ú[XÝÛNÂBÛÝ\XÛÛHÂ\Ü^NØÚÎÂÛÛÜ\KYÜ^KML
+NÂÛ]ÙZYÚÌÂÛ\Ú^N\[NÂY[Î
+\Â[Ú][ÛÛÛÜÜÈX\ÙNÂBÛÝ\XÛÛNÝ\ÂÛÛÜ\K\Y
+NÂBÛÝ\XÝÛHÂÜ\]Ü\ÛÛY\KYÜ^KMÌ
+NÂY[Ë]ÜÂ\Ü^N^Â\ÝYKXÛÛ[ÜXÙKX]ÙY[Â[YÛZ][\ÎÙ[\ÂBÛÝ\XÝÛHÂÛÛÜ\KYÜ^KML
+NÂÛ\Ú^N
+\[NÂÛ]ÙZYÚÌÂBÊOOOOHSÐSHTÔÓÒUHOOOOH
+ÂYYXH
+X^]ÚYL
+HÂX]\\ËYÜYÂÜY][\]KXÛÛ[[Î\X]
+YNÂBBYYXH
+X^]ÚY
+Í
+HÂÙXÝ[ÛÈY[Î
+ÌÈBY[K]ÙÙÛHÈ\Ü^N^ÈB][[ÜÈÂÜÚ][Û^YÂ[Ù]ÂXÚÙÜÝ[ØJLLLN
+NÂXÚÙÜY[\\
+NÂ^Y\XÝ[ÛÛÛ[[Â\ÝYKXÛÛ[Ù[\ÂØ\ÂÜXÚ]NÂ\ÚX[]NY[Â[Ú][Û[ÈX\ÙNÂB][[ÜËÜ[ÂÜXÚ]NNÂ\ÚX[]N\ÚXNÂB][[ÜÈHÂÛ\Ú^NK[NÂ]\\ÜXÚ[ÎÜÂBXÝ]YÜYÂÜY][\]KXÛÛ[[ÎYÂØ\
+ÂBXÝ]]\ÝX[ÈZYÚLÈBXÝ]\Ý]ÈÂ\ÝYKXÛÛ[Ù[\ÂBÙ\XÙ\ËYÜYÂÜY][\]KXÛÛ[[ÎYÂX^]ÚY
+ÂX\Ú[]]ÎÂBX]\\ËYÜYÂÜY][\]KXÛÛ[[ÎYYÂØ\MÂBX]\HÈY[ÎLÈB\XKXÛÛ[ÂÜY][\]KXÛÛ[[ÎYÂØ\
+ÂB\XK[X\XÛÛZ[\Y[YHÈZYÚÌÈBÛÛXÝYÜYÂÜY][\]KXÛÛ[[ÎYÂØ\
+ÂBÛÛXÝYÜHÈY[ÎÈBÜK\ÝÈÈÜY][\]KXÛÛ[[ÎYÈBÛÝ\YÜYÂÜY][\]KXÛÛ[[ÎYÂØ\ÌÂBÛÝ\XÝÛHÂ^Y\XÝ[ÛÛÛ[[ÂØ\Â^X[YÛÙ[\ÂB\ÈHÂ]\\ÜXÚ[Î
+ÂBÝ[[X\K[[Ù[ÈY[ÎMÈBÝ[[X\KX]ÛÈÈ^Y\XÝ[ÛÛÛ[[ÈBBYYXH
+X^]ÚY
+
+HÂX]\\ËYÜYÂÜY][\]KXÛÛ[[ÎYÂB\XK[\ÝÂÜY][\]KXÛÛ[[ÎYÂBXÝ]\Ý]ÈÂ^Y\XÝ[ÛÛÛ[[Â[YÛZ][\ÎÙ[\ÂB[YK\ÛÝËYÜYÂÜY][\]KXÛÛ[[Î\X]
+ËYNÂBBÜÝ[OÚXYÙOKKHOOOOHUTOOOOHKO]Û\ÜÏH]\YH]\]Û\ÜÏHÛÛZ[\HYHÈÛ\ÜÏH][ÙÛÈHÜ[]Z[ÏÜÜ[ØO]Û\ÜÏH][[ÜÈYH][ÜÈHYHØXÝ]XÝ]ØOHYHÜÙ\XÙ\ÈÙ\XÙ\ÏØOHYHÝÚHÚH\ÏØOHYHØ\XH\XOØOHYHØÛÛXÝÛ\ÜÏH]XÝHÛÚÈÝÏØOÙ]]Û\ÜÏHY[K]ÙÙÛHYHY[UÙÙÛHÜ[ÜÜ[Ü[ÜÜ[Ü[ÜÜ[Ù]Ù]Û]KKHOOOOHTÈOOOOHKOÙXÝ[ÛÛ\ÜÏH\ÈYH\È]Û\ÜÏH\ËYÜYÙ]]Û\ÜÏH\ËXÛÛ[]Û\ÜÏH\ËXYÙH[Z][H[Ø[H]Z[[ÏÙ]OOÜ[]Z[ÏÜÜ[ÚOÛ\ÜÏH\Ë]YÛ[HÙHÛÛYHÈ[ÝK[Ý\Ø\\XÝYÜ]Û\ÜÏH\ËX]ÛÈHYHØÛÛXÝÛ\ÜÏH\[X\HÛÚÈÝÏØOHYHÜÙ\XÙ\ÈÛ\ÜÏH[Ý][HY]ÈÙ\XÙ\ÏØOÙ]Ù]]Û\ÜÏHØÜÛZ[XØ]ÜÜ[ØÜÛÜÜ[]Û\ÜÏHØÜÛ[[HÙ]Ù]ÜÙXÝ[ÛKKHOOOOHPÕUOOOOHKOÙXÝ[ÛYHXÝ]]Û\ÜÏHÛÛZ[\]Û\ÜÏHXÝ]YÜY]Û\ÜÏHXÝ]]\ÝX[]X[]Û\ÜÏHXÝ]]\ÝX[Z[\]Û\ÜÏHXÝ]]\ÝX[]^OÙ]Ù]Ù]]Û\ÜÏHXÝ]]^]X[]X[Y[^KLHÏ[Ø[H]Z[[ËÜ[[]]YÜÜ[ÚÏH]Z[È\ÈZX[ZIÜÈ[ZY\[Ø[H]]È]Z[[ÈÙ\XÙKÙH[ÈÙ\ÜÚ[Û[YÜYH\]Z\Y[[[Z][HÙXÝÈ\XÝHÈ[Ý\ÛÜ	Y\ÚÈÈÚÜ\Ú]YYYÜÛHZ[H]\ÈÈ^ÝXÈÝ\\Ø\ËÙHX]]\HZXÛHÚ]HØ[YHØÙ\ÜÚ]H][[ÛÈ]Z[Ù\[ÈZX[ZKQYH[[ÙÛÝ]ÜYKÙHÛÜÈ\Ý[[Ý\ØÚY[HÛÈ[Ý\Ø\[Ø^\ÈÛÚÜÈ]ÈXÛÛ]H\ÝÜÙ]Ù]Ù]ÜÙXÝ[ÛKKHOOOOHÑTPÑTÈOOOOHKOÙXÝ[ÛYHÙ\XÙ\È]Û\ÜÏHÛÛZ[\]Û\ÜÏHÙXÝ[ÛZXY[È]X[Ù\XÙ\È	XÚ[ÏÚ]Û\ÜÏHXØÙ[[[HÙ]Ù\ÜÚ[Û[YÜYH]Z[[ÈXÚØYÙ\È\ÚYÛYÈÙY\[Ý\ZXÛH[ÚÝÜÛÛHÛÛ][ÛÜÙ]]Û\ÜÏHÙ\XÙ\ËYÜYKKHYÝ[\Ø\ÚKO]Û\ÜÏHÙ\XÙKXØ\]X[]Û\ÜÏHÙ\XÙKZXÛÛÝÈY]ÐÞH]HLL[
+K
+KNHKLLKÌHÏÜÝÏÙ]ÏYÝ[\Ø\ÚÚÏÛ\ÜÏHÙ\XÙK\ÝX]H\ÜÙ[X[ÛX[[	[\ÈÝ]	[È\Ý\ÚÌÈÏÜ]Û\ÜÏHXÚ[Ë]XH]Û\ÜÏHXÚ[Ë\ÝÈÜ[Û\ÜÏHZXÛK]\HÙY[ÈÛX[ZXÛOÜÜ[Ü[Û\ÜÏHZXÛK\XÙHOÜÜ[Ù]]Û\ÜÏHXÚ[Ë\ÝÈÜ[Û\ÜÏHZXÛK]\HÕUÈZYÚ^OÜÜ[Ü[Û\ÜÏHZXÛK\XÙHLOÜÜ[Ù]]Û\ÜÏHXÚ[Ë\ÝÈÜ[Û\ÜÏHZXÛK]\H\ÙHXÚÈÈYÈÕUÜÜ[Ü[Û\ÜÏHZXÛK\XÙHMOÜÜ[Ù]Ù]]Û\ÜÏHÙ\XÙK\ÙXÝ[Û[X[^\[ÜÙ][Û\ÜÏHÙ\XÙKZ[ÛY\ÈO^\[Ü[Ø\Ú	[\ÈOÛOOÚY[È	[\È\\ÈÛX[YÛOOÚY[Ù[È[ÙYÛOOÛÜ[XÈÚ\YÛOO\H\ÜÚ[È\YYÛOO^\[Ü[HÚ\HÝÛÛOOÚ[ÝÜÈÛX[YÛOÝ[]Û\ÜÏHÙ\XÙK\ÙXÝ[Û[X[[\[ÜÙ][Û\ÜÏHÙ\XÙKZ[ÛY\ÈO[\[ÜXÝ][OÛOO[\[ÜÚ\HÝÛÛOOÛÜX]ÈÛX[YÛOOØ\]ÈXÝ][YYÛOÝ[Ù]KKH[]Z[KO]Û\ÜÏHÙ\XÙKXØ\Ü[\]X[]X[Y[^KLH]Û\ÜÏHÜ[\XYÙH[ÜÝÜ[\Ù]]Û\ÜÏHÙ\XÙKZXÛÛÝÈY]ÐÞHÛYÛÛÚ[ÏHLMKHKÈMÈMMNNKLMËÍÈ
+KK
+ÈMMKÈLHÏÜÝÏÙ]Ï[]Z[ÚÏÛ\ÜÏHÙ\XÙK\ÝX]HÛÛ\]HÜ]ËXÝÛHÙ\XÙH	[È\Ý
+I\ÚÍÏÜ]Û\ÜÏHXÚ[Ë]XH]Û\ÜÏHXÚ[Ë\ÝÈÜ[Û\ÜÏHZXÛK]\HÙY[ÈÛX[ZXÛOÜÜ[Ü[Û\ÜÏHZXÛK\XÙHÍOÜÜ[Ù]]Û\ÜÏHXÚ[Ë\ÝÈÜ[Û\ÜÏHZXÛK]\HÕUÈZYÚ^OÜÜ[Ü[Û\ÜÏHZXÛK\XÙHÎNOÜÜ[Ù]]Û\ÜÏHXÚ[Ë\ÝÈÜ[Û\ÜÏHZXÛK]\H\ÙHXÚÈÈYÈÕUÜÜ[Ü[Û\ÜÏHZXÛK\XÙH
+
+OÜÜ[Ù]Ù]]Û\ÜÏHÙ\XÙK\ÙXÝ[Û[X[^\[ÜÙ][Û\ÜÏHÙ\XÙKZ[ÛY\ÈO[^\[Ü[Ø\Ú	[\ÈOÛOOÚY[Ë\\È	[\ÈÚY[Ù[ÏÛOOZ[XÛÛ[Z[][ÛÛOO[H	[\È\H\ÜÚ[ÏÛOO[^\[ÜÛ\ÜÈÛX[YÛOOÙ\[ZXÈØ\Ú[ÛYYÛOO[Ú[H^H]Z[YÛOÝ[]Û\ÜÏHÙ\XÙK\ÙXÝ[Û[X[[\[ÜÙ][Û\ÜÏHÙ\XÙKZ[ÛY\ÈO[\[ÜY\XÝ][OÛOO\ÚÛÛÛÛH	[\È[[ÈÛX[YÛOOÙX]ÈÚ[\ÛÙYÈX]\ÛÛ][ÛYÛOOX]\ÛÛ][Û[È
+Y\XØXJOÛOOØ\]ÈÚ[\ÛÙY	[\È^XÝYÛOOÛÜX]ÈÛX[Y	[\ÈZ[Ý[YÛOO[\[ÜÛ\ÜÈÛX[YÛOÝ[Ù]KKHHXZ[[[ÙHXÚØYÙHKO]Û\ÜÏHÙ\XÙKXØ\[ÛH]X[]X[Y[^KL]Û\ÜÏH[ÛKXYÙH[ÛOÙ]]Û\ÜÏHÙ\XÙKZXÛÛÝÈY]ÐÞHXÝHÈOHÚYHNZYÚHNHÏ]HLMNLÈLNÏÜÝÏÙ]ÏHXZ[[[ÙHXÚØYÙOÚÏÛ\ÜÏHÙ\XÙK\ÝX]H[ÛH\ÙY\	Y\ÚÈÝ^H\Ú	[È\ÝI\ÚÌÏÜ]Û\ÜÏHXÚ[Ë]XH]Û\ÜÏHXÚ[Ë\ÝÈÜ[Û\ÜÏHZXÛK]\HÙY[ÈÛX[ZXÛOÜÜ[Ü[Û\ÜÏHZXÛK\XÙH
+ÎHÈ[ÏÜÜ[Ù]]Û\ÜÏHXÚ[Ë\ÝÈÜ[Û\ÜÏHZXÛK]\HÕUÈZYÚ^OÜÜ[Ü[Û\ÜÏHZXÛK\XÙHNHÈ[ÏÜÜ[Ù]]Û\ÜÏHXÚ[Ë\ÝÈÜ[Û\ÜÏHZXÛK]\H\ÙHXÚÈÈYÈÕUÜÜ[Ü[Û\ÜÏHZXÛK\XÙHMLÈ[ÏÜÜ[Ù]Ù]]Û\ÜÏHÙ\XÙK\ÙXÝ[Û[X[^\[ÜÙ][Û\ÜÏHÙ\XÙKZ[ÛY\ÈO^\[Ü[Ø\Ú	[\ÈOÛOOÚY[È	[\È\\ÈÛX[YÛOOÚY[Ù[È[ÙYÛOOÛÜ[XÈÚ\YÛOO\H\ÜÚ[È\YYÛOO^\[Ü[HÚ\HÝÛÛOOÚ[ÝÜÈÛX[YÛOÝ[]Û\ÜÏHÙ\XÙK\ÙXÝ[Û[X[[\[ÜÙ][Û\ÜÏHÙ\XÙKZ[ÛY\ÈO[\[ÜXÝ][OÛOO[\[ÜYÚÚ\HÝÛÛOOÛÜX]ÈÛX[YÛOOØ\]ÈXÝ][YYÛOOZ\\Ú[\\YYÛOO[Ü]H[ÛHØÚY[[ÏÛOÝ[]Û\ÜÏHÙ\XÙK[ÝHÈÝ\HXZ[[[ÙHXÚØYÙKZ]\HYÝ[\Ø\ÚÜ[]Z[\È\]Z\Y\[[ÈÛZXÛHÛÛ][ÛÙ]Ù]Ù]KKHYSÛÈKO]Û\ÜÏHYÛËX\]X[ÏYSÛÈ	[\ÈY\ÎÚÏ]Û\ÜÏHYÛXÚ\Ù\[ZXÈØ\ÚÜ[Û\ÜÏHYÛ\XÙHÉÌÜÜ[Ù]]Û\ÜÏHYÛXÚ\XYYÚ\ÝÜ][ÛÜ[Û\ÜÏHYÛ\XÙHÉ
+ÜÜ[Ù]]Û\ÜÏHYÛXÚ\^Ù\ÜÚ]H]Z\[[Ý[Ü[Û\ÜÏHYÛ\XÙHÉÜÜ[Ù]Ù]Ù]ÜÙXÝ[ÛKKHOOOOHÒHÒÓÔÑHTÈOOOOHKOÙXÝ[ÛYHÚH]Û\ÜÏHÛÛZ[\]Û\ÜÏHÙXÝ[ÛZXY[È]X[ÚHÚÛÜÙHOÚ]Û\ÜÏHXØÙ[[[HÙ]Ú]Ù]È\È\\ÛHH\ÝÜÙ]]Û\ÜÏHX]\\ËYÜY]Û\ÜÏHX]\H]X[]Û\ÜÏHX]\KZXÛÛÝÈY]ÐÞH]HLHLÌ
+ËNHLËNHLÜËNKMNKLLØNHHHNÏÚ\ÛHÞHLÞOHLHÈÏÜÝÏÙ]Ï[Ø[H	ÛÛ[Y[ÚÏÙHÛÛYHÈ[Ý\ÛYKÙXÙKÜÚ\]\[Ý\Ø\\ËÈÜ[ÙËÈØZ][ÈÛÛ\ËÜÙ]]Û\ÜÏHX]\H]X[]X[Y[^KLH]Û\ÜÏHX]\KZXÛÛÝÈY]ÐÞH]HLLÎMLL[NLËNÝØÌ
+LLÏÜÝÏÙ]ÏÙ\ÜÚ[Û[ÙXÝÏÚÏÙH\ÙHÛH[Z][KÙ\ÜÚ[Û[YÜYHÙXÝÈ]ÝXÝ[[[ÙH[Ý\ZXÛIÜÈ[\ÚÜÙ]]Û\ÜÏHX]\H]X[]X[Y[^KL]Û\ÜÏHX]\KZXÛÛÝÈY]ÐÞHÚ\ÛHÞHLÞOHLHLÏ]HLL
+
+ÏÜÝÏÙ]Ï][[ÛÈ]Z[ÚÏ]\HÜ]XÙK]\HÝ\XÙKÙHÛÝÝ]ÛÜ\È	Y\ÚÈ[Ý\Ø\Ù]ÈH[YH]\Ù\\ËÜÙ]]Û\ÜÏHX]\H]X[]X[Y[^KLÈ]Û\ÜÏHX]\KZXÛÛÝÈY]ÐÞHXÝHÈOHÚYHNZYÚHNHÏ]HLMNLÈLNÏÜÝÏÙ]Ï^XHØÚY[[ÏÚÏÛÚÈÚ[]ÛÜÜÈÜ[ÝKX\H[Ü[ÜËÙYZÙ[ËÙHÛÜÈ\Ý[[Ý\ØÚY[KÜÙ]Ù]Ù]ÜÙXÝ[ÛKKHOOOOHÑTPÑHTPHOOOOHKOÙXÝ[ÛYH\XH]Û\ÜÏHÛÛZ[\]Û\ÜÏHÙXÝ[ÛZXY[È]X[Ù\XÙH\XOÚ]Û\ÜÏHXØÙ[[[HÙ]ÝYHÙ\[ÈZX[ZKQYH[Ý\Ý[[ÈÛÝ]ÜYHÛÛ[][]Y\ÏÜÙ]]Û\ÜÏH\XKXÛÛ[]Û\ÜÏH\XK]^]X[ÏÙHÛÝ\[ÙÛÝ]ÜYOÚÏ\ÙY[ZX[ZKH]Z[ÈÙ\\ÈH[\HZX[ZKQYH\XH[^[ÛÚ]\[ÝIÜH[XÚÙ[ÛÜ[ØX\ËÜ\È\\ÈÜ]Y\[H	Y\ÚÈÙIÛ[ÈH]Z[È[ÝKÜ[Û\ÜÏH\XK[\ÝOZX[ZHÈXÚÙ[ÛOOZX[ZHXXÚÛOOÛÜ[ØX\ÏÛOOÜ[ÛOOÙ[[ÛOOX[XZÛOO][\OÛOOÜ]Y\[OÛOOÛ]ÛÛÙÛOOÛY\ÝXYÛOÝ[]Û\ÜÏH\XK[YÙ[Ý[OHX\Ú[]ÜÈ]Û\ÜÏH\XK[YÙ[Z][H]Û\ÜÏH\XK[YÙ[YÝXÝ]HÙ]Ù\XÙH\XBÙ]]Û\ÜÏH\XK[YÙ[Z][H]Û\ÜÏH\XK[YÙ[YÝ[XÝ]HÙ]Ý]ÙÙ\XÙBÙ]Ù]Ù]]Û\ÜÏH]X[]X[Y[^KLH]Û\ÜÏH\XK[X\XÛÛZ[\]Û\ÜÏH\XK[X\[X[Ù\XÙH\XHÛÝ\YÙOÙ]KKHÛÛÙÛHX\È[XYÙ[\YÛZX[ZHÙ\XÙH\XHKOY[YBÜÏHÎËÝÝÝËÛÛÙÛKÛÛKÛX\ËÙ[XYÜHL[LML[LLL[LÈLYMLLÌ
+ÎMNLNÌ
+ÎN
+
+ÎLÙK
+Ì
+ÍÍ
+ÎMNLLÈLYLLÙLÛLLZLLLMÍMLËHMYLHLÛLL\Ù[LÝ\ÈMMM[LL\Ù[LÝ\ÈÚYHL	HZYÚH
+LÝ[OHÜ\È[ÝÙ[ØÜY[HØY[ÏH^HY\\ÛXÞOHË\Y\\]Ú[YÝÛÜYHÚY[YOÙ]Ù]Ù]Ù]ÜÙXÝ[ÛKKHOOOOHÓÓPÕÈÓÒÈOOOOHKOÙXÝ[ÛYHÛÛXÝ]Û\ÜÏHÛÛZ[\]Û\ÜÏHÙXÝ[ÛZXY[È]X[ÛÚÈ[Ý\]Z[Ú]Û\ÜÏHXØÙ[[[HÙ]XYHÈÙ][Ý\Ø\ÛÚÚ[È]È\ÝÈXXÚÝ]Ü[[HÜH[ÝÏÜÙ]]Û\ÜÏHÛÛXÝYÜY]Û\ÜÏHÛÛXÝZ[È]X[ÏÙ][ÝXÚÚÏ]HH]Y\Ý[ÛÜXYHÈÛÚÏÈÛÛXÝ\È\XÝHÜ\ÙHHÜKÙIÛÙ]XÚÈÈ[ÝHÚ][Ý\ËÜ]Û\ÜÏHÛÛXÝY]Z[]Û\ÜÏHÛÛXÝY]Z[ZXÛÛÝÈY]ÐÞH]HLMLØLKLNNKÎHNKÎHKNËLË
+ÈNKHNKHKMMNKÎHNKÎHKLË
+ËNÐLH
+LHØLHKÌËLËMÍHKLËÈXLKK
+HLSHKLXLMM
+
+KËLKØLHLKK
+XËL
+ËÌÎHK
+KMÌÈKÐLHMLÏÜÝÏÙ]]]Û\ÜÏHÛÛXÝY]Z[]^ÛOÙ]]Û\ÜÏHÛÛXÝY]Z[][YHHYH[ÌMMM
+LÍ
+È
+MJH
+
+LMÍ
+ÏØOÙ]Ù]Ù]]Û\ÜÏHÛÛXÝY]Z[]Û\ÜÏHÛÛXÝY]Z[ZXÛÛÝÈY]ÐÞHXÝHOHÚYHZYÚHHHÏ]HLMLKÍÐM
+HHLÈ
+
+HMLKÍÞÏ[HOHMËHLOHHHMËLHLHHÏÜÝÏÙ]]]Û\ÜÏHÛÛXÝY]Z[]^[ÝYÜ[OÙ]]Û\ÜÏHÛÛXÝY]Z[][YHHYHÎËÚ[ÝYÜ[KÛÛKÝY]Z[È\Ù]HØ[È[HÛÜ[\Y]Z[ÏØOÙ]Ù]Ù]]Û\ÜÏHÛÛXÝY]Z[]Û\ÜÏHÛÛXÝY]Z[ZXÛÛÝÈY]ÐÞH]HLHLÌ
+ËNHLËNHLÜËNKMNKLLØNHHHNÏÚ\ÛHÞHLÞOHLHÈÏÜÝÏÙ]]]Û\ÜÏHÛÛXÝY]Z[]^ØØ][ÛÙ]]Û\ÜÏHÛÛXÝY]Z[][YHZX[ZKÛÝ]ÜYOÙ]Ù]Ù]Ù]ÜHÛ\ÜÏHÛÛXÝYÜH]X[]X[Y[^KLHYHÛÚÚ[ÑÜHÝ[Y]OÏ\]Y\ÝHÛÚÚ[ÏÚÏKKH[YH	ÛHKO]Û\ÜÏHÜK\ÝÈ]Û\ÜÏHÜKYÜÝ\X[ÜH[YH[Ý\[YOÛX[[]\OH^YH[YH[YOH[YHXÙZÛ\HÚÙH\]Z\YÙ]]Û\ÜÏHÜKYÜÝ\X[ÜHÛHÛH[X\ÛX[[]\OH[YHÛH[YOHÛHXÙZÛ\HÌ
+JH
+MMKLLÍ\]Z\YÙ]Ù]KKHÙ\XÙH	Y[ÛÈ
+Ù\\]JHKO]Û\ÜÏHÜKYÜÝ\X[ÜHÙ\XÙHÙ\XÙOÛX[Ù[XÝYHÙ\XÙH[YOHÙ\XÙH\]Z\YÜ[Û[YOH\ØXYÙ[XÝYÙ[XÝHÙ\XÙOÛÜ[ÛÜ[Û[YOHYÝ[\Ø\Ú8 %ÛH	HYÝ[\Ø\Ú8 %ÛH	OÛÜ[ÛÜ[Û[YOH[]Z[8 %ÛH	ÍH[]Z[8 %ÛH	ÍOÛÜ[ÛÜ[Û[YOHHXZ[[[ÙHXÚØYÙH8 %ÛH	
+ÎKÛ[ÈHXZ[[[ÙHXÚØYÙH8 %ÛH	
+ÎKÛ[ÏÛÜ[ÛÜÙ[XÝÙ]]Û\ÜÏHÜKYÜÝ\X[YSÛÈ
+Ü[Û[
+OÛX[]Û\ÜÏH][K\Ù[XÝYHYÛÔÙ[XÝ]Û\ÜÏH][K\Ù[XÝ]YÙÙ\X[^HÜ[Û\ÜÏHXÙZÛ\Ù[XÝY[ÛËÜÜ[Ù]]Û\ÜÏH][K\Ù[XÝYÜÝÛ]Û\ÜÏH][K\Ù[XÝ[Ü[Û]K][YOHÙ\[ZXÈØ\Ú
+
+ÉÌ
+HÜ[Ù\[ZXÈØ\ÚÜÜ[Ü[Û\ÜÏHYÛ\XÙK]YÈÉÌÜÜ[Ù]]Û\ÜÏH][K\Ù[XÝ[Ü[Û]K][YOHXYYÚ\ÝÜ][Û
+
+É
+
+HÜ[XYYÚ\ÝÜ][ÛÜÜ[Ü[Û\ÜÏHYÛ\XÙK]YÈÉ
+ÜÜ[Ù]]Û\ÜÏH][K\Ù[XÝ[Ü[Û]K][YOH^Ù\ÜÚ]H]Z\[[Ý[
+
+É
+HÜ[^Ù\ÜÚ]H]Z\[[Ý[ÜÜ[Ü[Û\ÜÏHYÛ\XÙK]YÈÉÜÜ[Ù]Ù]Ù]Ù]KKHØ\[	[Ù[
+ÙX\ÚXJHKO]Û\ÜÏHÜK\ÝÈ]Û\ÜÏHÜKYÜÝ\X[Ø\[ÛX[]Û\ÜÏHÙX\Ú\Ù[XÝYH[Ù[XÝ]Û\ÜÏHÙX\Ú\Ù[XÝ]YÙÙ\X[^HÜ[Û\ÜÏHXÙZÛ\Ù[XÝ[ÜÜ[Ù]]Û\ÜÏHÙX\Ú\Ù[XÝYÜÝÛ[]\OH^Û\ÜÏHÙX\Ú\Ù[XÝ\ÙX\ÚXÙZÛ\H\HÈÙX\Ú]Û\ÜÏHÙX\Ú\Ù[XÝ[Ü[ÛÈYH[Ü[ÛÈÙ]Ù]Ù][]\OHY[YHØ\[[YOHØ\[\]Z\YÙ]]Û\ÜÏHÜKYÜÝ\X[Ø\[Ù[ÛX[]Û\ÜÏHÙX\Ú\Ù[XÝYH[Ù[Ù[XÝ]Û\ÜÏHÙX\Ú\Ù[XÝ]YÙÙ\X[^HÜ[Û\ÜÏHXÙZÛ\Ù[XÝ[\ÝÜÜ[Ù]]Û\ÜÏHÙX\Ú\Ù[XÝYÜÝÛ[]\OH^Û\ÜÏHÙX\Ú\Ù[XÝ\ÙX\ÚXÙZÛ\H\HÈÙX\Ú]Û\ÜÏHÙX\Ú\Ù[XÝ[Ü[ÛÈYH[Ù[Ü[ÛÈÙ]Ù]Ù][]\OHY[YHØ\[Ù[[YOHØ\[Ù[\]Z\YÙ]Ù]KKHØØ][ÛKO]Û\ÜÏHÜKYÜÝ\X[ÜHØØ][ÛÙ\XÙHØØ][ÛÛX[Ù[XÝYHØØ][Û[YOHØØ][Û\]Z\YÜ[Û[YOH\ØXYÙ[XÝYÙ[XÝ[Ý\\XOÛÜ[ÛÜ[Û[YOHZX[ZHÈXÚÙ[ZX[ZHÈXÚÙ[ÛÜ[ÛÜ[Û[YOHZX[ZHXXÚZX[ZHXXÚÛÜ[ÛÜ[Û[YOHÛÜ[ØX\ÈÛÜ[ØX\ÏÛÜ[ÛÜ[Û[YOHÜ[Ü[ÛÜ[ÛÜ[Û[YOHÙ[[Ù[[ÛÜ[ÛÜ[Û[YOHX[XZX[XZÛÜ[ÛÜ[Û[YOH][\H][\OÛÜ[ÛÜ[Û[YOHÜ]Y\[HÜ]Y\[OÛÜ[ÛÜ[Û[YOHÛ]ÛÛÙÛ]ÛÛÙÛÜ[ÛÜ[Û[YOHÛY\ÝXYÛY\ÝXYÛÜ[ÛÜÙ[XÝÙ]KKHØ[[\
+È[YHXÚÙ\KO]Û\ÜÏHÜKYÜÝ\X[Y\Y]H	[YOÛX[]Û\ÜÏHØ[[\\XÚÙ\YHØ[[\XÚÙ\]Û\ÜÏHØ[[\ZXY\
+YHØ[[\[ÛÚ
+]Û\ÜÏHØ[[\[]]Û\OH]ÛYHØ[]\ÏØ]Û]Û\OH]ÛYHØ[^\ÏØ]ÛÙ]Ù]]Û\ÜÏHØ[[\]ÙYZÙ^\ÈÜ[Ý[ÜÜ[Ü[[ÛÜÜ[Ü[YOÜÜ[Ü[ÙYÜÜ[Ü[OÜÜ[Ü[OÜÜ[Ü[Ø]ÜÜ[Ù]]Û\ÜÏHØ[[\Y^\ÈYHØ[[\^\ÈÙ]]Û\ÜÏH[YK\ÛÝÈYH[YTÛÝÈÝ[OH\Ü^NÛNÈ]Û\ÜÏH[YK\ÛÝË[X[]Z[XH[Y\ÏÙ]]Û\ÜÏH[YK\ÛÝËYÜYYH[YTÛÝÑÜYÙ]Ù]]Û\ÜÏHØ[[\X]Z[X[]K[ÝH[Û¸ $ÍH	[ÈYNLSx $ÍH	[ÈÙY8 $ÑN¸ $ÍH	[ÈØ]8 $ÔÝ[LSx $ÍBÙ]Ù][]\OHY[YHÙ[XÝY]H[YOHÙ[XÝY]H\]Z\Y[]\OHY[YHÙ[XÝY[YH[YOHÙ[XÝY[YH\]Z\YÙ]KKHY][Û[Ý\ÈKO]Û\ÜÏHÜKYÜÝ\X[ÜHÝ\ÈY][Û[Ý\È
+Ü[Û[
+OÛX[^\XHYHÝ\È[YOHÝ\ÈXÙZÛ\H[HÜXÚX[\]Y\ÝËZXÛHÛÛ][ÛËÜ]Y\Ý[ÛËÝ^\XOÙ]KKH\]Z\YÚXÚØÞKO]Û\ÜÏHÜKXÚXÚØÞ[]\OHÚXÚØÞYH][]PÚXÚÈ[YOH][]PÚXÚÈ\]Z\YX[ÜH][]PÚXÚÈØ]\[[XÝXÚ]HÛÝ\ÙH]\ÝHÝYYÜ[Û\ÜÏH\]Z\Y\Ý\ÜÜ[ÛX[Ù]]Û\OHÝXZ]Û\ÜÏHÜK\ÝXZ]YHÝXZ]]Y]È	ÝXZ]Ø]ÛÙÜOÙ]Ù]ÜÙXÝ[ÛKKHOOOOHÔHÕSSPTHSÑSOOOOHKO]Û\ÜÏHÝ[[X\K[Ý\^HYHÝ[[X\SÝ\^H]Û\ÜÏHÝ[[X\K[[Ù[ÏÛÚÚ[ÈÝ[[X\OÚÏ]YHÝ[[X\PÛÛ[Ù]]Û\ÜÏHÝ[[X\KX]ÛÈ]Û\OH]ÛÛ\ÜÏHXXÚÈYHÝ[[X\PXÚÈY]Ø]Û]Û\OH]ÛÛ\ÜÏHXÛÛ\HYHÝ[[X\PÛÛ\HÛÛ\H	Ù[Ø]ÛÙ]Ù]Ù]KKHOOOOHÓÕTOOOOHKOÛÝ\Û\ÜÏHÛÝ\]Û\ÜÏHÛÛZ[\]Û\ÜÏHÛÝ\YÜY]Û\ÜÏHÛÝ\X[HYHÈÛ\ÜÏH][ÙÛÈHÜ[]Z[ÏÜÜ[ØO[Z][H[Ø[H]]È]Z[[ÈÙ\[ÈZX[ZH[[ÙÛÝ]ÜYKÙHÛÛYHÈ[ÝH	Y\ÚÈ[Ý\Ø\\XÝYÜ]Û\ÜÏHÛÝ\\ÛØÚX[HYHÎËÚ[ÝYÜ[KÛÛKÝY]Z[È\Ù]HØ[È[HÛÜ[\\XK[X[H[ÝYÜ[HÝÈY]ÐÞH[ÏHËÝÝÝËÌËÜËÌÜÝÈ]HLLMØÌË
+ËN
+L
+
+K
+ÈËLM
+ÍÌHKLH
+LNH
+LNK
+NKK
+HK
+K
+H
+
+HË
+KKLËN
+K
+H
+
+KKMHËKLK
+ÍÌKMLNH
+LNKLK
+NLK
+
+ËM
+K
+ËLË
+LËN
+KLM
+KK
+ËLËKMKMÍÌKLKNKMLNKMLK
+NLKKK
+ËLK
+K
+ËM
+HLË
+LËLËNË
+ËM
+KMKLËÈKMÍÌH
+LNKMLNHKK
+MÈK
+KK
+H
+
+KK
+^LLÎÍHÌÌËM
+Ë
+LË
+ÌMKÌÌÈK
+ÌÈ
+Ë
+LMÌÌÈÍHLÌËNKMË
+Ì
+M
+ÍNN
+Î
+N
+NÎÌÌÈËN
+ÍHLÌËNHËKM
+MK
+Ì
+ÍMK
+ÎLN
+MÎKMN
+NKLK
+ÌËLKK
+ÌËMMLËNKKMLËËK
+ÌMM
+ËKNMMÍMLMËMÎMMÎKMNÌMKMMKNHLL
+KÎMM
+MLLÌ
+M
+MLLÌLLMM
+LLN
+
+LM
+LLK
+
+XLK
+K
+LHK
+K
+L^ÏÜÝÏØOHYHÎËÝZÝÚËÛÛKÐY]Z[È\Ù]HØ[È[HÛÜ[\\XK[X[HZÕÚÈÝÈY]ÐÞH[ÏHËÝÝÝËÌËÜËÌÜÝÈ]HLNKNH
+XMÈ
+ÈKLËÍËMULË
+]LËØLHHKLHHHKLKLHHHLKLXËM
+ÎK]LËXMÍÈ
+ÍÈKÎKK
+PMÍ
+ÍËMHMKMÍ
+ÍL
+
+
+LØN
+KNMÝLËM
+H
+
+HKLËÍËLKÍÕZËÍÞÏÜÝÏØOHYHÎËÙXÙXÛÚËÛÛKÝY]Z[È\Ù]HØ[È[HÛÜ[\\XK[X[HXÙXÛÚÈÝÈY]ÐÞH[ÏHËÝÝÝËÌËÜËÌÜÝÈ]HLL
+ÌØÌMËMKÍÌËLLLLLLËLL
+KÍÌËLLLÌ
+KNH
+ÎLMMLLHLK
+MNÎ
+R
+Ë
+ÎLË
+ÚË
+
+ÕKØÌLË
+ÈKÎLMH
+LÌËMHKÌL
+ÍH
+Í]MLÒMKØËLKLHLKMMLKLKMMK
+ÍZËÌKLÌË
+ÚLÎMÎ
+PÌNKLËÈN
+L
+ÌÞÏÜÝÏØOÙ]Ù]]Û\ÜÏHÛÝ\XÛÛ
+]ZXÚÈ[ÜÏÚ
+HYHØXÝ]XÝ]ØOHYHÜÙ\XÙ\ÈÙ\XÙ\ÏØOHYHÝÚHÚH\ÏØOHYHØ\XHÙ\XÙH\XOØOHYHØÛÛXÝÛÛXÝØOÙ]]Û\ÜÏHÛÝ\XÛÛ
+Ù\XÙ\ÏÚ
+HYHÜÙ\XÙ\ÈYÝ[\Ø\ÚØOHYHÜÙ\XÙ\È[]Z[ØOHYHÜÙ\XÙ\ÈXZ[[[ÙHXÚØYÙOØOÙ]Ù]]Û\ÜÏHÛÝ\XÝÛHÛÜNÈH]Z[Ë[YÚÈ\Ù\YÜZX[ZKÛÝ]ÜYOÜÙ]Ù]ÙÛÝ\ØÜ\ËÈOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOBËÈH]Z[È8 %ÛÚÚ[ÈÞ\Ý[H]TØÜ\ËÈOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOBËÈOOOOHÓÓQÕTUSÓOOOOBÛÛÝÕQWÑSPRSH	Ü^[[ÛÌLÌÛXZ[ÛÛIÎÈËÈ[XZ[ÈXÙZ]HÛÚÚ[ÈÝYXØ][ÛÂÛÛÝTÒSTÔ×ÔÓHH	ÊÌMMM
+LÍ
+ÉÎÂËÈOOOOHÐTUHOOOOBÛÛÝØ\]HHÂ	ÐXÝ\IÎÉÒS	Ë	Ò[YÜIË	ÓQ	Ë	ÓÖ	Ë	Ô	Ë	Õ	×K	Ð[HÛY[ÉÎÉÑÚ][XIË	ÔÝ[[ÉË	ÕÛ[IË	ÍÈÜY\×K	Ð\ÝÛX\[ÎÉÑLIË	ÑLË	Ñ	Ë	Õ[YÙIË	ÑÉ×K	Ð]YIÎÉÐLÉË	ÐM	Ë	ÐMIË	ÐMË	ÐMÉË	ÐN	Ë	ÙK]ÛË	ÙK]ÛÕ	Ë	ÔLÉË	ÔMK]ÛË	ÔMIË	ÔMÉË	ÔN	Ë	Ô	Ë	ÔÌÉË	ÔÍIË	ÔÍË	ÔÍÉË	ÔÈK]ÛÕ	Ë	ÔÌÉË	ÔÍ	Ë	ÔÍIË	ÔÍË	ÔÍÉË	ÔÎ	Ë	ÔÔMIË	ÔÔMÉË	ÔÔN	Ë	Õ	×K	Ð[^IÎÉÐ[^YØIË	ÐÛÛ[[[Õ	Ë	ÑZ[ÈÜ\×K	ÐUÉÎÉÌÙ\Y\ÉË	ÌÈÙ\Y\ÉË	ÍÙ\Y\ÉË	ÍHÙ\Y\ÉË	ÍÈÙ\Y\ÉË	ÎÙ\Y\ÉË	ÚM	Ë	ÚMIË	ÚMÉË	ÚV	Ë	ÓLË	ÓLÉË	ÓM	Ë	ÓMIË	ÓN	Ë	ÖIË	ÖË	ÖÉË	Ö
+	Ë	Ö
+IË	Ö
+Ë	Ö
+ÉË	ÖIË	Ö	×K	ÐZXÚÉÎÉÑ[Û]IË	Ñ[ÛÜIË	Ñ[ÛÜHÖ	Ë	Ñ[\Ú[ÛË	Ñ[\ÝI×K	ÐØY[XÉÎÉÐÕ
+	Ë	ÐÕ
+IË	Ñ\ØØ[YIË	Ñ\ØØ[YHTÕË	ÓTTIË	Ö
+	Ë	Ö
+IË	Ö
+×K	ÐÚ]Û]	ÎÉÐ^\Ë	ÐÛUUË	ÐØ[X\ÉË	ÐÛÛÜYÉË	ÐÛÜ]IË	Ñ\]Z[Þ	Ë	ÓX[XIË	ÔÚ[\YÈML	Ë	ÔÚ[\YÈL	Ë	ÔÝX\[Ë	ÕZÙIË	ÕZ[^\Ë	Õ]\ÙIË	Õ^	×K	ÐÚ\Û\ÎÉÌÌ	Ë	ÔXÚYXØI×K	ÑÙÙIÎÉÐÚ[[Ù\Ë	ÐÚ\Ù\Ë	Ñ\[ÛÉË	ÒÜ]	×K	Ñ\\IÎÉÌMÕË	ÌMÕÉË	ÎLË	Ñ	Ë	ÔÛXIË	ÔÑL	Ë	Ô\ÜØ[ÝYI×K	ÑX]	ÎÉÍL	Ë	ÍLI×K	ÑÜ	ÎÉÐÛÛÉË	ÐÛÛÈÜÜ	Ë	ÑYÙIË	Ñ\ØØ\IË	Ñ^Y][ÛË	Ñ^Ü\Ë	ÑLML	Ë	ÑLMLYÚ[ÉË	ÓX]\XÚÉË	Ó]\Ý[ÉË	Ó]\Ý[ÈXXÚQIË	Ô[Ù\Ë	Õ[Ú]	×K	ÑÙ[\Ú\ÉÎÉÑÍÌ	Ë	ÑÎ	Ë	ÑÎL	Ë	ÑÕ	Ë	ÑÕÌ	Ë	ÑÕ	×K	ÑÓPÉÎÉÐXØYXIË	ÐØ[[ÛË	Ò[[Y\UË	ÔÚY\HML	Ë	ÔÚY\HL	Ë	Õ\Z[Ë	Ö]ZÛÛË	Ö]ZÛÛ	×K	ÒÛIÎÉÐXØÛÜ	Ë	ÐÚ]XÉË	ÐÔUË	ÒUË	ÓÙ\ÜÙ^IË	Ô\ÜÜÜ	Ë	Ô[Ý	Ë	ÔYÙ[[I×K	Ò][ZIÎÉÑ[[IË	ÒSÓTH
+IË	ÒSÓTH
+Ë	ÒÛÛIË	Ô[\ØYIË	ÔØ[HÜ^Ë	ÔØ[HIË	ÔÛÛ]IË	ÕXÜÛÛË	Õ[YI×K	Ò[[]IÎÉÔML	Ë	ÔM	Ë	ÔV
+L	Ë	ÔV
+MIË	ÔV
+	Ë	ÔV	×K	ÒYÝX\ÎÉÑKTPÑIË	ÑTPÑIË	ÑUTIË	ÒKTPÑIË	Ö×K	ÒY\	ÎÉÐÚ\ÚÙYIË	ÐÛÛ\\ÜÉË	ÑÛYX]ÜË	ÑÜ[Ú\ÚÙYIË	ÑÜ[Ú\ÚÙYH	Ë	ÑÜ[ØYÛÛY\Ë	Ô[YØYIË	ÕØYÛÛY\Ë	ÕÜ[Û\×K	ÒÚXIÎÉÐØ\][	Ë	ÑUË	ÑUIË	ÑÜIË	ÒÍIË	Ó\ÉË	Ô[ÉË	ÔÙ[ÜÉË	ÔÛÜ[ÉË	ÔÛÝ[	Ë	ÔÜÜYÙIË	ÔÝ[Ù\Ë	Õ[\YI×K	Ó[XÜÚ[IÎÉÒ\XØ[Ë	Ô]Y[ÉË	Õ\\É×K	Ó[Ý\ÎÉÑY[\Ë	Ñ\ØÛÝ\IË	Ñ\ØÛÝ\HÜÜ	Ë	Ô[ÙHÝ\Ë	Ô[ÙHÝ\]Ü]YIË	Ô[ÙHÝ\ÜÜ	Ë	Ô[ÙHÝ\[\×K	Ó^\ÉÎÉÑTÉË	ÑÖ	Ë	ÒTÉË	ÒTÍL	Ë	ÓÉË	ÓÍL	Ë	Ó	Ë	Ó	Ë	ÔÉË	ÔÌÍL	Ë	Ô	Ë	ÔÍL	Ë	ÔË	Õ	Ë	ÕV	×K	Ó[ÛÛÎÉÐ]X]ÜË	ÐÛÜØZ\Ë	Ó]][\ÉË	Ó]YØ]Ü×K	ÓXÚY	ÎÉÐZ\×K	ÓX\Ù\]IÎÉÑÚXIË	ÑÜ[\\Û[ÉË	ÑÜXØ[IË	Ó][IË	ÓPÌ	Ë	Ô]X]ÜÜI×K	ÓX^IÎÉÐÖLÌ	Ë	ÐÖMIË	ÐÖML	Ë	ÐÖNL	Ë	ÓX^LÉË	ÓVMHZX]IË	ÓVLÌ	×K	ÓXÓ\[ÎÉÍÌÉË	ÍÍLÉË	Ð\\IË	ÑÕ	×K	ÓY\ÙY\ËP[ÎÉÐKPÛ\ÜÉË	ÐSQÈÕ	Ë	ÐËPÛ\ÜÉË	ÐÓIË	ÐÓIË	ÐÓÉË	ÑKPÛ\ÜÉË	ÑTPË	ÑTQIË	ÑTTÉË	ÑËPÛ\ÜÉË	ÑÓIË	ÑÓË	ÑÓÉË	ÑÓIË	ÑÓÉË	ÓX^XXÚ	Ë	ÔËPÛ\ÜÉË	ÔÓ	×K	ÓRSIÎÉÐÛXX[Ë	ÐÛÛ\XIË	ÐÛÝ[[X[Ë	Ò\ÜÛÜË	Ò\Ü
+ÛÜ×K	ÓZ]ÝX\ÚIÎÉÑXÛ\ÙHÜÜÜÉË	ÓZ\YÙIË	ÓÝ][\Ë	ÓÝ][\ÜÜ	×K	Ó\ÜØ[ÎÉÐ[[XIË	Ð\^XIË	ÑÛY\Ë	ÑÕTË	ÒÚXÚÜÉË	ÓPQË	ÓX^[XIË	Ó]\[ÉË	Ô][\Ë	ÔÙÝYIË	ÔÙ[IË	Õ][Ë	Õ\ØIË	Ö×K	ÔÛ\Ý\ÎÉÔÛ\Ý\Ë	ÔÛ\Ý\É×K	ÔÜØÚIÎÉÍÌNÞÝ\Ë	ÍÌNØ^[X[Ë	ÎLLIË	ÐØ^Y[IË	ÓXXØ[Ë	Ô[[Y\IË	Õ^XØ[×K	ÔSIÎÉÌML	Ë	ÌL	Ë	ÌÍL	Ë	ÔÓX\Ý\×K	Ô]X[ÎÉÔTÉË	ÔU	×K	ÔÛËTÞXÙIÎÉÐÝ[[[Ë	ÑÚÜÝ	Ë	Ô[ÛIË	ÔÜXÝIË	ÕÜZ]	×K	ÔÝX\IÎÉÐ\ØÙ[	Ë	ÐË	ÐÜÜÜÝZÉË	ÑÜ\Ý\Ë	Ò[\^IË	ÓYØXÞIË	ÓÝ]XÚÉË	ÔÛÛ\IË	ÕÔ	×K	Õ\ÛIÎÉÓ[Ù[ÉË	Ó[Ù[ÉË	Ó[Ù[	Ë	Ó[Ù[IË	ÐÞX\XÚÉ×K	ÕÞ[ÝIÎÉÍ[\Ë	Î
+Ë	Ø	Ë	ÐØ[\IË	ÐÛÜÛIË	ÐÛÜÛHÜÜÜÉË	ÐÜÝÛ	ÑÔÝ\IË	ÑÜ[YÚ[\Ë	ÒYÚ[\Ë	Ó[ÜZ\Ù\Ë	Ô]\ÉË	ÔU	Ë	ÔÙ\][ÚXIË	ÔÚY[IË	ÕXÛÛXIË	Õ[IË	Õ[I×K	ÕÛÜÝØYÙ[ÎÉÐ]\ÉË	Ð]\ÈÜÜÜÈÜÜ	Ë	ÑÛÛÕIË	ÑÛÛË	ÒQ	Ë	Ò]IË	Õ[ÜÉË	ÕYÝX[×K	ÕÛÉÎÉÐÍXÚ\ÙIË	ÔÍ	Ë	ÔÎL	Ë	Õ	Ë	ÕL	Ë	ÖÍ	Ë	ÖÍ	Ë	ÖÎL	×BNÂËÈOOOOHURSPSUHÐÒQSH
+^HÙÙYZÈOÜÝ\Ý\[Ý\JHOOOOBËÈTÝ[OS[ÛUYKÏUÙY
+UK
+OQK
+TØ]ÛÛÝ]Z[X[]HHÂÌLNKËÈÝ[^HLSKMBNÌMNKËÈ[Û^HKMBÌLNKËÈY\Ù^HLSKMBÎÌMNKËÈÙY\Ù^HKMB
+ÌMNKËÈ\Ù^HKMB
+NÌMNKËÈY^HKMB
+ÌLNHËÈØ]\^HLSKMBNÂËÈOOOOHUTÐÔÓQPÕOOOOBÛÛÝ]\HØÝ[Y[Ù][[Y[RY
+	Û]\ÊNÂÛÛÝÙXÝ[ÛÈHØÝ[Y[]Y\TÙ[XÝÜ[
+	ÜÙXÝ[ÛÚYIÊNÂÛÛÝ][ÜÈHØÝ[Y[]Y\TÙ[XÝÜ[
+	Ë][[ÜÈNÝ
+]XÝJIÊNÂ[Ý[Û[TØÜÛ
+
+HÂY
+Ú[ÝËØÜÛH
+L
+HÂ]\Û\ÜÓ\ÝY
+	ÜØÜÛY	ÊNÂH[ÙHÂ]\Û\ÜÓ\Ý[[ÝJ	ÜØÜÛY	ÊNÂB]Ý\[H	ÉÎÂÙXÝ[ÛËÜXXÚ
+ÙXÝ[ÛOÂÛÛÝÜHÙXÝ[ÛÙÙ]ÜHLÂY
+Ú[ÝËØÜÛHHÜ
+HÂÝ\[HÙXÝ[ÛÙ]]X]J	ÚY	ÊNÂBJNÂ][ÜËÜXXÚ
+[ÈOÂ[ËÛ\ÜÓ\Ý[[ÝJ	ØXÝ]IÊNÂY
+[ËÙ]]X]J	ÚYÊHOOH	ÈÉÈ
+ÈÝ\[
+HÂ[ËÛ\ÜÓ\ÝY
+	ØXÝ]IÊNÂBJNÂBÚ[ÝËY][\Ý[\	ÜØÜÛ	Ë[TØÜÛÈ\ÜÚ]NYHJNÂËÈOOOOHSÐSHQSHOOOOBÛÛÝY[UÙÙÛHHØÝ[Y[Ù][[Y[RY
+	ÛY[UÙÙÛIÊNÂÛÛÝ][ÜÐÛÛZ[\HØÝ[Y[Ù][[Y[RY
+	Û][ÜÉÊNÂY[UÙÙÛKY][\Ý[\	ØÛXÚÉË
+
+HOÂY[UÙÙÛKÛ\ÜÓ\ÝÙÙÛJ	ÛÜ[ÊNÂ][ÜÐÛÛZ[\Û\ÜÓ\ÝÙÙÛJ	ÛÜ[ÊNÂØÝ[Y[ÙKÝ[KÝ\ÝÈH][ÜÐÛÛZ[\Û\ÜÓ\ÝÛÛZ[Ê	ÛÜ[ÊHÈ	ÚY[È	ÉÎÂJNÂ][ÜÐÛÛZ[\]Y\TÙ[XÝÜ[
+	ØIÊKÜXXÚ
+[ÈOÂ[ËY][\Ý[\	ØÛXÚÉË
+
+HOÂY[UÙÙÛKÛ\ÜÓ\Ý[[ÝJ	ÛÜ[ÊNÂ][ÜÐÛÛZ[\Û\ÜÓ\Ý[[ÝJ	ÛÜ[ÊNÂØÝ[Y[ÙKÝ[KÝ\ÝÈH	ÉÎÂJNÂJNÂËÈOOOOHÐÔÓUPSOOOOBÛÛÝ]X[[[Y[ÈHØÝ[Y[]Y\TÙ[XÝÜ[
+	Ë]X[	ÊNÂÛÛÝ]X[ØÙ\\H]È[\ÙXÝ[ÛØÙ\\
+[Y\ÊHOÂ[Y\ËÜXXÚ
+[HOÂY
+[K\Ò[\ÙXÝ[ÊHÂ[K\Ù]Û\ÜÓ\ÝY
+	Ý\ÚXIÊNÂ]X[ØÙ\\[ØÙ\J[K\Ù]
+NÂBJNÂKÂ\ÚÛKÛÝX\Ú[	ÌM	ÂJNÂ]X[[[Y[ËÜXXÚ
+[O]X[ØÙ\\ØÙ\J[
+JNÂËÈOOOOHÑPTPHÔÕÓÓÓTÓSOOOOB[Ý[Û[]ÙX\ÚÙ[XÝ
+ÛÛZ[\Ü[ÛËÛÚ[ÙJHÂÛÛÝYÙÙ\HÛÛZ[\]Y\TÙ[XÝÜ	ËÙX\Ú\Ù[XÝ]YÙÙ\ÊNÂÛÛÝÜÝÛHÛÛZ[\]Y\TÙ[XÝÜ	ËÙX\Ú\Ù[XÝYÜÝÛÊNÂÛÛÝÙX\Ú[]HÛÛZ[\]Y\TÙ[XÝÜ	ËÙX\Ú\Ù[XÝ\ÙX\Ú	ÊNÂÛÛÝÜ[ÛÐÛÛZ[\HÛÛZ[\]Y\TÙ[XÝÜ	ËÙX\Ú\Ù[XÝ[Ü[ÛÉÊNÂ]Ù[XÝY[YHH	ÉÎÂ[Ý[Û[\][\ÊHÂÜ[ÛÐÛÛZ[\[\SH	ÉÎÂ][\ËÜXXÚ
+][HOÂÛÛÝÜHØÝ[Y[ÜX]Q[[Y[
+	Ù]ÊNÂÜÛ\ÜÓ[YHH	ÜÙX\Ú\Ù[XÝ[Ü[ÛÈ
+È
+][HOOHÙ[XÝY[YHÈ	ÈÙ[XÝY	È	ÉÊNÂÜ^ÛÛ[H][NÂÜY][\Ý[\	ØÛXÚÉË
+
+HOÂÙ[XÝY[YHH][NÂYÙÙ\[\SH][NÂÛÛZ[\Û\ÜÓ\Ý[[ÝJ	ÛÜ[ÊNÂYÙÙ\Û\ÜÓ\Ý[[ÝJ	ÛÜ[ÊNÂÙX\Ú[][YHH	ÉÎÂY
+ÛÚ[ÙJHÛÚ[ÙJ][JNÂJNÂÜ[ÛÐÛÛZ[\\[Ú[
+Ü
+NÂJNÂB[Ý[ÛÙ]Ü[ÛÊ][\ÊHÂÜ[ÛÈH][\ÎÂÙ[XÝY[YHH	ÉÎÂYÙÙ\[\SH	ÏÜ[Û\ÜÏHXÙZÛ\È
+Â
+][\Ë[ÝÈ	ÔÙ[XÝÈ	ÔÙ[XÝ[\ÝÊH
+È	ÏÜÜ[ÎÂ[\][\ÊNÂBYÙÙ\Y][\Ý[\	ØÛXÚÉË
+JHOÂKÝÜÜYØ][Û
+NÂËÈÛÜÙHÝ\ÜÝÛÂØÝ[Y[]Y\TÙ[XÝÜ[
+	ËÙX\Ú\Ù[XÝÜ[][K\Ù[XÝÜ[ÊKÜXXÚ
+[OÂY
+[OOHÛÛZ[\HÈ[Û\ÜÓ\Ý[[ÝJ	ÛÜ[ÊNÈBJNÂÛÛZ[\Û\ÜÓ\ÝÙÙÛJ	ÛÜ[ÊNÂYÙÙ\Û\ÜÓ\ÝÙÙÛJ	ÛÜ[ÊNÂY
+ÛÛZ[\Û\ÜÓ\ÝÛÛZ[Ê	ÛÜ[ÊJHÂÙX\Ú[]ØÝ\Ê
+NÂ[\Ü[ÛÊNÂBJNÂÙX\Ú[]Y][\Ý[\	Ú[]	Ë
+
+HOÂÛÛÝHHÙX\Ú[][YKÓÝÙ\Ø\ÙJ
+NÂÛÛÝ[\YHÜ[ÛË[\ÈOËÓÝÙ\Ø\ÙJ
+K[ÛY\ÊJJNÂ[\[\Y
+NÂJNÂÙX\Ú[]Y][\Ý[\	ØÛXÚÉË
+JHOKÝÜÜYØ][Û
+JNÂ]\ÈÙ]Ü[ÛËÙ]Ù[XÝY
+
+HOÙ[XÝY[YHNÂBËÈOOOOHUSKTÑSPÕÓÓTÓQS =====
     function initMultiSelect(container) {
       const trigger = container.querySelector('.multi-select-trigger');
       const dropdown = container.querySelector('.multi-select-dropdown');
@@ -2778,318 +1384,4 @@
     let calYear, calMonth, calSelectedDate = null, calSelectedTime = null;
 
     const calendarDaysEl = document.getElementById('calendarDays');
-    const calendarMonthEl = document.getElementById('calendarMonth');
-    const timeSlotsEl = document.getElementById('timeSlots');
-    const timeSlotsGrid = document.getElementById('timeSlotsGrid');
-    const monthNames = ['January','February','March','April','May','June','July','August','September','October','November','December'];
-
-    function initCalendar() {
-      const now = new Date();
-      calYear = now.getFullYear();
-      calMonth = now.getMonth();
-      renderCalendar();
-    }
-
-    function renderCalendar() {
-      calendarMonthEl.textContent = monthNames[calMonth] + ' ' + calYear;
-      calendarDaysEl.innerHTML = '';
-
-      const firstDay = new Date(calYear, calMonth, 1).getDay();
-      const daysInMonth = new Date(calYear, calMonth + 1, 0).getDate();
-      const today = new Date();
-      today.setHours(0,0,0,0);
-
-      // Empty cells before first day
-      for (let i = 0; i < firstDay; i++) {
-        const empty = document.createElement('div');
-        empty.className = 'calendar-day empty';
-        calendarDaysEl.appendChild(empty);
-      }
-
-      for (let d = 1; d <= daysInMonth; d++) {
-        const date = new Date(calYear, calMonth, d);
-        const dayEl = document.createElement('div');
-        dayEl.className = 'calendar-day';
-        dayEl.textContent = d;
-
-        const isPast = date < today;
-
-        if (isPast) {
-          dayEl.classList.add('disabled');
-        } else {
-          if (date.getTime() === today.getTime()) {
-            dayEl.classList.add('today');
-          }
-
-          if (calSelectedDate &&
-              date.getFullYear() === calSelectedDate.getFullYear() &&
-              date.getMonth() === calSelectedDate.getMonth() &&
-              date.getDate() === calSelectedDate.getDate()) {
-            dayEl.classList.add('selected');
-          }
-
-          dayEl.addEventListener('click', () => selectDate(date, d));
-        }
-
-        calendarDaysEl.appendChild(dayEl);
-      }
-    }
-
-    function selectDate(date, day) {
-      calSelectedDate = date;
-      calSelectedTime = null;
-      document.getElementById('selectedDate').value =
-        (calMonth + 1) + '/' + day + '/' + calYear;
-      document.getElementById('selectedTime').value = '';
-      renderCalendar();
-      renderTimeSlots(date);
-    }
-
-    function renderTimeSlots(date) {
-      const dow = date.getDay();
-      const hours = availability[dow];
-
-      timeSlotsGrid.innerHTML = '';
-      timeSlotsEl.style.display = 'block';
-
-      if (!hours) {
-        timeSlotsGrid.innerHTML = '<div style="color:var(--gray-500);font-size:0.85rem;grid-column:1/-1;">Not available on this day</div>';
-        return;
-      }
-
-      const [start, end] = hours;
-      for (let h = start; h < end; h++) {
-        // Full hour
-        const slot1 = createTimeSlot(h, 0);
-        timeSlotsGrid.appendChild(slot1);
-        // Half hour
-        const slot2 = createTimeSlot(h, 30);
-        timeSlotsGrid.appendChild(slot2);
-      }
-    }
-
-    function createTimeSlot(hour, minute) {
-      const slot = document.createElement('div');
-      slot.className = 'time-slot';
-
-      const period = hour >= 12 ? 'PM' : 'AM';
-      const displayHour = hour > 12 ? hour - 12 : hour;
-      const timeStr = displayHour + ':' + (minute === 0 ? '00' : '30') + ' ' + period;
-
-      slot.textContent = timeStr;
-
-      if (calSelectedTime === timeStr) {
-        slot.classList.add('selected');
-      }
-
-      slot.addEventListener('click', () => {
-        calSelectedTime = timeStr;
-        document.getElementById('selectedTime').value = timeStr;
-        timeSlotsGrid.querySelectorAll('.time-slot').forEach(s => s.classList.remove('selected'));
-        slot.classList.add('selected');
-      });
-
-      return slot;
-    }
-
-    document.getElementById('calPrev').addEventListener('click', () => {
-      calMonth--;
-      if (calMonth < 0) { calMonth = 11; calYear--; }
-      renderCalendar();
-      timeSlotsEl.style.display = 'none';
-    });
-
-    document.getElementById('calNext').addEventListener('click', () => {
-      calMonth++;
-      if (calMonth > 11) { calMonth = 0; calYear++; }
-      renderCalendar();
-      timeSlotsEl.style.display = 'none';
-    });
-
-    initCalendar();
-
-    // ===== FORM SUMMARY & SUBMISSION =====
-    const form = document.getElementById('bookingForm');
-    const summaryOverlay = document.getElementById('summaryOverlay');
-    const summaryContent = document.getElementById('summaryContent');
-
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-
-      // Validate required fields
-      const name = form.name.value.trim();
-      const phone = form.phone.value.trim();
-      const service = form.service.value;
-      const carBrand = document.getElementById('carBrand').value;
-      const carModel = document.getElementById('carModel').value;
-      const location = form.location.value;
-      const selectedDate = document.getElementById('selectedDate').value;
-      const selectedTime = document.getElementById('selectedTime').value;
-      const utilityCheck = document.getElementById('utilityCheck').checked;
-
-      if (!name || !phone || !service || !carBrand || !carModel || !location || !selectedDate || !selectedTime) {
-        alert('Please fill in all required fields including date and time.');
-        return;
-      }
-
-      if (!utilityCheck) {
-        alert('Please confirm that water and electricity source will be provided.');
-        return;
-      }
-
-      // Build summary
-      const addons = addonsMulti.getSelected();
-      const notes = form.notes.value.trim();
-
-      let html = '';
-      html += summaryRow('Name', name);
-      html += summaryRow('Phone', phone);
-      html += summaryRow('Service', service);
-      html += summaryRow('Add-Ons', addons.length ? addons.join(', ') : 'None');
-      html += summaryRow('Vehicle', carBrand + ' ' + carModel);
-      html += summaryRow('Location', location);
-      html += summaryRow('Date', selectedDate);
-      html += summaryRow('Time', selectedTime);
-      if (notes) html += summaryRow('Notes', notes);
-
-      summaryContent.innerHTML = html;
-      summaryOverlay.classList.add('active');
-    });
-
-    function summaryRow(label, value) {
-      return '<div class="summary-row"><span class="summary-label">' + label +
-             '</span><span class="summary-value">' + escapeHtml(value) + '</span></div>';
-    }
-
-    function escapeHtml(str) {
-      const div = document.createElement('div');
-      div.textContent = str;
-      return div.innerHTML;
-    }
-
-    // Back button
-    document.getElementById('summaryBack').addEventListener('click', () => {
-      summaryOverlay.classList.remove('active');
-    });
-
-    // Close summary on overlay click
-    summaryOverlay.addEventListener('click', (e) => {
-      if (e.target === summaryOverlay) summaryOverlay.classList.remove('active');
-    });
-
-    // Confirm & Send
-    document.getElementById('summaryConfirm').addEventListener('click', () => {
-      const confirmBtn = document.getElementById('summaryConfirm');
-      confirmBtn.textContent = 'SENDING...';
-      confirmBtn.disabled = true;
-
-      const name = form.name.value.trim();
-      const phone = form.phone.value.trim();
-      const service = form.service.value;
-      const addons = addonsMulti.getSelected();
-      const carBrand = document.getElementById('carBrand').value;
-      const carModel = document.getElementById('carModel').value;
-      const location = form.location.value;
-      const selectedDate = document.getElementById('selectedDate').value;
-      const selectedTime = document.getElementById('selectedTime').value;
-      const notes = form.notes.value.trim();
-
-      // Build SMS message body
-      const smsBody = [
-        'New VRM Booking Inquiry:',
-        'Name: ' + name,
-        'Phone: ' + phone,
-        'Service: ' + service,
-        'Add-Ons: ' + (addons.length ? addons.join(', ') : 'None'),
-        'Vehicle: ' + carBrand + ' ' + carModel,
-        'Location: ' + location,
-        'Date: ' + selectedDate + ' at ' + selectedTime,
-        notes ? 'Notes: ' + notes : ''
-      ].filter(Boolean).join('\n');
-
-      // Send SMS via Twilio serverless function
-      fetch(TWILIO_ENDPOINT, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          to: BUSINESS_PHONE,
-          body: smsBody
-        })
-      })
-      .then(res => {
-        if (!res.ok) throw new Error('SMS send failed');
-        return res.json();
-      })
-      .then(() => {
-        confirmBtn.textContent = 'BOOKING SENT!';
-        confirmBtn.style.background = '#1a8f1a';
-        setTimeout(() => {
-          summaryOverlay.classList.remove('active');
-          form.reset();
-          // Reset custom components
-          brandSelect.setOptions(brandNames);
-          modelSelect.setOptions([]);
-          document.getElementById('carBrand').value = '';
-          document.getElementById('carModel').value = '';
-          document.getElementById('selectedDate').value = '';
-          document.getElementById('selectedTime').value = '';
-          calSelectedDate = null;
-          calSelectedTime = null;
-          timeSlotsEl.style.display = 'none';
-          renderCalendar();
-          // Reset multi-select visually
-          document.querySelectorAll('.multi-select-option.selected').forEach(o => o.classList.remove('selected'));
-          const trigger = document.querySelector('#addonsSelect .multi-select-trigger');
-          trigger.querySelectorAll('.multi-select-tag').forEach(t => t.remove());
-          if (!trigger.querySelector('.placeholder')) {
-            const ph = document.createElement('span');
-            ph.className = 'placeholder';
-            ph.textContent = 'Select add-ons...';
-            trigger.appendChild(ph);
-          }
-          // Reset confirm button
-          confirmBtn.textContent = 'CONFIRM & SEND';
-          confirmBtn.style.background = '';
-          confirmBtn.disabled = false;
-        }, 2000);
-      })
-      .catch(() => {
-        // Fallback: open SMS app or show success anyway for demo
-        confirmBtn.textContent = 'BOOKING SENT!';
-        confirmBtn.style.background = '#1a8f1a';
-        // Fallback: open SMS link
-        const encodedBody = encodeURIComponent(smsBody);
-        window.open('sms:' + BUSINESS_PHONE + '?body=' + encodedBody, '_blank');
-        setTimeout(() => {
-          summaryOverlay.classList.remove('active');
-          confirmBtn.textContent = 'CONFIRM & SEND';
-          confirmBtn.style.background = '';
-          confirmBtn.disabled = false;
-          form.reset();
-          calSelectedDate = null;
-          calSelectedTime = null;
-          timeSlotsEl.style.display = 'none';
-          renderCalendar();
-        }, 2000);
-      });
-    });
-
-    // ===== SMOOTH SCROLL FOR SAFARI =====
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        const targetId = this.getAttribute('href');
-        if (targetId === '#') return;
-
-        const target = document.querySelector(targetId);
-        if (target) {
-          e.preventDefault();
-          const offset = 70;
-          const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
-          window.scrollTo({ top, behavior: 'smooth' });
-        }
-      });
-    });
-  </script>
-
-</body>
-</html>
+    const calendarMonthEl = document.getElementById('calendarMonth'°¢6öç7BFÖU6Æ÷G4VÂÒFö7VÖVçBævWDVÆVÖVçD'BwFÖU6Æ÷G2r°¢6öç7BFÖU6Æ÷G4w&BÒFö7VÖVçBævWDVÆVÖVçD'BwFÖU6Æ÷G4w&Br°¢6öç7BÖöçFæÖW2Ò²t¦çV'rÂtfV''V'rÂtÖ&6rÂt&ÂrÂtÖrÂt§VæRrÂt§VÇrÂtVwW7BrÂu6WFVÖ&W"rÂtö7Fö&W"rÂtæ÷fVÖ&W"rÂtFV6VÖ&W"uÓ° ¢gVæ7FöâæD6ÆVæF"°¢6öç7Bæ÷rÒæWrFFR°¢6ÅV"Òæ÷rævWDgVÆÅV"°¢6ÄÖöçFÒæ÷rævWDÖöçF°¢&VæFW$6ÆVæF"°¢Ð ¢gVæ7Föâ&VæFW$6ÆVæF"°¢6ÆVæF$ÖöçFVÂçFWD6öçFVçBÒÖöçFæÖW5¶6ÄÖöçFÒ²rr²6ÅV#°¢6ÆVæF$F4VÂæææW$DÔÂÒrs° ¢6öç7Bf'7DFÒæWrFFR6ÅV"Â6ÄÖöçFÂævWDF°¢6öç7BF4äÖöçFÒæWrFFR6ÅV"Â6ÄÖöçF²ÂævWDFFR°¢6öç7BFöFÒæWrFFR°¢FöFç6WD÷W'2ÃÃÃ° ¢òòV×G6VÆÇ2&Vf÷&Rf'7BF¢f÷"ÆWBÒ²Âf'7DF²²²°¢6öç7BV×GÒFö7VÖVçBæ7&VFTVÆVÖVçBvFbr°¢V×Gæ6Æ74æÖRÒv6ÆVæF"ÖFV×Gs°¢6ÆVæF$F4VÂæVæD6ÆBV×G°¢Ð ¢f÷"ÆWBBÒ²BÃÒF4äÖöçF²B²²°¢6öç7BFFRÒæWrFFR6ÅV"Â6ÄÖöçFÂB°¢6öç7BFVÂÒFö7VÖVçBæ7&VFTVÆVÖVçBvFbr°¢FVÂæ6Æ74æÖRÒv6ÆVæF"ÖFs°¢FVÂçFWD6öçFVçBÒC° ¢6öç7B57BÒFFRÂFöF° ¢b57B°¢FVÂæ6Æ74Æ7BæFBvF6&ÆVBr°¢ÒVÇ6R°¢bFFRævWEFÖRÓÓÒFöFævWEFÖR°¢FVÂæ6Æ74Æ7BæFBwFöFr°¢Ð ¢b6Å6VÆV7FVDFFRb`¢FFRævWDgVÆÅV"ÓÓÒ6Å6VÆV7FVDFFRævWDgVÆÅV"b`¢FFRævWDÖöçFÓÓÒ6Å6VÆV7FVDFFRævWDÖöçFb`¢FFRævWDFFRÓÓÒ6Å6VÆV7FVDFFRævWDFFR°¢FVÂæ6Æ74Æ7BæFBw6VÆV7FVBr°¢Ð ¢FVÂæFDWfVçDÆ7FVæW"v6Æ6²rÂÓâ6VÆV7DFFRFFRÂB°¢Ð ¢6ÆVæF$F4VÂæVæD6ÆBFVÂ°¢Ð¢Ð ¢gVæ7Föâ6VÆV7DFFRFFRÂF°¢6Å6VÆV7FVDFFRÒFFS°¢6Å6VÆV7FVEFÖRÒçVÆÃ°¢Fö7VÖVçBævWDVÆVÖVçD'Bw6VÆV7FVDFFRrçfÇVRÐ¢6ÄÖöçF²²ròr²F²ròr²6ÅV#°¢Fö7VÖVçBævWDVÆVÖVçD'Bw6VÆV7FVEFÖRrçfÇVRÒrs°¢&VæFW$6ÆVæF"°¢&VæFW%FÖU6Æ÷G2FFR°¢Ð ¢gVæ7Föâ&VæFW%FÖU6Æ÷G2FFR°¢6öç7BF÷rÒFFRævWDF°¢6öç7B÷W'2ÒfÆ&ÆG¶F÷uÓ° ¢FÖU6Æ÷G4w&BæææW$DÔÂÒrs°¢FÖU6Æ÷G4VÂç7GÆRæF7ÆÒv&Æö6²s° ¢b÷W'2°¢FÖU6Æ÷G4w&BæææW$DÔÂÒsÆFb7GÆSÒ&6öÆ÷#§f"ÒÖw&ÓS¶föçB×6¦S£ãW&VÓ¶w&BÖ6öÇVÖã£òÓ²#äæ÷BfÆ&ÆRöâF2FÂöFcâs°¢&WGW&ã°¢Ð ¢6öç7B·7F'BÂVæEÒÒ÷W'3°¢f÷"ÆWBÒ7F'C²ÂVæC²²²°¢òògVÆÂ÷W ¢6öç7B6Æ÷CÒ7&VFUFÖU6Æ÷BÂ°¢FÖU6Æ÷G4w&BæVæD6ÆB6Æ÷C°¢òòÆb÷W ¢6öç7B6Æ÷C"Ò7&VFUFÖU6Æ÷BÂ3°¢FÖU6Æ÷G4w&BæVæD6ÆB6Æ÷C"°¢Ð¢Ð ¢gVæ7Föâ7&VFUFÖU6Æ÷B÷W"ÂÖçWFR°¢6öç7B6Æ÷BÒFö7VÖVçBæ7&VFTVÆVÖVçBvFbr°¢6Æ÷Bæ6Æ74æÖRÒwFÖR×6Æ÷Bs° ¢6öç7BW&öBÒ÷W"ãÒ"òuÒr¢tÒs°¢6öç7BF7Æ÷W"Ò÷W"â"ò÷W"Ò"¢÷W#°¢6öç7BFÖU7G"ÒF7Æ÷W"²s¢r²ÖçWFRÓÓÒòsr¢s3r²rr²W&öC° ¢6Æ÷BçFWD6öçFVçBÒFÖU7G#° ¢b6Å6VÆV7FVEFÖRÓÓÒFÖU7G"°¢6Æ÷Bæ6Æ74Æ7BæFBw6VÆV7FVBr°¢Ð ¢6Æ÷BæFDWfVçDÆ7FVæW"v6Æ6²rÂÓâ°¢6Å6VÆV7FVEFÖRÒFÖU7G#°¢Fö7VÖVçBævWDVÆVÖVçD'Bw6VÆV7FVEFÖRrçfÇVRÒFÖU7G#°¢FÖU6Æ÷G4w&BçVW'6VÆV7F÷$ÆÂrçFÖR×6Æ÷Bræf÷$V62Óâ2æ6Æ74Æ7Bç&VÖ÷fRw6VÆV7FVBr°¢6Æ÷Bæ6Æ74Æ7BæFBw6VÆV7FVBr°¢Ò° ¢&WGW&â6Æ÷C°¢Ð ¢Fö7VÖVçBævWDVÆVÖVçD'Bv6Å&WbræFDWfVçDÆ7FVæW"v6Æ6²rÂÓâ°¢6ÄÖöçFÒÓ°¢b6ÄÖöçFÂ²6ÄÖöçFÒ²6ÅV"ÒÓ²Ð¢&VæFW$6ÆVæF"°¢FÖU6Æ÷G4VÂç7GÆRæF7ÆÒvæöæRs°¢Ò° ¢Fö7VÖVçBævWDVÆVÖVçD'Bv6ÄæWBræFDWfVçDÆ7FVæW"v6Æ6²rÂÓâ°¢6ÄÖöçF²³°¢b6ÄÖöçFâ²6ÄÖöçFÒ²6ÅV"²³²Ð¢&VæFW$6ÆVæF"°¢FÖU6Æ÷G4VÂç7GÆRæF7ÆÒvæöæRs°¢Ò° ¢æD6ÆVæF"° ¢òòÓÓÓÓÒdõ$Ò5TÔÔ%b5T$Ô54ôâÓÓÓÓÐ¢6öç7Bf÷&ÒÒFö7VÖVçBævWDVÆVÖVçD'Bv&öö¶ætf÷&Òr°¢6öç7B7VÖÖ'÷fW&ÆÒFö7VÖVçBævWDVÆVÖVçD'Bw7VÖÖ'÷fW&Ær°¢6öç7B7VÖÖ'6öçFVçBÒFö7VÖVçBævWDVÆVÖVçD'Bw7VÖÖ'6öçFVçBr° ¢f÷&ÒæFDWfVçDÆ7FVæW"w7V&ÖBrÂRÓâ°¢Rç&WfVçDFVfVÇB° ¢òòfÆFFR&WV&VBfVÆG0¢6öç7BæÖRÒf÷&ÒææÖRçfÇVRçG&Ò°¢6öç7BöæRÒf÷&ÒçöæRçfÇVRçG&Ò°¢6öç7B6W'f6RÒf÷&Òç6W'f6RçfÇVS°¢6öç7B6$'&æBÒFö7VÖVçBævWDVÆVÖVçD'Bv6$'&æBrçfÇVS°¢6öç7B6$ÖöFVÂÒFö7VÖVçBævWDVÆVÖVçD'Bv6$ÖöFVÂrçfÇVS°¢6öç7BÆö6FöâÒf÷&ÒæÆö6FöâçfÇVS°¢6öç7B6VÆV7FVDFFRÒFö7VÖVçBævWDVÆVÖVçD'Bw6VÆV7FVDFFRrçfÇVS°¢6öç7B6VÆV7FVEFÖRÒFö7VÖVçBævWDVÆVÖVçD'Bw6VÆV7FVEFÖRrçfÇVS°¢6öç7BWFÆG6V6²ÒFö7VÖVçBævWDVÆVÖVçD'BwWFÆG6V6²ræ6V6¶VC° ¢bæÖRÇÂöæRÇÂ6W'f6RÇÂ6$'&æBÇÂ6$ÖöFVÂÇÂÆö6FöâÇÂ6VÆV7FVDFFRÇÂ6VÆV7FVEFÖR°¢ÆW'BuÆV6RfÆÂâÆÂ&WV&VBfVÆG2æ6ÇVFærFFRæBFÖRâr°¢&WGW&ã°¢Ð ¢bWFÆG6V6²°¢ÆW'BuÆV6R6öæf&ÒFBvFW"æBVÆV7G&6G6÷W&6RvÆÂ&R&÷fFVBâr°¢&WGW&ã°¢Ð ¢òò'VÆB7VÖÖ'¢6öç7BFFöç2ÒFFöç4×VÇFævWE6VÆV7FVB°¢6öç7Bæ÷FW2Òf÷&Òææ÷FW2çfÇVRçG&Ò° ¢ÆWBFÖÂÒrs°¢FÖÂ³Ò7VÖÖ'&÷rtæÖRrÂæÖR°¢FÖÂ³Ò7VÖÖ'&÷ruöæRrÂöæR°¢FÖÂ³Ò7VÖÖ'&÷ru6W'f6RrÂ6W'f6R°¢FÖÂ³Ò7VÖÖ'&÷rtFBÔöç2rÂFFöç2æÆVæwFòFFöç2æ¦öârÂr¢tæöæRr°¢FÖÂ³Ò7VÖÖ'&÷rufV6ÆRrÂ6$'&æB²rr²6$ÖöFVÂ°¢FÖÂ³Ò7VÖÖ'&÷rtÆö6FöârÂÆö6Föâ°¢FÖÂ³Ò7VÖÖ'&÷rtFFRrÂ6VÆV7FVDFFR°¢FÖÂ³Ò7VÖÖ'&÷ruFÖRrÂ6VÆV7FVEFÖR°¢bæ÷FW2FÖÂ³Ò7VÖÖ'&÷rtæ÷FW2rÂæ÷FW2° ¢7VÖÖ'6öçFVçBæææW$DÔÂÒFÖÃ°¢7VÖÖ'÷fW&Ææ6Æ74Æ7BæFBv7FfRr°¢Ò° ¢gVæ7Föâ7VÖÖ'&÷rÆ&VÂÂfÇVR°¢&WGW&âsÆFb6Æ73Ò'7VÖÖ'×&÷r#ãÇ7â6Æ73Ò'7VÖÖ'ÖÆ&VÂ#âr²Æ&VÂ°¢sÂ÷7ããÇ7â6Æ73Ò'7VÖÖ'×fÇVR#âr²W66TFÖÂfÇVR²sÂ÷7ããÂöFcâs°¢Ð ¢gVæ7FöâW66TFÖÂ7G"°¢6öç7BFbÒFö7VÖVçBæ7&VFTVÆVÖVçBvFbr°¢FbçFWD6öçFVçBÒ7G#°¢&WGW&âFbæææW$DÔÃ°¢Ð ¢òò&6²'WGFöà¢Fö7VÖVçBævWDVÆVÖVçD'Bw7VÖÖ'&6²ræFDWfVçDÆ7FVæW"v6Æ6²rÂÓâ°¢7VÖÖ'÷fW&Ææ6Æ74Æ7Bç&VÖ÷fRv7FfRr°¢Ò° ¢òò6Æ÷6R7VÖÖ'öâ÷fW&Æ6Æ6°¢7VÖÖ'÷fW&ÆæFDWfVçDÆ7FVæW"v6Æ6²rÂRÓâ°¢bRçF&vWBÓÓÒ7VÖÖ'÷fW&Æ7VÖÖ'÷fW&Ææ6Æ74Æ7Bç&VÖ÷fRv7FfRr°¢Ò° ¢òò6öæf&Òb6Væ@¢Fö7VÖVçBævWDVÆVÖVçD'Bw7VÖÖ'6öæf&ÒræFDWfVçDÆ7FVæW"v6Æ6²rÂÓâ°¢6öç7B6öæf&Ô'FâÒFö7VÖVçBævWDVÆVÖVçD'Bw7VÖÖ'6öæf&Òr°¢6öæf&Ô'FâçFWD6öçFVçBÒu4TäDärâââs°¢6öæf&Ô'FâæF6&ÆVBÒG'VS° ¢6öç7BæÖRÒf÷&ÒææÖRçfÇVRçG&Ò°¢6öç7BöæRÒf÷&ÒçöæRçfÇVRçG&Ò°¢6öç7B6W'f6RÒf÷&Òç6W'f6RçfÇVS°¢6öç7BFFöç2ÒFFöç4×VÇFævWE6VÆV7FVB°¢6öç7B6$'&æBÒFö7VÖVçBævWDVÆVÖVçD'Bv6$'&æBrçfÇVS°¢6öç7B6$ÖöFVÂÒFö7VÖVçBævWDVÆVÖVçD'Bv6$ÖöFVÂrçfÇVS°¢6öç7BÆö6FöâÒf÷&ÒæÆö6FöâçfÇVS°¢6öç7B6VÆV7FVDFFRÒFö7VÖVçBævWDVÆVÖVçD'Bw6VÆV7FVDFFRrçfÇVS°¢6öç7B6VÆV7FVEFÖRÒFö7VÖVçBævWDVÆVÖVçD'Bw6VÆV7FVEFÖRrçfÇVS°¢6öç7Bæ÷FW2Òf÷&Òææ÷FW2çfÇVRçG&Ò° ¢òò'VÆBæ÷Ff6Föâ&öG¢6öç7B6×4&öGÒ°¢tæWre$Ò&öö¶ærçV'¢rÀ¢tæÖS¢r²æÖRÀ¢uöæS¢r²öæRÀ¢u6W'f6S¢r²6W'f6RÀ¢tFBÔöç3¢r²FFöç2æÆVæwFòFFöç2æ¦öârÂr¢tæöæRrÀ¢ufV6ÆS¢r²6$'&æB²rr²6$ÖöFVÂÀ¢tÆö6Föã¢r²Æö6FöâÀ¢tFFS¢r²6VÆV7FVDFFR²rBr²6VÆV7FVEFÖRÀ¢æ÷FW2òtæ÷FW3¢r²æ÷FW2¢rp¢ÒæfÇFW"&ööÆVâæ¦öâuÆâr° ¢òò6VæBVÖÂæ÷Ff6Föâff÷&×7V&ÖBæ6òg&VRÂæò&6¶VæBæVVFVB¢fWF6vGG3¢òöf÷&×7V&ÖBæ6òö¦òr²äõDeôTÔÂÂ°¢ÖWFöC¢uõ5BrÀ¢VFW'3¢°¢t6öçFVçBÕGRs¢vÆ6Föâö§6öârÀ¢t66WBs¢vÆ6Föâö§6öâp¢ÒÀ¢&öG¢¥4ôâç7G&ævg°¢÷7V&¦V7C¢	ù©ræWre$Ò&öö¶ær(	2r²æÖRÀ¢æÖS¢æÖRÀ¢öæS¢öæRÀ¢6W'f6S¢6W'f6RÀ¢tFBÔöç2s¢FFöç2æÆVæwFòFFöç2æ¦öârÂr¢tæöæRrÀ¢fV6ÆS¢6$'&æB²rr²6$ÖöFVÂÀ¢Æö6Föã¢Æö6FöâÀ¢töçFÖVçBFFRs¢6VÆV7FVDFFRÀ¢töçFÖVçBFÖRs¢6VÆV7FVEFÖRÀ¢æ÷FW3¢æ÷FW2ÇÂtæöæRrÀ¢÷FV×ÆFS¢wF&ÆRrÀ¢ö6F6¢vfÇ6Rp¢Ò¢Ò¢çFVâ&W2Óâ°¢b&W2æö²F&÷ræWrW'&÷"tVÖÂ6VæBfÆVBr°¢&WGW&â&W2æ§6öâ°¢Ò¢çFVâÓâ°¢6öæf&Ô'FâçFWD6öçFVçBÒt$ôô´är4TåBs°¢6öæf&Ô'Fâç7GÆRæ&6¶w&÷VæBÒr3cs°¢6WEFÖV÷WBÓâ°¢7VÖÖ'÷fW&Ææ6Æ74Æ7Bç&VÖ÷fRv7FfRr°¢f÷&Òç&W6WB°¢òò&W6WB7W7FöÒ6ö×öæVçG0¢'&æE6VÆV7Bç6WD÷Föç2'&æDæÖW2°¢ÖöFVÅ6VÆV7Bç6WD÷Föç2µÒ°¢Fö7VÖVçBævWDVÆVÖVçD'Bv6$'&æBrçfÇVRÒrs°¢Fö7VÖVçBævWDVÆVÖVçD'Bv6$ÖöFVÂrçfÇVRÒrs°¢Fö7VÖVçBævWDVÆVÖVçD'Bw6VÆV7FVDFFRrçfÇVRÒrs°¢Fö7VÖVçBævWDVÆVÖVçD'Bw6VÆV7FVEFÖRrçfÇVRÒrs°¢6Å6VÆV7FVDFFRÒçVÆÃ°¢6Å6VÆV7FVEFÖRÒçVÆÃ°¢FÖU6Æ÷G4VÂç7GÆRæF7ÆÒvæöæRs°¢&VæFW$6ÆVæF"°¢òò&W6WB×VÇF×6VÆV7Bf7VÆÇ¢Fö7VÖVçBçVW'6VÆV7F÷$ÆÂræ×VÇF×6VÆV7BÖ÷Föâç6VÆV7FVBræf÷$V6òÓâòæ6Æ74Æ7Bç&VÖ÷fRw6VÆV7FVBr°¢6öç7BG&vvW"ÒFö7VÖVçBçVW'6VÆV7F÷"r6FFöç56VÆV7Bæ×VÇF×6VÆV7B×G&vvW"r°¢G&vvW"çVW'6VÆV7F÷$ÆÂræ×VÇF×6VÆV7B×Frræf÷$V6BÓâBç&VÖ÷fR°¢bG&vvW"çVW'6VÆV7F÷"rçÆ6VöÆFW"r°¢6öç7BÒFö7VÖVçBæ7&VFTVÆVÖVçBw7âr°¢æ6Æ74æÖRÒwÆ6VöÆFW"s°¢çFWD6öçFVçBÒu6VÆV7BFBÖöç2âââs°¢G&vvW"æVæD6ÆB°¢Ð¢òò&W6WB6öæf&Ò'WGFöà¢6öæf&Ô'FâçFWD6öçFVçBÒt4ôäd$Òb4TäBs°¢6öæf&Ô'Fâç7GÆRæ&6¶w&÷VæBÒrs°¢6öæf&Ô'FâæF6&ÆVBÒfÇ6S°¢ÒÂ#°¢Ò¢æ6F6Óâ°¢òòfÆÆ&6³¢÷Vâ4Õ2÷"6÷r7V66W72çvf÷"FVÖð¢6öæf&Ô'FâçFWD6öçFVçBÒt$ôô´är4TåBs°¢6öæf&Ô'Fâç7GÆRæ&6¶w&÷VæBÒr3cs°¢òòfÆÆ&6³¢÷Vâ4Õ2Ææ°¢6öç7BVæ6öFVD&öGÒVæ6öFUU$6ö×öæVçB6×4&öG°¢væF÷ræ÷Vâw6×3¢r²%U4äU55õôäR²sö&öGÒr²Væ6öFVD&öGÂuö&Ææ²r°¢6WEFÖV÷WBÓâ°¢7VÖÖ'÷fW&Ææ6Æ74Æ7Bç&VÖ÷fRv7FfRr°¢6öæf&Ô'FâçFWD6öçFVçBÒt4ôäd$Òb4TäBs°¢6öæf&Ô'Fâç7GÆRæ&6¶w&÷VæBÒrs°¢6öæf&Ô'FâæF6&ÆVBÒfÇ6S°¢f÷&Òç&W6WB°¢6Å6VÆV7FVDFFRÒçVÆÃ°¢6Å6VÆV7FVEFÖRÒçVÆÃ°¢FÖU6Æ÷G4VÂç7GÆRæF7ÆÒvæöæRs°¢&VæFW$6ÆVæF"°¢ÒÂ#°¢Ò°¢Ò° ¢òòÓÓÓÓÒ4ÔôõD45$ôÄÂdõ"4d$ÓÓÓÓÐ¢Fö7VÖVçBçVW'6VÆV7F÷$ÆÂv¶&VeãÒ"2%Òræf÷$V6æ6÷"Óâ°¢æ6÷"æFDWfVçDÆ7FVæW"v6Æ6²rÂgVæ7FöâR°¢6öç7BF&vWDBÒF2ævWDGG&'WFRv&Vbr°¢bF&vWDBÓÓÒr2r&WGW&ã° ¢6öç7BF&vWBÒFö7VÖVçBçVW'6VÆV7F÷"F&vWDB°¢bF&vWB°¢Rç&WfVçDFVfVÇB°¢6öç7Böfg6WBÒs°¢6öç7BF÷ÒF&vWBævWD&÷VæFæt6ÆVçE&V7BçF÷²væF÷rçvUöfg6WBÒöfg6WC°¢væF÷rç67&öÆÅFò²F÷Â&Vf÷#¢w6Öö÷FrÒ°¢Ð¢Ò°¢Ò°¢Â÷67&Cà £Âö&öGà£ÂöFÖÃà 
